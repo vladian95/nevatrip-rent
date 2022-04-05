@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 18px;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

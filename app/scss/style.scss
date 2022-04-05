@@ -1,0 +1,13 @@
+@import '_vars';
+@import '_global';
+@import '_fonts';
+
+
+.test {
+    font-family: $fontRoboto;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: yellow;
+    width: 300px;
+    height: 40px;
+}
