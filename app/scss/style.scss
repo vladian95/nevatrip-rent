@@ -3,10 +3,13 @@
 @import '_fonts';
 
 //style Regata page
-@import '_regata';
+@import '../Regata/regata.scss';
 
 //style Speedboat page
-@import '_speedboat';
+@import '../Speedboat/speedboat.scss';
+
+//style TEST-CHES page
+@import '../Ches/ches.scss';
 
 
 
