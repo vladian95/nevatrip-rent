@@ -221,9 +221,58 @@
     line-height: 26px;
     margin-top: 15px;
 }
-
-
 //Routes end
+
+//Accordion start
+.accordion{
+    padding-top: 90px;
+}
+.accordion__inner{
+    margin-top: 36px;
+}
+.accordion__item{
+    padding: 30px 0px;
+    border-top: 1px solid $light-gray;
+    &:last-child{
+        border-bottom: 1px solid $light-gray;
+    }
+}
+.accordion__item__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion__item-title{
+    font-weight: 600;
+    line-height: 22px;
+    color: $dark;
+    margin-bottom: 10px;
+}
+.accordion__item-price{
+    line-height: 21px;
+}
+.accordion__icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid $light-gray 2px;
+    position: relative;
+    img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.accordion__dropDown{
+    display: none;
+}
+
+
+
+
+
+//Accordion end
 
 //other start
 .other{
