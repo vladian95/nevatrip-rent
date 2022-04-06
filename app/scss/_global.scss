@@ -40,9 +40,7 @@ body {
 }
 
 .container {
-    max-width: 930px;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .page-title{
@@ -50,4 +48,32 @@ body {
     line-height: 26px;
     font-weight: 600;
     color: $dark;
+}
+
+@media (min-width : 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width : 992px)  {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 30px;
+        margin: 0 auto;
+        max-width: 930px;
+    }
+}
+
+@media (min-width : 1400px) {
+    .container {
+        padding: 0 30px;
+        margin: 0 auto;
+        max-width: 930px;
+    }
 }
