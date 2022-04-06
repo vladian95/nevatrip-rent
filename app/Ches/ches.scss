@@ -1,16 +1,12 @@
-
 .regata-slider__item {
     color: red;
 }
 
 
-
-@media (min-width : 360px) {
-
-}
-
 @media (min-width : 768px) {
-
+    .regata-slider__item {
+        color: blue;
+    }
 }
 
 @media (min-width : 992px)  {
@@ -18,9 +14,11 @@
 }
 
 @media (min-width: 1200px) {
+    .regata-slider__item {
+        color: black;
+    }
 
 }
 
 @media (min-width : 1400px) {
-    
 }
