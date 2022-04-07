@@ -10,9 +10,9 @@
             width: 335px;
             height: 220px;
             margin: auto;
-            // z-index: 1;
         }
     }
+
     .variants-slider{
         padding-top: 60px;
     }
@@ -39,7 +39,6 @@
         margin-bottom: 20px;
         margin-right: 20px;
     }
-    
     .variants-slider__list {
         padding: 0 20px;
         font-size: 15px;
@@ -54,8 +53,7 @@
                 top: 2px;
             }
         }
-    }
-    
+    } 
     .variants-slider__price {
         padding: 0 0 30px 20px;
         font-weight: 400;
@@ -64,6 +62,8 @@
             content: url('../images/regata/ruble-currency-sign.png');
         }
     }
+
+    
     
 }
 
@@ -86,7 +86,6 @@
                 z-index: -2;
             }
             &::after {
-                // content: url('../images/regata/piter_blur.jpg');
                 content: '';
                 background-image: url('../images/regata/piter_blur.jpg');
                 background-repeat: no-repeat;
@@ -101,7 +100,6 @@
             }
         }
     }
-
 }
 
 @media (min-width : 992px)  {
