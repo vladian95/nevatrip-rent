@@ -63,7 +63,8 @@ body {
     //General
 
     //Top background start
-    .regata-main {
+    .regata-main,
+    .speedboat-rent {
         min-height: 365px;
         background-image: url(../images/mobile-bg.jpeg);
         background-position: center;
@@ -71,15 +72,21 @@ body {
         background-repeat: no-repeat;
         position: relative;
     }
-    .regata-main__inner {
+    .regata-main__inner,
+    .speedboat-main__inner {
         position: relative;
     }
-    .regata-main__title {
+    .regata-main__title,
+    .speedboat-main__title {
         position: absolute;
         top: 286px;
         left: 0;
     }
-    .regata-main__rectangle {
+    .speedboat-main__title{
+        top: 261px;
+    }
+    .regata-main__rectangle,
+    .speedboat-main__rectangle {
         height: 46px;
         position: absolute;
         left: 0;
@@ -117,13 +124,16 @@ body {
     //BreadScrumbs end
 
     //About start
-    .regata-about__container {
+    .regata-about__container,
+    .speedboat-about__container {
         position: relative;
     }
-    .regata-about__sideBar {
+    .regata-about__sideBar,
+    .speedboat-about__sideBar {
         display: none;
     }
-    .regata-about__text {
+    .regata-about__text,
+    .speedboat-about__text {
         font-size: 14px;
         line-height: 21px;
         font-weight: 400;
@@ -133,7 +143,8 @@ body {
     //About end
 
     //Important start
-    .regata-important__inner {
+    .regata-important__inner,
+    .speedboat-important__inner {
         background: #ebf3ff;
         box-shadow: 2px 2px 5px rgba(150, 150, 150, 0.25);
         border-radius: 12px;
@@ -152,11 +163,13 @@ body {
             height: 23px;
         }
     }
-    .regata-important__title {
+    .regata-important__title,
+    .speedboat-important__title {
         color: #121212;
         font-weight: 600;
     }
-    .regata-important__text {
+    .regata-important__text,
+    .speedboat-important__text {
         color: $main;
         font-weight: 400;
         font-size: 14px;
@@ -164,6 +177,16 @@ body {
         margin: 8px 0px 0px 0px;
     }
     //Important end
+
+    //Transpor slider start
+    
+
+
+
+
+
+
+    //Transport slider end
 
     //Accordion start
     .regata-accordion {
