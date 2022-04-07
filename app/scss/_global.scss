@@ -63,7 +63,8 @@ body {
     //General
 
     //Top background start
-    .regata-main {
+    .regata-main,
+    .wedding-main {
         min-height: 365px;
         background-image: url(../images/mobile-bg.jpeg);
         background-position: center;
@@ -71,15 +72,18 @@ body {
         background-repeat: no-repeat;
         position: relative;
     }
-    .regata-main__inner {
+    .regata-main__inner,
+    .wedding-main__inner{
         position: relative;
     }
-    .regata-main__title {
+    .regata-main__title,
+    .wedding-main__title {
         position: absolute;
         top: 286px;
         left: 0;
     }
-    .regata-main__rectangle {
+    .regata-main__rectangle,
+    .wedding-main__rectangle {
         height: 46px;
         position: absolute;
         left: 0;
@@ -117,13 +121,16 @@ body {
     //BreadScrumbs end
 
     //About start
-    .regata-about__container {
+    .regata-about__container,
+    .wedding-about__container {
         position: relative;
-    }
-    .regata-about__sideBar {
+    }c
+    .regata-about__sideBar,
+    .wedding-about__sideBar {
         display: none;
     }
-    .regata-about__text {
+    .regata-about__text,
+    .wedding-about__text {
         font-size: 14px;
         line-height: 21px;
         font-weight: 400;
@@ -133,7 +140,8 @@ body {
     //About end
 
     //Important start
-    .regata-important__inner {
+    .regata-important__inner,
+    .wedding-important__inner {
         background: #ebf3ff;
         box-shadow: 2px 2px 5px rgba(150, 150, 150, 0.25);
         border-radius: 12px;
@@ -152,11 +160,13 @@ body {
             height: 23px;
         }
     }
-    .regata-important__title {
+    .regata-important__title,
+    .wedding-important__title {
         color: #121212;
         font-weight: 600;
     }
-    .regata-important__text {
+    .regata-important__text,
+    .wedding-important__text {
         color: $main;
         font-weight: 400;
         font-size: 14px;
@@ -166,37 +176,44 @@ body {
     //Important end
 
     //Accordion start
-    .regata-accordion {
+    .regata-accordion,
+    .wedding-accordion{
         padding-top: 60px;
     }
-    .regata-accordion__inner {
+    .regata-accordion__inner,
+    .wedding-accordion__inner{
         margin-top: 17px;
     }
-    .regata-accordion__item {
+    .regata-accordion__item,
+    .wedding-accordion__item {
         padding: 17px 0px;
         border-top: 1px solid $light-gray;
         &:last-child {
             border-bottom: 1px solid $light-gray;
         }
     }
-    .regata-accordion__item-wrapper {
+    .regata-accordion__item-wrapper,
+    .wedding-accordion__item-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .regata-accordion__item-title {
+    .regata-accordion__item-title,
+    .wedding-accordion__item-title {
         font-weight: 600;
         line-height: 19px;
         font-size: 14px;
         color: $dark;
         margin-bottom: 10px;
     }
-    .regata-accordion__item-price {
+    .regata-accordion__item-price,
+    .wedding-accordion__item-price {
         line-height: 19px;
         font-size: 14px;
         margin-bottom: 0;
     }
-    .regata-accordion__icon {
+    .regata-accordion__icon,
+    .wedding-accordion__icon {
         width: 19px;
         height: 19px;
         border-radius: 50%;
@@ -214,31 +231,36 @@ body {
             height: 8.83px;
         }
     }
-    .regata-accordion__dropDown {
+    .regata-accordion__dropDown,
+    .wedding-accordion__dropDown {
         display: none;
     }
     //Accordion end
 
     //sideBar mobile star
-    .regata-sideBar{
+    .regata-sideBar,
+    .wedding-sideBar{
         box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
         border-radius: 20px 20px 0px 0px;
         margin: 60px 0 90px;
         padding: 14px 0px;
     }
-    .regata-sideBar__inner{
+    .regata-sideBar__inner,
+    .wedding-sideBar__inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .regata-sideBar__text{
+    .regata-sideBar__text,
+    .wedding-sideBar__text{
         font-size: 13px;
         line-height: 20px;
         font-weight: 600;
         margin-bottom: 0;
         color: $dark;
     }
-    .regata-sideBar__btn{
+    .regata-sideBar__btn,
+    .wedding-sideBar__btn{
         padding: 13px 14px;
         font-size: 12px;
         line-height: 26px;
@@ -268,7 +290,8 @@ body {
     //General
 
     //Top background start
-    .regata-main {
+    .regata-main,
+    .wedding-main  {
         min-height: 370px;
         background-image: url(../images/main-bg.jpeg);
         background-position: center;
@@ -276,7 +299,8 @@ body {
         background-repeat: no-repeat;
         position: relative;
     }
-    .regata-main__rectangle {
+    .regata-main__rectangle,
+    .wedding-main__rectangle {
         display: none;
     }
     //Top background end
@@ -288,7 +312,8 @@ body {
     //BreadCrumbs end
 
     //About start
-    .regata-about__text {
+    .regata-about__text,
+    .wedding-about__text {
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
@@ -298,40 +323,48 @@ body {
     //About end
 
     //Important start
-    .regata-important__text {
+    .regata-important__text,
+    .wedding-important__text {
         font-size: 16px;
         line-height: 26px;
     }
     //Important end
 
     //Accordion start
-    .regata-accordion__inner {
+    .regata-accordion__inner,
+    .wedding-accordion__inner{
         margin-top: 36px;
     }
-    .regata-accordion__item {
+    .regata-accordion__item,
+    .wedding-accordion__item {
         padding: 30px 0px;
     }
-    .regata-accordion__item-title {
+    .regata-accordion__item-title,
+    .wedding-accordion__item-title {
         font-weight: 600;
         line-height: 22px;
         font-size: 16px;
         color: $dark;
         margin-bottom: 10px;
     }
-    .regata-accordion__item-price {
+    .regata-accordion__item-price,
+    .wedding-accordion__item-price{
         line-height: 21px;
         font-size: 16px;
     }
     //Accordion end
 
     //sideBar mobile start
-    .regata-sideBar{
+    .regata-sideBar,
+    .wedding-sideBar{
         margin: 71px 0 90px;
     }
-    .regata-sideBar__text{
+    .regata-sideBar__text,
+    .wedding-sideBar__text{
         font-size: 16px;
     }
-    .regata-sideBar__btn{
+    .regata-sideBar__btn,
+    .wedding-sideBar__btn{
         font-size:  16px;   
     }
     //sideBar mobile end
@@ -347,12 +380,14 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .regata-sideBar{
+    .regata-sideBar,
+    .wedding-sideBar{
         display: none;
     }
 
     //Sidebar about start
-    .regata-about__sideBar {
+    .regata-about__sideBar,
+    .wedding-about__sideBar {
         display: block;
         position: absolute;
         width: 105px;
@@ -363,7 +398,8 @@ body {
         right: -115px;
         padding: 0px 7px;
     }
-    .regata-about__sidebar-inner{
+    .regata-about__sidebar-inner,
+    .wedding-about__sidebar-inner{
         position: relative;
         height: 100%;
         &::before{
@@ -377,7 +413,8 @@ body {
             transform: translate( -15px, -50%);
         }
     }
-    .regata-about__sideBar-text {
+    .regata-about__sideBar-text,
+    .wedding-about__sideBar-text{
         display: none;
         font-size: 16px;
         line-height: 22px;
@@ -386,7 +423,8 @@ body {
         margin: 0 auto;
         color: #2b2b2b;
     }
-    .regata-about__sideBar-btn {
+    .regata-about__sideBar-btn,
+    .wedding-about__sideBar-btn {
         margin-top: 14px;
         background: #fed74b;
         border-radius: 33px;
@@ -400,13 +438,18 @@ body {
         margin: 0 auto;
         position: absolute;
         bottom: 10px;
+        &:hover {
+            background: $orange;
+            transition: 0.5s;
+        }
     }
     //Sidebar about end
 }
 
 @media (min-width: 1440px) {
     //Sidebar about start
-    .regata-about__sideBar {
+    .regata-about__sideBar,
+    .wedding-about__sideBar {
         display: block;
         position: absolute;
         width: 197px;
@@ -414,13 +457,15 @@ body {
         right: -227px;
         padding: 22px 20px 10px 20px;
     }
-    .regata-about__sidebar-inner{
+    .regata-about__sidebar-inner,
+    .wedding-about__sidebar-inner{
         height: 100%;
         &::before{
             display: none;
         }
     }
-    .regata-about__sideBar-text {
+    .regata-about__sideBar-text,
+    .wedding-about__sideBar-text {
         display: block;
         font-size: 16px;
         line-height: 22px;
@@ -429,7 +474,8 @@ body {
         text-align: center;
         color: $main;
     }
-    .regata-about__sideBar-btn {
+    .regata-about__sideBar-btn,
+    .wedding-about__sideBar-btn {
         background: $yellow;
         border-radius: 33px;
         padding: 13px 14px;

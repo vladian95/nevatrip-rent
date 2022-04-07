@@ -13,25 +13,25 @@
         }
     }
 
-    .variants-slider{
+    .offers{
         padding-top: 60px;
     }
-    .variants__title {
+    .offers__title {
         text-align: left;
     }
-    .variants-slider__inner {
+    .offers__inner {
         margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    .variants-slider__title {
+    .offers__title {
         padding: 20px;
         font-weight: 600;
         line-height: 22px;
     }
-    .variants-slider__item {
+    .offers__item {
         width: 335px;
         border-radius: 12px;
         border: 1px solid $light-gray;
@@ -39,7 +39,7 @@
         margin-bottom: 20px;
         margin-right: 20px;
     }
-    .variants-slider__list {
+    .offers__list {
         padding: 0 20px;
         font-size: 15px;
         li {
@@ -54,16 +54,18 @@
             }
         }
     } 
-    .variants-slider__price {
-        padding: 0 0 30px 20px;
+    .offers__price {
+        padding: 0 0 0 20px;
         font-weight: 400;
         font-size: 22px;
         &::after {
             content: url('../images/regata/ruble-currency-sign.png');
         }
     }
-
-    
+    .offers__star {
+        padding: 0 0 40px 20px;
+        font-size: 12px;
+    }
     
 }
 
@@ -121,23 +123,66 @@
             }
         }
     }
-    .variants-slider__title {
+    .offers__title {
         padding-top: 40px;
     }
-    .variants-slider__item {
-        width: 420px;
+    .offers__inner {
+        flex-wrap: nowrap;
+    }
+    .offers__item {
+        width: 450px;
     }
     
 }
 
 @media (min-width: 1200px) {
-
+    .offers__button {
+        display: flex;
+    }
+    .offers__sideBar-btn {
+        margin-top: 14px;
+        background: #fed74b;
+        border-radius: 33px;
+        padding: 6px 13px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #2b2b2b;
+        margin: 0 auto;
+        
+    }
 }
 
 @media (min-width : 1400px) {
-
+    .offers__sideBar-btn {
+        background: $yellow;
+        padding: 13px 14px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 26px;
+        color: $main;
+        width: 157px;
+        margin-bottom: 30px;
+        &:hover {
+            background: $orange;
+            transition: 0.5s;
+        }
+    }
 }
 
 
 
 
+
+.offers__img {
+    background-image: url('../images/wedding/wedding.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 450px;
+    height: 280px;
+}
