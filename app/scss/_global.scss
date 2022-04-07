@@ -31,16 +31,19 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
+h1{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: $main;
     outline: none;
-}
-
-.container {
-    padding: 0 20px;
 }
 
 .page-title{
@@ -51,29 +54,25 @@ body {
 }
 
 @media (min-width : 768px) {
-    .container {
-        padding: 0 30px;
+    h1{
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 46px;
+        color: #fff;
     }
 }
 
 @media (min-width : 992px)  {
-    .container {
-        padding: 0 30px;
+    .container{
+        max-width: 930px;
+        margin: 0 auto;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        padding: 0 30px;
-        margin: 0 auto;
-        max-width: 930px;
-    }
+    
 }
 
 @media (min-width : 1400px) {
-    .container {
-        padding: 0 30px;
-        margin: 0 auto;
-        max-width: 930px;
-    }
+    
 }

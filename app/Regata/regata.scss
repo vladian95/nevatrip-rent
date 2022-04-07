@@ -1,0 +1,15 @@
+.regata-main{
+    min-height: 365px;
+    background-image: url(../images/mobile-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.regata-main__inner{
+    position: relative;
+}
+.regata-main__title{
+    position: absolute;
+    top: 286px;
+    left: 0;
+}
