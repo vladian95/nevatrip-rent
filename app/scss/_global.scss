@@ -42,6 +42,8 @@ body {
     font-weight: 400;
     color: $main;
     outline: none;
+    //test padding 
+    padding-bottom: 100px;
 }
 
 @media (min-width: 360px) {
@@ -118,37 +120,8 @@ body {
     .regata-about__container {
         position: relative;
     }
-    .about__sideBar {
+    .regata-about__sideBar {
         display: none;
-        position: absolute;
-        width: 197px;
-        height: 176px;
-        box-shadow: 0px 0.731903px 19.7614px rgba(0, 0, 0, 0.13);
-        border-radius: 20px;
-        top: 0;
-        right: -227px;
-        padding: 22px 20px;
-        text-align: center;
-    }
-    .about__sideBar-text {
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 600;
-        max-width: 150px;
-        margin: 0 auto;
-        color: #2b2b2b;
-    }
-    .about__sideBar-btn {
-        margin-top: 14px;
-        background: #fed74b;
-        border-radius: 33px;
-        padding: 13px 14px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-        color: #2b2b2b;
     }
     .regata-about__text {
         font-size: 14px;
@@ -197,10 +170,10 @@ body {
         padding-top: 60px;
     }
     .regata-accordion__inner {
-        margin-top: 36px;
+        margin-top: 17px;
     }
     .regata-accordion__item {
-        padding: 30px 0px;
+        padding: 17px 0px;
         border-top: 1px solid $light-gray;
         &:last-child {
             border-bottom: 1px solid $light-gray;
@@ -213,30 +186,69 @@ body {
     }
     .regata-accordion__item-title {
         font-weight: 600;
-        line-height: 22px;
+        line-height: 19px;
+        font-size: 14px;
         color: $dark;
         margin-bottom: 10px;
     }
     .regata-accordion__item-price {
-        line-height: 21px;
+        line-height: 19px;
+        font-size: 14px;
+        margin-bottom: 0;
     }
     .regata-accordion__icon {
-        width: 30px;
-        height: 30px;
+        width: 19px;
+        height: 19px;
         border-radius: 50%;
         border: solid $light-gray 2px;
         position: relative;
-        img {
+        cursor: pointer;
+        &::before {
+            content: '';
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            background-image: url(../images/accordion-plus-mobile.svg);
+            width: 8.83px;
+            height: 8.83px;
         }
     }
     .regata-accordion__dropDown {
         display: none;
     }
     //Accordion end
+
+    //sideBar mobile star
+    .regata-sideBar{
+        box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
+        border-radius: 20px 20px 0px 0px;
+        margin: 60px 0 90px;
+        padding: 14px 0px;
+    }
+    .regata-sideBar__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .regata-sideBar__text{
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $dark;
+    }
+    .regata-sideBar__btn{
+        padding: 13px 14px;
+        font-size: 12px;
+        line-height: 26px;
+        font-weight: 400;
+        border: none;
+        border-radius: 33px;
+        width: 157px;
+        background-color: $yellow;
+    }
+    //sideBar mobile end
 }
 
 @media (min-width: 768px) {
@@ -291,6 +303,38 @@ body {
         line-height: 26px;
     }
     //Important end
+
+    //Accordion start
+    .regata-accordion__inner {
+        margin-top: 36px;
+    }
+    .regata-accordion__item {
+        padding: 30px 0px;
+    }
+    .regata-accordion__item-title {
+        font-weight: 600;
+        line-height: 22px;
+        font-size: 16px;
+        color: $dark;
+        margin-bottom: 10px;
+    }
+    .regata-accordion__item-price {
+        line-height: 21px;
+        font-size: 16px;
+    }
+    //Accordion end
+
+    //sideBar mobile start
+    .regata-sideBar{
+        margin: 71px 0 90px;
+    }
+    .regata-sideBar__text{
+        font-size: 16px;
+    }
+    .regata-sideBar__btn{
+        font-size:  16px;   
+    }
+    //sideBar mobile end
 }
 
 @media (min-width: 992px) {
@@ -298,10 +342,104 @@ body {
         max-width: 930px;
         margin: 0 auto;
     }
+
+
 }
 
 @media (min-width: 1200px) {
+    .regata-sideBar{
+        display: none;
+    }
+
+    //Sidebar about start
+    .regata-about__sideBar {
+        display: block;
+        position: absolute;
+        width: 105px;
+        height: 109px;
+        box-shadow: 0px 0.731903px 19.7614px rgba(0, 0, 0, 0.13);
+        border-radius: 20px;
+        top: 0;
+        right: -115px;
+        padding: 0px 7px;
+    }
+    .regata-about__sidebar-inner{
+        position: relative;
+        height: 100%;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/sideBar-icon.svg);
+            width: 30px;
+            height: 30px;
+            top: 30px;
+            left: 50%;
+            transform: translate( -15px, -50%);
+        }
+    }
+    .regata-about__sideBar-text {
+        display: none;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        max-width: 150px;
+        margin: 0 auto;
+        color: #2b2b2b;
+    }
+    .regata-about__sideBar-btn {
+        margin-top: 14px;
+        background: #fed74b;
+        border-radius: 33px;
+        padding: 6px 13px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #2b2b2b;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 10px;
+    }
+    //Sidebar about end
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
+    //Sidebar about start
+    .regata-about__sideBar {
+        display: block;
+        position: absolute;
+        width: 197px;
+        height: 176px;
+        right: -227px;
+        padding: 22px 20px 10px 20px;
+    }
+    .regata-about__sidebar-inner{
+        height: 100%;
+        &::before{
+            display: none;
+        }
+    }
+    .regata-about__sideBar-text {
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        max-width: 150px;
+        text-align: center;
+        color: $main;
+    }
+    .regata-about__sideBar-btn {
+        background: $yellow;
+        border-radius: 33px;
+        padding: 13px 14px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $main;
+        width: 100%;
+    }
+    //Sidebar about end
 }
