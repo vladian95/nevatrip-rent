@@ -46,12 +46,121 @@ body {
     outline: none;
 }
 
-.page-title{
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 600;
-    color: $dark;
+
+// .page-title{
+//     font-size: 22px;
+//     line-height: 26px;
+//     font-weight: 600;
+//     color: $dark;
+// }
+
+//General
+
+//BreadScrumbs start
+.bread-crumbs__inner{
+    margin-top: 25px;
 }
+.bread-crumbs__item{
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+}
+.bread-crumbs__item--active{
+    color: $dark-gray;
+}
+.bread-crumbs__link{
+    color: #181818;
+}
+//BreadScrumbs end
+
+//About start
+.regata-about__container{
+    position: relative;
+}
+.about__sideBar{
+    display: none;
+    position: absolute;
+    width: 197px;
+    height: 176px;
+    box-shadow: 0px 0.731903px 19.7614px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    top: 0;
+    right: -227px;
+    padding: 22px 20px;
+    text-align: center;
+}
+.about__sideBar-text{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    max-width: 150px;
+    margin: 0 auto;
+    color: #2b2b2b;
+}
+.about__sideBar-btn{
+    margin-top: 14px;
+    background: #FED74B;
+    border-radius: 33px;
+    padding: 13px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #2b2b2b;
+}
+.regata-about__text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #323232;
+    margin-top: 20px;
+}
+//About end
+
+//Important start
+.regata-important__inner{
+    background: #EBF3FF;
+    box-shadow: 2px 2px 5px rgba(150, 150, 150, 0.25);
+    border-radius: 12px;    
+    padding: 20px 30px 22px 58px;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    margin-top: 30px;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 23px;
+        background-image: url(../images/important-megaphone.svg);
+        width: 24px;
+        height: 23px;
+    }
+}
+.regata-important__title{
+    color: #121212;
+    font-weight: 600;
+}
+.regata-important__text{
+    color: #2f2f2f;
+    font-weight: 400;
+    margin: 8px 0px 0px 0px;
+}
+//Important end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width : 768px) {
     h1{
@@ -59,6 +168,9 @@ body {
         font-size: 34px;
         line-height: 46px;
         color: #fff;
+    }
+    .bread-crumbs__item{
+        line-height: 26px;  
     }
 }
 

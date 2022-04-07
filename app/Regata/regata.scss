@@ -4,6 +4,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 .regata-main__inner{
     position: relative;
@@ -12,4 +13,38 @@
     position: absolute;
     top: 286px;
     left: 0;
+}
+.regata-main__rectangle{
+    height: 46px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -23px;
+    background-color: #fff;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        width: 59px;
+        height: 5px;
+        background-color: #E4E4E4;
+    }
+}
+
+@media (min-width : 768px) {
+
+}
+
+@media (min-width : 992px)  {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width : 1400px) {
+    
 }

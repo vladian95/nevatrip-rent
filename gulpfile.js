@@ -60,6 +60,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
+    gulp.watch('app/**/*.scss', gulp.parallel('sass')); //Для моделей html/css/js-отдельных-Блоков 
     gulp.watch('app/*.html', gulp.parallel('html'));
     gulp.watch('app/js/*.js', gulp.parallel('js'));
 });
