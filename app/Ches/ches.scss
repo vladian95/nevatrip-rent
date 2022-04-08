@@ -18,6 +18,11 @@
     }
     .offers__title {
         text-align: left;
+        color: black;
+        &:hover {
+            text-decoration: underline;
+            color: $dark-blue;
+        }
     }
     .offers__inner {
         margin-top: 20px;
