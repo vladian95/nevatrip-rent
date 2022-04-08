@@ -65,6 +65,7 @@ body {
 
     //Top background start
     .regata-main,
+    .speedboat-rent,
     .wedding-main {
         min-height: 365px;
         background-image: url(../images/mobile-bg.jpeg);
@@ -74,16 +75,19 @@ body {
         position: relative;
     }
     .regata-main__inner,
+    .speedboat-main__inner,
     .wedding-main__inner{
         position: relative;
     }
     .regata-main__title,
+    .speedboat-main__title,
     .wedding-main__title {
         position: absolute;
         top: 286px;
         left: 0;
     }
     .regata-main__rectangle,
+    .speedboat-main__rectangle,
     .wedding-main__rectangle {
         height: 46px;
         position: absolute;
@@ -128,10 +132,12 @@ body {
 
     //About start
     .regata-about__container,
+    .speedboat-about__container,
     .wedding-about__container {
         position: relative;
     }c
     .regata-about__sideBar,
+    .speedboat-about__sideBar,
     .wedding-about__sideBar {
         display: none;
     }
@@ -147,6 +153,7 @@ body {
 
     //Important start
     .regata-important__inner,
+    .speedboat-important__inner,
     .wedding-important__inner {
         background: #ebf3ff;
         box-shadow: 2px 2px 5px rgba(150, 150, 150, 0.25);
@@ -167,11 +174,13 @@ body {
         }
     }
     .regata-important__title,
+    .speedboat-important__title,
     .wedding-important__title {
         color: #121212;
         font-weight: 600;
     }
     .regata-important__text,
+    .speedboat-important__text,
     .wedding-important__text {
         color: $main;
         font-weight: 400;
