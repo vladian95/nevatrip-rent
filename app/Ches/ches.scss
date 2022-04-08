@@ -10,9 +10,68 @@
             width: 335px;
             height: 220px;
             margin: auto;
-            // z-index: 1;
         }
     }
+
+    .offers{
+        padding-top: 60px;
+    }
+    .offers__title {
+        text-align: left;
+        color: black;
+        &:hover {
+            text-decoration: underline;
+            color: $dark-blue;
+        }
+    }
+    .offers__inner {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .offers__title {
+        padding: 20px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    .offers__item {
+        width: 335px;
+        border-radius: 12px;
+        border: 1px solid $light-gray;
+        box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .offers__list {
+        padding: 0 20px;
+        font-size: 15px;
+        li {
+            position: relative;
+            padding-left: 35px;
+            padding-bottom: 20px;
+            &::before {
+                position: absolute;
+                content: url('../images/regata/yellow_arrow.svg');
+                left: 0px;
+                top: 2px;
+            }
+        }
+    } 
+    .offers__price {
+        padding: 0 0 0 20px;
+        font-weight: 400;
+        font-size: 22px;
+        &::after {
+            content: url('../images/regata/ruble-currency-sign.png');
+        }
+    }
+    .offers__star {
+        padding: 0 0 40px 20px;
+        font-size: 12px;
+    }
+    
 }
 
 @media (min-width : 768px) {
@@ -34,7 +93,6 @@
                 z-index: -2;
             }
             &::after {
-                // content: url('../images/regata/piter_blur.jpg');
                 content: '';
                 background-image: url('../images/regata/piter_blur.jpg');
                 background-repeat: no-repeat;
@@ -49,7 +107,6 @@
             }
         }
     }
-
 }
 
 @media (min-width : 992px)  {
@@ -71,17 +128,66 @@
             }
         }
     }
+    .offers__title {
+        padding-top: 40px;
+    }
+    .offers__inner {
+        flex-wrap: nowrap;
+    }
+    .offers__item {
+        width: 450px;
+    }
     
 }
 
 @media (min-width: 1200px) {
-
+    .offers__button {
+        display: flex;
+    }
+    .offers__sideBar-btn {
+        margin-top: 14px;
+        background: #fed74b;
+        border-radius: 33px;
+        padding: 6px 13px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #2b2b2b;
+        margin: 0 auto;
+        
+    }
 }
 
 @media (min-width : 1400px) {
-
+    .offers__sideBar-btn {
+        background: $yellow;
+        padding: 13px 14px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 26px;
+        color: $main;
+        width: 157px;
+        margin-bottom: 30px;
+        &:hover {
+            background: $orange;
+            transition: 0.5s;
+        }
+    }
 }
 
 
 
 
+
+.offers__img {
+    background-image: url('../images/wedding/wedding.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 450px;
+    height: 280px;
+}

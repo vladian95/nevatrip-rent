@@ -1,5 +1,6 @@
 @media (min-width : 360px) {
-    .regata-slider {
+    .regata-slider,
+    .wedding-slider {
         padding: 20px 0 30px 0;
         &__item {
             position: relative;
@@ -12,10 +13,66 @@
             margin: auto;
         }
     }
+    .keytering {
+        padding-top: 20px;
+    }
+    
+    .keytering__item {
+        padding: 30px 0;
+    }
+
+    .keytering__btn {
+        margin-right: 10px;
+        padding: 25px 0;
+        width: 158px;   
+        height: 62px;
+        background-color: $blue-two;
+        border: 1px solid rgba(218, 218, 218, 0);
+        border-radius: 22px;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        position: relative;
+        &:hover {
+            background-color: $blue;
+            transition: 0.4s;
+            text-decoration: underline;
+        }
+    }
+
+
+.keytering__buffet,
+.keytering__banquet {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: normal;
+}
+
+.keytering__buffet::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    background-image: url(../images/wedding/cake30.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.keytering__banquet::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    background-image: url(../images/wedding/dish34.svg);
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 30px;
+}
 }
 
 @media (min-width: 768px) {
-    .regata-slider {
+    .regata-slider,
+    .wedding-slider {
         &__item {
             width: 485px;
             height: 310px;
@@ -30,6 +87,7 @@
                 width: 335px;
                 height: 220px;
                 border-radius: 12px;
+                z-index: -2;
             }
             &::after {
                 // content: url('../images/regata/piter_blur.jpg');
@@ -43,13 +101,20 @@
                 right: -107px;
                 width: 335px;
                 height: 220px;
+                z-index: -2;
             }
         }
+    }
+    .keytering__btn {
+        margin-right: 0;
+        width: 344px;
+        height: 100px;
     }
 }
 
 @media (min-width: 992px) {
-    .regata-slider {
+    .regata-slider,
+    .wedding-slider {
         &__item {
             width: 610px;
             height: 400px;
@@ -58,14 +123,19 @@
                 height: 288px;
                 top: 45px;
                 left: -144px;
+               
             }
             &::after {
                 width: 440px;
                 height: 288px;
                 top: 45px;
                 right: -144px;
+                
             }
         }
+    }
+    .keytering__btn {
+        width: 450px;
     }
 }
 
@@ -74,4 +144,3 @@
 
 @media (min-width: 1400px) {
 }
-
