@@ -249,6 +249,27 @@
     font-weight: 600;
 }
 
+.session__item-about {
+    padding-top: 30px;
+    margin-left: 13px;
+    margin-right: 13px;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.session__item-box {
+
+}
+
+.session__item-name {
+    padding-bottom: 10px;
+    font-weight: 600;
+    width: 120px;
+}
+
 .session__sentence {
     padding-left: 30px;
 }

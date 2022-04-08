@@ -206,22 +206,26 @@ body {
     //Important end
 
     //Transport slider start
-    .speedboat-transport{
+    .speedboat-transport,
+    .wedding-transport {
         padding-top: 50px;
     }
-    .speedboat-transport__inner{
+    .speedboat-transport__inner,
+    .wedding-transport__inner{
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .speedboat-transport__item{
+    .speedboat-transport__item,
+    .wedding-transport__item{
         width: 246px;
         box-shadow: 0px 1.17886px 31.8293px rgba(0, 0, 0, 0.13);
         border-radius: 20px;
         padding: 12px;
     }
-    .speedboat-transport__bg{
+    .speedboat-transport__bg,
+    .wedding-transport__bg {
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/otherItemImg.jpeg);
         width: 100%;
         height: 160px;
@@ -231,7 +235,8 @@ body {
         border-radius: 16px;
         position: relative;
     }
-    .speedboat-transport__component{
+    .speedboat-transport__component,
+    .wedding-transport__component{
         position: absolute;
         width: 148px;
         height: 42px;
@@ -245,22 +250,27 @@ body {
         text-align: center;
         color: $dark;
     }
-    .speedboat-transport__text{
+    .speedboat-transport__text,
+    .wedding-transport__text{
         margin: 12px 0px 8px;
         font-size: 14px;
         line-height: 22px;
         font-weight: 600;
         color: $main;
     }
-    .speedboat-transport__price{
+    .speedboat-transport__price,
+    .wedding-transport__price {
         font-size: 18px;
         font-weight: 400;
     }
-    .speedboat-transport__item1{
+    .speedboat-transport__item1,
+    .wedding-transport__item1{
         margin: 0 auto;
     }
     .speedboat-transport__item2,
-    .speedboat-transport__item3{
+    .speedboat-transport__item3,
+    .wedding-transport__item2,
+    .wedding-transport__item3 {
         display: none;
     }
     //Transport slider end
@@ -578,38 +588,47 @@ body {
     //Important end
 
     //Transport slider start
-    .speedboat-transport {
+    .speedboat-transport,
+    .wedding-transport {
         padding-top: 60px;
     }
-    .speedboat-transport__inner{
+    .speedboat-transport__inner,
+    .wedding-transport__inner{
         margin-top: 36px;
         justify-content: space-around;
     }
-    .speedboat-transport__item{
+    .speedboat-transport__item,
+    .wedding-transport__item {
         padding: 15px 15px 20px 15px;
     }
-    .speedboat-transport__item1{
+    .speedboat-transport__item1,
+    .wedding-transport__item1 {
         margin: 0;
     }
-    .speedboat-transport__item2{
+    .speedboat-transport__item2,
+    .wedding-transport__item2{
         display: block;
     }
-    .speedboat-transport__bg{
+    .speedboat-transport__bg,
+    .wedding-transport__bg{
         height: 190px;
     }
-    .speedboat-transport__component{
+    .speedboat-transport__component,
+    .wedding-transport__component {
         font-size: 16px;
         line-height: 22px;
         font-weight: 600;
     }
-    .speedboat-transport__text{
+    .speedboat-transport__text, 
+    .wedding-transport__text{
         font-size: 16px;
         line-height: 22px;
         font-weight: 600;
         margin: 12px 0px;
         
     }
-    .speedboat-transport__price{
+    .speedboat-transport__price,
+    .wedding-transport__price {
         font-size: 22px;
         font-weight: 400;
     }
@@ -713,10 +732,12 @@ body {
     }
 
     //Transport slider start
-    .speedboat-transport__inner{
+    .speedboat-transport__inner,
+    .wedding-transport__inner{
         justify-content: space-between;
     }
-    .speedboat-transport__item3{
+    .speedboat-transport__item3,
+    .wedding-transport__item3{
         display: block;
     }
     //Transport slider end
