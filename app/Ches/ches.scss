@@ -1,4 +1,4 @@
-@media (min-width : 370px) { 
+@media (min-width : 360px) { 
     .regata-slider {
         padding: 20px 0 30px 0;
         &__item {
@@ -13,17 +13,6 @@
             // z-index: 1;
         }
     }
-    .variants-slider{
-        padding-top: 60px;
-    }
-    .variants-slider__inner{
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
 }
 
 @media (min-width : 768px) {
@@ -42,6 +31,7 @@
                 width: 335px;
                 height: 220px;
                 border-radius: 12px;
+                z-index: -2;
             }
             &::after {
                 // content: url('../images/regata/piter_blur.jpg');
@@ -55,6 +45,7 @@
                 right: -107px;
                 width: 335px;
                 height: 220px;
+                z-index: -2;
             }
         }
     }
@@ -93,48 +84,4 @@
 
 
 
-//variants-slider start
 
-
-.variants-slider__item {
-    width: 450px;
-    height: 450px;
-    border-radius: 12px;
-    border: 1px solid $light-gray;
-    margin-right: 30px;
-}
-
-.variants-slider__title {
-    padding: 40px 20px;
-    font-weight: 600;
-    line-height: 22px;
-}
-
-.variants-slider__list {
-
-    li {
-        position: relative;
-        padding-left: 40px;
-        padding-bottom: 35px;
-        &::before {
-            position: absolute;
-            content: url('../images/regata/yellow_arrow.svg');
-            left: 10px;
-            top: 2px;
-        }
-    }
-}
-
-.variants-slider__price {
-    padding-left: 20px;
-    font-weight: 400;
-    font-size: 22px;
-    &::after {
-        content: url('../images/regata/ruble-currency-sign.png');
-    }
-}
-
-
-
-
-//variants-slider end
