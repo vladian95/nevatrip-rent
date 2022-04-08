@@ -206,14 +206,137 @@ body {
     //Important end
 
     //Transport slider start
-    
+    .speedboat-transport{
+        padding-top: 50px;
+    }
+    .speedboat-transport__inner{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .speedboat-transport__item{
+        width: 246px;
+        box-shadow: 0px 1.17886px 31.8293px rgba(0, 0, 0, 0.13);
+        border-radius: 20px;
+        padding: 12px;
+    }
+    .speedboat-transport__bg{
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/otherItemImg.jpeg);
+        width: 100%;
+        height: 160px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+        position: relative;
+    }
+    .speedboat-transport__component{
+        position: absolute;
+        width: 148px;
+        height: 42px;
+        padding: 10px 20px;
+        top: 10px;
+        right: 10px;
+        background-color: #FFF3C7;
+        border-radius: 18px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        color: $dark;
+    }
+    .speedboat-transport__text{
+        margin: 12px 0px 8px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+        color: $main;
+    }
+    .speedboat-transport__price{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .speedboat-transport__item1{
+        margin: 0 auto;
+    }
+    .speedboat-transport__item2,
+    .speedboat-transport__item3{
+        display: none;
+    }
+    //Transport slider end
 
+    //Start price start
+    .speedboat-price{
+        padding-top: 60px;
+    }
+    .speedboat-price__title{
+        margin-bottom: 10px;
+    }
+    .speedboat-price__text{
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0;
+    }
+    //Start price end
 
-
-
-
-
-    //Transportt slider end
+    //Routes start
+    .speedboat-routes{
+        padding-top: 60px;
+    }
+    .speedboat-routes__inner{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .speedboat-routes__slider-item{
+        width: 335px;
+        box-shadow: 0px 0.866635px 23.3991px rgba(0, 0, 0, 0.13);
+        border-radius: 16px;
+        padding: 25px 20px 20px 20px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .speedboat-routes__slider-item1{
+        margin: 0 auto;
+    }
+    .speedboat-routes__slider-item2,
+    .speedboat-routes__slider-item3{
+        display: none;
+    }
+    .speedboat-routes__slider-bg{
+        background-image: url(../images/otherItemImg.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 16px;
+        width: 100%;
+        height: 295px;
+        position: relative;
+    }
+    .speedboat-routes__slider-component{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100px;
+        height: 38px;
+        padding: 8px 11px;
+        background-color: #D9E8FF;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        border-radius: 0px 13px 0px 16px;
+        color: $main;
+    }
+    .speedboat-routes__slider-title{
+        font-weight: 600;
+        margin: 15px 0px 6px;
+    }
+    .speedboat-routes__slider-text{
+        font-weight: 400;
+        margin: 0;
+    }
+    //Routes end
 
     //Varients slider start
     .variants-slider{
@@ -270,14 +393,17 @@ body {
 
     //Accordion start
     .regata-accordion,
+    .speedboat-accordion,
     .wedding-accordion{
         padding-top: 60px;
     }
     .regata-accordion__inner,
+    .speedboat-accordion__inner,
     .wedding-accordion__inner{
         margin-top: 17px;
     }
     .regata-accordion__item,
+    .speedboat-accordion__item,
     .wedding-accordion__item {
         padding: 17px 0px;
         border-top: 1px solid $light-gray;
@@ -286,21 +412,14 @@ body {
         }
     }
     .regata-accordion__item-wrapper,
+    .speedboat-accordion__item-wrapper,
     .wedding-accordion__item-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
-
-    .regata-accordion__item:hover,
-    .wedding-accordion__item:hover {
-        text-decoration: underline;
-        color: $dark-blue;
-        cursor: pointer;
-    }
-
     .regata-accordion__item-title,
+    .speedboat-accordion__item-title,
     .wedding-accordion__item-title {
         font-weight: 600;
         line-height: 19px;
@@ -309,12 +428,14 @@ body {
         margin-bottom: 10px;
     }
     .regata-accordion__item-price,
+    .speedboat-accordion__item-price,
     .wedding-accordion__item-price {
         line-height: 19px;
         font-size: 14px;
         margin-bottom: 0;
     }
     .regata-accordion__icon,
+    .speedboat-accordion__icon,
     .wedding-accordion__icon {
         width: 19px;
         height: 19px;
@@ -338,13 +459,15 @@ body {
         }
     }
     .regata-accordion__dropDown,
+    .speedboat-accordion__dropDown,
     .wedding-accordion__dropDown {
         display: none;
     }
     //Accordion end
 
-    //sideBar mobile star
+    //sideBar mobile start
     .regata-sideBar,
+    .speedboat-sideBar,
     .wedding-sideBar{
         box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
         border-radius: 20px 20px 0px 0px;
@@ -352,12 +475,14 @@ body {
         padding: 14px 0px;
     }
     .regata-sideBar__inner,
+    .speedboat-sideBar__inner,
     .wedding-sideBar__inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .regata-sideBar__text,
+    .speedboat-sideBar__text,
     .wedding-sideBar__text{
         font-size: 13px;
         line-height: 20px;
@@ -366,6 +491,7 @@ body {
         color: $dark;
     }
     .regata-sideBar__btn,
+    .speedboat-sideBar__btn,
     .wedding-sideBar__btn{
         padding: 13px 14px;
         font-size: 12px;
@@ -451,16 +577,101 @@ body {
     }
     //Important end
 
+    //Transport slider start
+    .speedboat-transport {
+        padding-top: 60px;
+    }
+    .speedboat-transport__inner{
+        margin-top: 36px;
+        justify-content: space-around;
+    }
+    .speedboat-transport__item{
+        padding: 15px 15px 20px 15px;
+    }
+    .speedboat-transport__item1{
+        margin: 0;
+    }
+    .speedboat-transport__item2{
+        display: block;
+    }
+    .speedboat-transport__bg{
+        height: 190px;
+    }
+    .speedboat-transport__component{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    .speedboat-transport__text{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        margin: 12px 0px;
+        
+    }
+    .speedboat-transport__price{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    //Transport slider end
+
+    //Start price start
+    .speedboat-price{
+        padding-top: 80px;
+    }
+    .speedboat-price{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    //Start price end
+
+    //Routes start
+    .speedboat-routes{
+        padding-top: 80px;
+    }
+    .speedboat-routes__inner{
+        margin-top: 36px;
+        justify-content: space-around;
+    }
+    .speedboat-routes__slider-item{
+        width: 290px;
+        box-shadow: 0px 0.866635px 23.3991px rgba(0, 0, 0, 0.13);
+        border-radius: 16px;
+        padding: 15px 15px 20px 15px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .speedboat-routes__slider-item1{
+        margin: 0;
+    }
+    .speedboat-routes__slider-item2{
+        display: block;
+    }
+    .speedboat-routes__slider-bg{
+        height: 260px;
+        
+    }
+    .speedboat-routes__slider-title{
+        margin: 12px 0px 6px;
+    }
+    .speedboat-routes__slider-text{
+        line-height: 24px;
+    }
+    //Routes end
+
     //Accordion start
     .regata-accordion__inner,
+    .speedboat-accordion__inner,
     .wedding-accordion__inner{
         margin-top: 36px;
     }
     .regata-accordion__item,
+    .speedboat-accordion__item,
     .wedding-accordion__item {
         padding: 30px 0px;
     }
     .regata-accordion__item-title,
+    .speedboat-accordion__item-title,
     .wedding-accordion__item-title {
         font-weight: 600;
         line-height: 22px;
@@ -469,6 +680,7 @@ body {
         margin-bottom: 10px;
     }
     .regata-accordion__item-price,
+    .speedboat-accordion__item-price,
     .wedding-accordion__item-price{
         line-height: 21px;
         font-size: 16px;
@@ -477,14 +689,17 @@ body {
 
     //sideBar mobile start
     .regata-sideBar,
+    .speedboat-sideBar,
     .wedding-sideBar{
         margin: 71px 0 90px;
     }
     .regata-sideBar__text,
+    .speedboat-sideBar__text,
     .wedding-sideBar__text{
         font-size: 16px;
     }
     .regata-sideBar__btn,
+    .speedboat-sideBar__btn,
     .wedding-sideBar__btn{
         font-size:  16px;   
     }
@@ -496,6 +711,24 @@ body {
         max-width: 930px;
         margin: 0 auto;
     }
+
+    //Transport slider start
+    .speedboat-transport__inner{
+        justify-content: space-between;
+    }
+    .speedboat-transport__item3{
+        display: block;
+    }
+    //Transport slider end
+
+    //Routes start
+    .speedboat-routes__inner{
+        justify-content: space-between;
+    }
+    .speedboat-routes__slider-item3{
+        display: block;
+    }
+    //Routes end
 
     //Varients slider start
     .variants-slider__title {
@@ -510,15 +743,19 @@ body {
 }
 
 @media (min-width: 1200px) {
+    // Sidebar mobile start
     .regata-sideBar,
+    .speedboat-sideBar,
     .wedding-sideBar{
         display: none;
     }
+    // Sidebar mobile end
 
     //Sidebar about start
     .regata-about__sideBar,
     .wedding-about__sideBar,
-    .ship-about__sideBar {
+    .ship-about__sideBar,
+    .speedboat-about__sideBar {
         display: block;
         position: absolute;
         width: 105px;
@@ -531,7 +768,8 @@ body {
     }
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
-    .ship-about__sidebar-inner {
+    .ship-about__sidebar-inner,
+    .speedboat-about__sidebar-inner{
         position: relative;
         height: 100%;
         &::before{
@@ -547,7 +785,8 @@ body {
     }
     .regata-about__sideBar-text,
     .wedding-about__sideBar-text,
-    .ship-about__sideBar-text{
+    .ship-about__sideBar-text,
+    .speedboat-about__sideBar__text {
         display: none;
         font-size: 16px;
         line-height: 22px;
@@ -558,7 +797,8 @@ body {
     }
     .regata-about__sideBar-btn,
     .wedding-about__sideBar-btn,
-    .ship-about__sideBar-btn {
+    .ship-about__sideBar-btn,
+    .speed-about__sideBar__btn {
         margin-top: 14px;
         background: #fed74b;
         border-radius: 33px;
@@ -584,7 +824,8 @@ body {
     //Sidebar about start
     .regata-about__sideBar,
     .wedding-about__sideBar,
-    .ship-about__sideBar{
+    .ship-about__sideBar,
+    .speedboat-about__sideBar {
         display: block;
         position: absolute;
         width: 197px;
@@ -594,7 +835,8 @@ body {
     }
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
-    .ship-about__sidebar-inner{
+    .ship-about__sidebar-inner,
+    .speedboat-about__sidebar-inner {
         height: 100%;
         &::before{
             display: none;
@@ -602,7 +844,8 @@ body {
     }
     .regata-about__sideBar-text,
     .wedding-about__sideBar-text,
-    .ship-about__sidebar-text {
+    .ship-about__sidebar-text,
+    .speedboat-about__sideBar__text {
         display: block;
         font-size: 16px;
         line-height: 22px;
@@ -613,7 +856,8 @@ body {
     }
     .regata-about__sideBar-btn,
     .wedding-about__sideBar-btn,
-    .ship-about__sideBar-btn {
+    .ship-about__sideBar-btn,
+    .speed-about__sideBar__btn {
         background: $yellow;
         border-radius: 33px;
         padding: 13px 14px;
