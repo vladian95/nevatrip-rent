@@ -1,0 +1,172 @@
+@media (min-width: 360px) {
+    .regata-slider,
+    .wedding-slider {
+        padding: 20px 0 30px 0;
+        &__item {
+            position: relative;
+            background-image: url("../images/regata/piter.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 335px;
+            height: 220px;
+            margin: auto;
+        }
+    }
+
+    //Keytering block start
+    .keytering {
+        padding-top: 20px;
+    }
+
+    .keytering__inner {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .keytering__btn {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        padding: 15px 56px 15px 56px;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        position: relative;
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            top: 17px;
+            left: 14px;
+            
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }   
+    .keytering__btn-buffet{
+        background-color: $blue-two;
+        &::before{
+            background-image: url(../images/wedding/cake-mobile.svg);
+            width: 30px;
+            height: 27px;
+        }
+    } 
+    .keytering__btn-banquet{
+        background-color: $blue;
+        &::after{
+            background-image: url(../images/wedding/banquet-mobile.svg);
+            width: 34px;
+            height: 21px;
+        }
+    }
+    // Keytering block end
+}
+
+@media (min-width: 768px) {
+    .regata-slider,
+    .wedding-slider {
+        &__item {
+            width: 485px;
+            height: 310px;
+            &::before {
+                content: "";
+                background-image: url("../images/regata/piter_blur.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                top: 45px;
+                left: -107px;
+                width: 335px;
+                height: 220px;
+                border-radius: 12px;
+                z-index: -2;
+            }
+            &::after {
+                // content: url('../images/regata/piter_blur.jpg');
+                content: "";
+                background-image: url("../images/regata/piter_blur.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 12px;
+                position: absolute;
+                top: 45px;
+                right: -107px;
+                width: 335px;
+                height: 220px;
+                z-index: -2;
+            }
+        }
+    }
+    
+
+    //Keytering block start
+    .keytering__btn{
+        padding: 38px 100px;
+        font-size: 18px;
+        line-height: 24px;
+        width: 344px;
+        br{
+            display: none;
+        }
+    }
+    .keytering__btn-buffet{
+        &::before{
+            background-image: url(../images/wedding/cake-desktop.svg);
+            width: 50px;
+            height: 46px;
+            top: 27px;
+            left: 30px;
+        }
+    }
+    .keytering__btn-banquet{
+        &::after{
+            background-image: url(../images/wedding/banquet-desktop.svg);
+            width: 52px;
+            height: 33px;
+            top: 32px;
+            left: 31px;
+        }
+    }
+
+    // Keytering block end
+}
+
+@media (min-width: 992px) {
+    .regata-slider,
+    .wedding-slider {
+        &__item {
+            width: 610px;
+            height: 400px;
+            &::before {
+                width: 440px;
+                height: 288px;
+                top: 45px;
+                left: -144px;
+            }
+            &::after {
+                width: 440px;
+                height: 288px;
+                top: 45px;
+                right: -144px;
+            }
+        }
+    }
+
+    // Keytering block start
+    .keytering__btn {
+        padding: 38px 95px 38px 0px;
+        width: 450px;
+    }
+
+    // Keytering block end
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

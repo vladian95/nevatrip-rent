@@ -427,6 +427,17 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &:hover{
+            p{
+                color: $dark-blue;
+                text-decoration: underline;
+            }
+            div{
+                &:last-child{
+                    border: $dark-blue 2px solid;
+                }
+            }   
+        }
     }
     .regata-accordion__item-title,
     .speedboat-accordion__item-title,
@@ -436,6 +447,7 @@ body {
         font-size: 14px;
         color: $dark;
         margin-bottom: 10px;
+        transition: all .3s;
     }
     .regata-accordion__item-price,
     .speedboat-accordion__item-price,
@@ -443,10 +455,12 @@ body {
         line-height: 19px;
         font-size: 14px;
         margin-bottom: 0;
+        transition: all .3s;
     }
     .regata-accordion__icon,
     .speedboat-accordion__icon,
     .wedding-accordion__icon {
+        transition: all .3s;
         width: 19px;
         height: 19px;
         border-radius: 50%;
@@ -807,7 +821,7 @@ body {
     .regata-about__sideBar-text,
     .wedding-about__sideBar-text,
     .ship-about__sideBar-text,
-    .speedboat-about__sideBar__text {
+    .speedboat-about__sideBar__text{
         display: none;
         font-size: 16px;
         line-height: 22px;
