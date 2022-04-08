@@ -178,10 +178,6 @@
     }
 }
 
-
-
-
-
 .offers__img {
     background-image: url('../images/wedding/wedding.jpg');
     background-position: center;
@@ -190,4 +186,69 @@
     color: #fff;
     width: 450px;
     height: 280px;
+}
+
+
+
+
+.session__buttons {
+    padding-top: 36px;
+    display: flex;
+}
+.session__btn {
+    width: 240px;
+    height: 54px;
+    border: 2px solid red;
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+}
+
+.session__btn-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.session__btn-gray {
+    color: $gray;
+}
+
+.session__list {
+    width: 930px;
+    height: 665px;
+    border: 1px solid red;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+}
+
+.session-block {
+    display: flex;
+    padding: 30px 0px 20px 30px;
+}
+
+.session__item {
+    width: 270px;
+    height: 555px;
+    margin-right: 30px;
+    border: 1px solid red;
+    border-radius: 18px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+}
+
+.session__item-title {
+    width: 252px;
+    height: 48px;
+    background-color: $blue;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-weight: 600;
+}
+
+.session__sentence {
+    padding-left: 30px;
 }
