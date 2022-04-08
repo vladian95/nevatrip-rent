@@ -65,7 +65,7 @@ body {
 
     //Top background start
     .regata-main,
-    .speedboat-rent,
+    .speedboat-main,
     .wedding-main {
         min-height: 365px;
         background-image: url(../images/mobile-bg.jpeg);
@@ -145,7 +145,8 @@ body {
         display: none;
     }
     .regata-about__text,
-    .wedding-about__text {
+    .wedding-about__text,
+    .speedboat-about__text {
         font-size: 14px;
         line-height: 21px;
         font-weight: 400;
@@ -193,15 +194,15 @@ body {
     }
     //Important end
 
-    //Transpor slider start
+    //Transport slider start
+    
 
 
 
 
 
 
-
-    //Transport slider end
+    //Transportt slider end
 
     //Varients slider start
     .variants-slider{
@@ -230,7 +231,6 @@ body {
         margin-bottom: 20px;
         margin-right: 20px;
     }
-    
     .variants-slider__list {
         padding: 0 20px;
         font-size: 15px;
@@ -255,12 +255,6 @@ body {
             content: url('../images/regata/ruble-currency-sign.png');
         }
     }
-
-
-
-
-
-
     //Varients slider end
 
     //Accordion start
@@ -392,6 +386,7 @@ body {
 
     //Top background start
     .regata-main,
+    .speedboat-main,
     .wedding-main  {
         min-height: 370px;
         background-image: url(../images/main-bg.jpeg);
@@ -400,10 +395,18 @@ body {
         background-repeat: no-repeat;
         position: relative;
     }
+    .speedboat-main__title{
+        top: 289px;
+        br{
+            display: none;
+        }
+    }
     .regata-main__rectangle,
+    .speedboat-main__rectangle,
     .wedding-main__rectangle {
         display: none;
     }
+
     //Top background end
 
     //BreadCrumbs start
@@ -414,6 +417,7 @@ body {
 
     //About start
     .regata-about__text,
+    .speedboat-about__text,
     .wedding-about__text {
         font-size: 16px;
         line-height: 24px;
