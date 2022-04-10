@@ -13,7 +13,6 @@
             margin: auto;
         }
     }
-
     //Keytering block start
     .keytering {
         padding-top: 20px;
@@ -64,6 +63,73 @@
         }
     }
     // Keytering block end
+
+    //Offers block start
+    .offers{
+        padding-top: 60px;
+    }
+    // .offers__inner {
+    //     margin-top: 20px;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+    .offers__item {
+        width: 335px;
+        border-radius: 12px;
+        box-shadow: 0px 1.34328px 36.2687px rgba(0, 0, 0, 0.13);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border-radius: 0px 0px 16px 16px;
+        margin-right: 20px;
+        margin: 0 auto;
+    }
+    .offers__img{
+        background-image: url(../images/wedding/wedding-offers.jpeg);
+        width: 100%;
+        min-height: 220px;
+        border-radius: 16px 16px 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .offers__item-content{
+        padding: 16px 20px 35px 12px;
+    }
+    .offers__item-title{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    .offers__list {
+        
+        font-size: 15px;
+        li {
+            position: relative;
+            padding-left: 30px;
+            
+            &::before {
+                position: absolute;
+                content: url('../images/regata/yellow_arrow.svg');
+                left: 0px;
+                top: 2px;
+            }
+        }
+    } 
+    .offers__price {
+        padding: 0 0 0 20px;
+        font-weight: 400;
+        font-size: 22px;
+        &::after {
+            content: url('../images/regata/ruble-currency-sign.png');
+        }
+    }
+    .offers__star {
+        padding: 0 0 40px 20px;
+        font-size: 12px;
+    }
+    //Offers block end
 }
 
 @media (min-width: 768px) {
@@ -133,8 +199,10 @@
     }
 
     // Keytering block end
-}
 
+
+    
+}
 @media (min-width: 992px) {
     .regata-slider,
     .wedding-slider {
