@@ -67,7 +67,8 @@ body {
     .regata-main,
     .speedboat-main,
     .wedding-main,
-    .ship-main {
+    .ship-main,
+    .specific-main{
         min-height: 365px;
         background-image: url(../images/mobile-bg.jpeg);
         background-position: center;
@@ -78,13 +79,15 @@ body {
     .regata-main__inner,
     .speedboat-main__inner,
     .wedding-main__inner,
-    .ship-main__inner{
+    .ship-main__inner,
+    .specific-main__inner{
         position: relative;
     }
     .regata-main__title,
     .speedboat-main__title,
     .wedding-main__title,
-    .ship-main__title {
+    .ship-main__title,
+    .specific-main__title {
         position: absolute;
         top: 286px;
         left: 0;
@@ -96,7 +99,8 @@ body {
     .regata-main__rectangle,
     .speedboat-main__rectangle,
     .wedding-main__rectangle,
-    .ship-main__rectangle  {
+    .ship-main__rectangle,
+    .specific-main__rectangle  {
         height: 46px;
         position: absolute;
         left: 0;
@@ -142,19 +146,22 @@ body {
     .regata-about__container,
     .speedboat-about__container,
     .wedding-about__container,
-    .ship-about__container {
+    .ship-about__container,
+    .specific-about__container {
         position: relative;
     }
     .regata-about__sideBar,
     .speedboat-about__sideBar,
     .wedding-about__sideBar,
-    .ship-about__sideBar {
+    .ship-about__sideBar,
+    .specific-about__sideBar {
         display: none;
     }
     .regata-about__text,
     .wedding-about__text,
     .speedboat-about__text,
-    .ship-about__text {
+    .ship-about__text,
+    .specific-about__text {
         font-size: 14px;
         line-height: 21px;
         font-weight: 400;
@@ -167,7 +174,8 @@ body {
     .regata-important__inner,
     .speedboat-important__inner,
     .wedding-important__inner,
-    .ship-important__inner {
+    .ship-important__inner,
+    .specific-important__inner {
         background: #ebf3ff;
         box-shadow: 2px 2px 5px rgba(150, 150, 150, 0.25);
         border-radius: 12px;
@@ -189,14 +197,16 @@ body {
     .regata-important__title,
     .speedboat-important__title,
     .wedding-important__title,
-    .ship-important__title {
+    .ship-important__title,
+    .specific-important__title {
         color: #121212;
         font-weight: 600;
     }
     .regata-important__text,
     .speedboat-important__text,
     .wedding-important__text,
-    .ship-important__text {
+    .ship-important__text,
+    .specific-important__text {
         color: $main;
         font-weight: 400;
         font-size: 14px;
@@ -207,25 +217,33 @@ body {
 
     //Transport slider start
     .speedboat-transport,
-    .wedding-transport {
+    .wedding-transport,
+    .ship-transport,
+    .specific-transport {
         padding-top: 50px;
     }
     .speedboat-transport__inner,
-    .wedding-transport__inner{
+    .wedding-transport__inner,
+    .ship-transport__inner,
+    .specific-transport__inner{
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .speedboat-transport__item,
-    .wedding-transport__item{
+    .wedding-transport__item,
+    .ship-transport__item,
+    .specific-transport__item  {
         width: 246px;
         box-shadow: 0px 1.17886px 31.8293px rgba(0, 0, 0, 0.13);
         border-radius: 20px;
         padding: 12px;
     }
     .speedboat-transport__bg,
-    .wedding-transport__bg {
+    .wedding-transport__bg,
+    .ship-transport__bg,
+    .specific-transport__bg {
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/otherItemImg.jpeg);
         width: 100%;
         height: 160px;
@@ -236,7 +254,9 @@ body {
         position: relative;
     }
     .speedboat-transport__component,
-    .wedding-transport__component{
+    .wedding-transport__component,
+    .ship-transport__component,
+    .specific-transport__component {
         position: absolute;
         width: 148px;
         height: 42px;
@@ -251,7 +271,9 @@ body {
         color: $dark;
     }
     .speedboat-transport__text,
-    .wedding-transport__text{
+    .wedding-transport__text,
+    .ship-transport__text,
+    .specific-transport__text {
         margin: 12px 0px 8px;
         font-size: 14px;
         line-height: 22px;
@@ -264,42 +286,60 @@ body {
         font-weight: 400;
     }
     .speedboat-transport__item1,
-    .wedding-transport__item1{
+    .wedding-transport__item1,
+    .ship-transport__item1,
+    .specific-transport__item1{
         margin: 0 auto;
     }
     .speedboat-transport__item2,
     .speedboat-transport__item3,
     .wedding-transport__item2,
-    .wedding-transport__item3 {
+    .wedding-transport__item3,
+    .ship-transport__item2,
+    .ship-transport__item3,
+    .specific-transport__item2,
+    .specific-transport__item3{
         display: none;
     }
     //Transport slider end
 
     //Start price start
-    .speedboat-price{
+    .speedboat-price,
+    .ship-price,
+    .specific-price{
         padding-top: 60px;
     }
-    .speedboat-price__title{
+    .speedboat-price__title,
+    .ship-price__title,
+    .specific-price__title{
         margin-bottom: 10px;
     }
-    .speedboat-price__text{
-        font-size: 14px;
+    .speedboat-price__text,
+    .ship-price__text,
+    .specific-price__text{
+        font-size: 15px;
         line-height: 21px;
         margin: 0;
     }
     //Start price end
 
     //Routes start
-    .speedboat-routes{
+    .speedboat-routes,
+    .ship-routes,
+    .specific-routes{
         padding-top: 60px;
     }
-    .speedboat-routes__inner{
+    .speedboat-routes__inner,
+    .ship-routes__inner,
+    .specific-routes__inner{
         margin-top: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .speedboat-routes__slider-item{
+    .speedboat-routes__slider-item,
+    .ship-routes__slider-item,
+    .specific-routes__slider-item{
         width: 335px;
         box-shadow: 0px 0.866635px 23.3991px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
@@ -307,14 +347,22 @@ body {
         font-size: 14px;
         line-height: 22px;
     }
-    .speedboat-routes__slider-item1{
+    .speedboat-routes__slider-item1,
+    .ship-routes__slider-item1,
+    .specific-routes__slider-item1{
         margin: 0 auto;
     }
     .speedboat-routes__slider-item2,
-    .speedboat-routes__slider-item3{
+    .speedboat-routes__slider-item3,
+    .ship-routes__slider-item2,
+    .ship-routes__slider-item3,
+    .specific-routes__slider-item2,
+    .specific-routes__slider-item3 {
         display: none;
     }
-    .speedboat-routes__slider-bg{
+    .speedboat-routes__slider-bg,
+    .ship-routes__slider-bg,
+    .specific-routes__slider-bg{
         background-image: url(../images/otherItemImg.jpeg);
         background-position: center;
         background-repeat: no-repeat;
@@ -324,7 +372,9 @@ body {
         height: 295px;
         position: relative;
     }
-    .speedboat-routes__slider-component{
+    .speedboat-routes__slider-component,
+    .ship-routes__slider-component,
+    .specific-routes__slider-component{
         position: absolute;
         top: 0px;
         right: 0px;
@@ -338,11 +388,15 @@ body {
         border-radius: 0px 13px 0px 16px;
         color: $main;
     }
-    .speedboat-routes__slider-title{
+    .speedboat-routes__slider-title,
+    .ship-routes__slider-title,
+    .specific-routes__slider-title{
         font-weight: 600;
         margin: 15px 0px 6px;
     }
-    .speedboat-routes__slider-text{
+    .speedboat-routes__slider-text,
+    .ship-routes__slider-text,
+    .specific-routes__slider-text{
         font-weight: 400;
         margin: 0;
     }
@@ -404,17 +458,23 @@ body {
     //Accordion start
     .regata-accordion,
     .speedboat-accordion,
-    .wedding-accordion{
+    .wedding-accordion,
+    .ship-accordion,
+    .specific-accordion{
         padding-top: 60px;
     }
     .regata-accordion__inner,
     .speedboat-accordion__inner,
-    .wedding-accordion__inner{
+    .wedding-accordion__inner,
+    .ship-accordion__inner,
+    .specific-accordion__inner{
         margin-top: 17px;
     }
     .regata-accordion__item,
     .speedboat-accordion__item,
-    .wedding-accordion__item {
+    .wedding-accordion__item,
+    .ship-accordion__item,
+    .specific-accordion__item {
         padding: 17px 0px;
         border-top: 1px solid $light-gray;
         &:last-child {
@@ -423,10 +483,13 @@ body {
     }
     .regata-accordion__item-wrapper,
     .speedboat-accordion__item-wrapper,
-    .wedding-accordion__item-wrapper {
+    .wedding-accordion__item-wrapper,
+    .ship-accordion__item-wrapper,
+    .specific-accordion__item-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
         &:hover{
             p{
                 color: $dark-blue;
@@ -441,7 +504,9 @@ body {
     }
     .regata-accordion__item-title,
     .speedboat-accordion__item-title,
-    .wedding-accordion__item-title {
+    .wedding-accordion__item-title,
+    .ship-accordion__item-title,
+    .specific-accordion__item-title {
         font-weight: 600;
         line-height: 19px;
         font-size: 14px;
@@ -451,7 +516,9 @@ body {
     }
     .regata-accordion__item-price,
     .speedboat-accordion__item-price,
-    .wedding-accordion__item-price {
+    .wedding-accordion__item-price,
+    .ship-accordion__item-price,
+    .specific-accordion__item-price{
         line-height: 19px;
         font-size: 14px;
         margin-bottom: 0;
@@ -459,7 +526,9 @@ body {
     }
     .regata-accordion__icon,
     .speedboat-accordion__icon,
-    .wedding-accordion__icon {
+    .wedding-accordion__icon,
+    .ship-accordion__icon,
+    .specific-accordion__icon {
         transition: all .3s;
         width: 19px;
         height: 19px;
@@ -484,7 +553,9 @@ body {
     }
     .regata-accordion__dropDown,
     .speedboat-accordion__dropDown,
-    .wedding-accordion__dropDown {
+    .wedding-accordion__dropDown,
+    .ship-accordion__dropDown,
+    .specific-accordion__dropDown{
         display: none;
     }
     //Accordion end
@@ -492,7 +563,9 @@ body {
     //sideBar mobile start
     .regata-sideBar,
     .speedboat-sideBar,
-    .wedding-sideBar{
+    .wedding-sideBar,
+    .ship-sideBar,
+    .specific-sideBar{
         box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
         border-radius: 20px 20px 0px 0px;
         margin: 60px 0 90px;
@@ -500,14 +573,18 @@ body {
     }
     .regata-sideBar__inner,
     .speedboat-sideBar__inner,
-    .wedding-sideBar__inner{
+    .wedding-sideBar__inner,
+    .ship-sideBar__inner,
+    .specific-sideBar__inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .regata-sideBar__text,
     .speedboat-sideBar__text,
-    .wedding-sideBar__text{
+    .wedding-sideBar__text,
+    .ship-sideBar__text,
+    .specific-sideBar__text{
         font-size: 13px;
         line-height: 20px;
         font-weight: 600;
@@ -516,7 +593,9 @@ body {
     }
     .regata-sideBar__btn,
     .speedboat-sideBar__btn,
-    .wedding-sideBar__btn{
+    .wedding-sideBar__btn,
+    .ship-sideBar__btn,
+    .specific-sideBar__btn{
         padding: 13px 14px;
         font-size: 12px;
         line-height: 26px;
@@ -549,7 +628,8 @@ body {
     .regata-main,
     .speedboat-main,
     .wedding-main,
-    .ship-main {
+    .ship-main,
+    .specific-main {
         min-height: 370px;
         background-image: url(../images/main-bg.jpeg);
         background-position: center;
@@ -558,7 +638,8 @@ body {
         position: relative;
     }
     .speedboat-main__title,
-    .ship-main__title{
+    .ship-main__title,
+    .specific-main__title{
         top: 289px;
         br{
             display: none;
@@ -567,7 +648,8 @@ body {
     .regata-main__rectangle,
     .speedboat-main__rectangle,
     .wedding-main__rectangle,
-    .ship-main__rectangle {
+    .ship-main__rectangle,
+    .specific-main__rectangle {
         display: none;
     }
 
@@ -583,7 +665,8 @@ body {
     .regata-about__text,
     .speedboat-about__text,
     .wedding-about__text,
-    .ship-about__text{
+    .ship-about__text,
+    .specific-about__text{
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
@@ -595,7 +678,9 @@ body {
     //Important start
     .regata-important__text,
     .wedding-important__text,
-    .ship-important__text {
+    .ship-important__text,
+    .speedboat-important__text,
+    .specific-important__text {
         font-size: 16px;
         line-height: 26px;
     }
@@ -603,38 +688,54 @@ body {
 
     //Transport slider start
     .speedboat-transport,
-    .wedding-transport {
+    .wedding-transport,
+    .ship-transport,
+    .specific-transport {
         padding-top: 60px;
     }
     .speedboat-transport__inner,
-    .wedding-transport__inner{
+    .wedding-transport__inner,
+    .ship-transport__inner,
+    .specific-transport__inner{
         margin-top: 36px;
         justify-content: space-around;
     }
     .speedboat-transport__item,
-    .wedding-transport__item {
+    .wedding-transport__item,
+    .ship-transport__item,
+    .specific-transport__item{
         padding: 15px 15px 20px 15px;
     }
     .speedboat-transport__item1,
-    .wedding-transport__item1 {
+    .wedding-transport__item1,
+    .ship-transport__item1,
+    .specific-transport__item1 {
         margin: 0;
     }
     .speedboat-transport__item2,
-    .wedding-transport__item2{
+    .wedding-transport__item2,
+    .ship-transport__item2,
+    .specific-transport__item2{
         display: block;
     }
     .speedboat-transport__bg,
-    .wedding-transport__bg{
+    .wedding-transport__bg,
+    .ship-transport__bg,
+    .specific-transport__bg{
         height: 190px;
     }
     .speedboat-transport__component,
-    .wedding-transport__component {
+    .wedding-transport__component,
+    .ship-transport__component,
+    .specific-transport__component {
         font-size: 16px;
         line-height: 22px;
         font-weight: 600;
     }
     .speedboat-transport__text, 
-    .wedding-transport__text{
+    .wedding-transport__text,
+    .ship-transport__text,
+    .specific-transport__text{
         font-size: 16px;
         line-height: 22px;
         font-weight: 600;
@@ -649,24 +750,35 @@ body {
     //Transport slider end
 
     //Start price start
-    .speedboat-price{
+    .speedboat-price,
+    .ship-price,
+    .specific-price{
         padding-top: 80px;
     }
-    .speedboat-price{
+    .speedboat-price,
+    .ship-price,
+    .specific-price{
         font-size: 16px;
         line-height: 24px;
     }
     //Start price end
 
     //Routes start
-    .speedboat-routes{
+    .speedboat-routes,
+    .ship-routes,
+    .specific-routes{
         padding-top: 80px;
     }
-    .speedboat-routes__inner{
+    .speedboat-routes__inner,
+    .ship-routes__inner,
+    .specific-routes__inner,
+    .specific-routes__inner {
         margin-top: 36px;
         justify-content: space-around;
     }
-    .speedboat-routes__slider-item{
+    .speedboat-routes__slider-item,
+    .ship-routes__slider-item,
+    .specific-routes__slider-item {
         width: 290px;
         box-shadow: 0px 0.866635px 23.3991px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
@@ -674,20 +786,29 @@ body {
         font-size: 16px;
         line-height: 22px;
     }
-    .speedboat-routes__slider-item1{
+    .speedboat-routes__slider-item1,
+    .ship-routes__slider-item1,
+    .specific-routes__slider-item1 {
         margin: 0;
     }
-    .speedboat-routes__slider-item2{
+    .speedboat-routes__slider-item2,
+    .ship-routes__slider-item2,
+    .specific-routes__slider-item2{
         display: block;
     }
-    .speedboat-routes__slider-bg{
+    .speedboat-routes__slider-bg,
+    .ship-routes__slider-bg{
         height: 260px;
         
     }
-    .speedboat-routes__slider-title{
+    .speedboat-routes__slider-title,
+    .ship-routes__slider-title,
+    .specific-routes__slider-title{
         margin: 12px 0px 6px;
     }
-    .speedboat-routes__slider-text{
+    .speedboat-routes__slider-text,
+    .ship-routes__slider-text,
+    .specific-routes__slider-text{
         line-height: 24px;
     }
     //Routes end
@@ -695,17 +816,23 @@ body {
     //Accordion start
     .regata-accordion__inner,
     .speedboat-accordion__inner,
-    .wedding-accordion__inner{
+    .wedding-accordion__inner,
+    .ship-accordion__inner,
+    .specific-accordion__inner{
         margin-top: 36px;
     }
     .regata-accordion__item,
     .speedboat-accordion__item,
-    .wedding-accordion__item {
+    .wedding-accordion__item,
+    .ship-accordion__item,
+    .specific-accordion__item {
         padding: 30px 0px;
     }
     .regata-accordion__item-title,
     .speedboat-accordion__item-title,
-    .wedding-accordion__item-title {
+    .wedding-accordion__item-title,
+    .ship-accordion__item-title,
+    .specific-accordion__title {
         font-weight: 600;
         line-height: 22px;
         font-size: 16px;
@@ -714,7 +841,9 @@ body {
     }
     .regata-accordion__item-price,
     .speedboat-accordion__item-price,
-    .wedding-accordion__item-price{
+    .wedding-accordion__item-price,
+    .ship-accordion__item-price,
+    .specific-accordion__item-price {
         line-height: 21px;
         font-size: 16px;
     }
@@ -723,17 +852,23 @@ body {
     //sideBar mobile start
     .regata-sideBar,
     .speedboat-sideBar,
-    .wedding-sideBar{
+    .wedding-sideBar,
+    .ship-sideBar,
+    .specific-sideBar{
         margin: 71px 0 90px;
     }
     .regata-sideBar__text,
     .speedboat-sideBar__text,
-    .wedding-sideBar__text{
+    .wedding-sideBar__text,
+    .ship-sideBar__text,
+    .specific-sideBar__text{
         font-size: 16px;
     }
     .regata-sideBar__btn,
     .speedboat-sideBar__btn,
-    .wedding-sideBar__btn{
+    .wedding-sideBar__btn,
+    .ship-sideBar__btn,
+    .specific-sideBar__btn{
         font-size:  16px;   
     }
     //sideBar mobile end
@@ -747,20 +882,28 @@ body {
 
     //Transport slider start
     .speedboat-transport__inner,
-    .wedding-transport__inner{
+    .wedding-transport__inner,
+    .ship-transport__inner,
+    .specific-transport__inner{
         justify-content: space-between;
     }
     .speedboat-transport__item3,
-    .wedding-transport__item3{
+    .wedding-transport__item3,
+    .ship-transport__item3,
+    .specific-transport__item3{
         display: block;
     }
     //Transport slider end
 
     //Routes start
-    .speedboat-routes__inner{
+    .speedboat-routes__inner,
+    .ship-routes__inner,
+    .specific-routes__inner {
         justify-content: space-between;
     }
-    .speedboat-routes__slider-item3{
+    .speedboat-routes__slider-item3,
+    .ship-routes__slider-item3,
+    .specific-routes__slider-item3{
         display: block;
     }
     //Routes end
@@ -781,7 +924,9 @@ body {
     // Sidebar mobile start
     .regata-sideBar,
     .speedboat-sideBar,
-    .wedding-sideBar{
+    .wedding-sideBar,
+    .ship-sideBar,
+    .specific-sideBar{
         display: none;
     }
     // Sidebar mobile end
@@ -790,7 +935,8 @@ body {
     .regata-about__sideBar,
     .wedding-about__sideBar,
     .ship-about__sideBar,
-    .speedboat-about__sideBar {
+    .speedboat-about__sideBar,
+    .specific-about__sideBar {
         display: block;
         position: absolute;
         width: 105px;
@@ -804,7 +950,8 @@ body {
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
     .ship-about__sidebar-inner,
-    .speedboat-about__sidebar-inner{
+    .speedboat-about__sidebar-inner,
+    .specific-about__sidebar-inner{
         position: relative;
         height: 100%;
         &::before{
@@ -821,7 +968,8 @@ body {
     .regata-about__sideBar-text,
     .wedding-about__sideBar-text,
     .ship-about__sideBar-text,
-    .speedboat-about__sideBar__text{
+    .speedboat-about__sideBar__text,
+    .specific-about__sideBar__text{
         display: none;
         font-size: 16px;
         line-height: 22px;
@@ -833,7 +981,8 @@ body {
     .regata-about__sideBar-btn,
     .wedding-about__sideBar-btn,
     .ship-about__sideBar-btn,
-    .speed-about__sideBar__btn {
+    .speedboat-about__sideBar__btn,
+    .specific-about__sideBar-btn {
         margin-top: 14px;
         background: #fed74b;
         border-radius: 33px;
@@ -860,7 +1009,8 @@ body {
     .regata-about__sideBar,
     .wedding-about__sideBar,
     .ship-about__sideBar,
-    .speedboat-about__sideBar {
+    .speedboat-about__sideBar,
+    .specific-about__sideBar {
         display: block;
         position: absolute;
         width: 197px;
@@ -871,7 +1021,8 @@ body {
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
     .ship-about__sidebar-inner,
-    .speedboat-about__sidebar-inner {
+    .speedboat-about__sidebar-inner,
+    .specific-about__sidebar-inner {
         height: 100%;
         &::before{
             display: none;
@@ -880,7 +1031,8 @@ body {
     .regata-about__sideBar-text,
     .wedding-about__sideBar-text,
     .ship-about__sidebar-text,
-    .speedboat-about__sideBar__text {
+    .speedboat-about__sideBar__text,
+    .specific-about__sideBar-text {
         display: block;
         font-size: 16px;
         line-height: 22px;
@@ -892,7 +1044,8 @@ body {
     .regata-about__sideBar-btn,
     .wedding-about__sideBar-btn,
     .ship-about__sideBar-btn,
-    .speed-about__sideBar__btn {
+    .speedboat-about__sideBar__btn,
+    .specific-about__sideBar-btn {
         background: $yellow;
         border-radius: 33px;
         padding: 13px 14px;
