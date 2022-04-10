@@ -1,18 +1,15 @@
 @media (min-width: 360px) {
     //other start
-    .speedboat-other,
-    .specific-other {
+    .speedboat-other {
         padding-top: 40px;
     }
-    .speedboat-other__inner,
-    .specific-other__inner {
+    .speedboat-other__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 15px;
     }
-    .speedboat-other__item,
-    .specific-other__item {
+    .speedboat-other__item {
         background-image: url(../images/otherItemImg.jpeg);
         min-width: 246px;
         min-height: 160px;
@@ -22,15 +19,13 @@
         background-size: cover;
         position: relative;
     }
-    .speedboat-other__item1,
-    .speedboat-other__item1{
+    .speedboat-other__item1 {
         margin: 0 auto;
     }
     .speedboat-other__item2 {
         display: none;
     }
-    .speedboat-other__item-component,
-    .specific-other__item-component {
+    .speedboat-other__item-component {
         padding: 12px 14px;
         min-width: 157px;
         background-color: #dce8ff;
@@ -42,8 +37,7 @@
         line-height: 16px;
         font-weight: 600;
     }
-    .speedboat-other__link,
-    .specific-other__link {
+    .speedboat-other__link {
         position: absolute;
         right: 22px;
         bottom: 10px;
@@ -64,59 +58,35 @@
             right: -12px;
         }
     }
-    //other end
 }
 
 @media (min-width: 768px) {
-    //Other start
-    .speedboat-other,
-    .specific-other {
+    .speedboat-other {
         padding-top: 80px;
     }
-    .speedboat-other__inner,
-    .specific-other__inner {
+    .speedboat-other__inner {
         justify-content: space-around;
         margin-top: 36px;
     }
-    .speedboat-other__item,
-    .specific-other__item {
+    .speedboat-other__item {
         min-width: 344px;
         min-height: 230px;
     }
-    .speedboat-other__item1,
     .speedboat-other__item1 {
         margin: 0;
     }
     .speedboat-other__item2 {
         display: block;
     }
-    .speedboat-other__item-component,
-    .specific-other__item-component {
+    .speedboat-other__item-component {
         font-size: 16px;
         line-height: 21px;
     }
-    //Other end
 }
 
 @media (min-width: 992px) {
-    //Other start
-    .speedboat-other__item,
-    .specific-other__item {
+    .speedboat-other__item {
         min-width: 450px;
         min-height: 300px;
     }
-    //Other end
 }
-
-//Event start
-// .event{
-//     padding-top: 80px;
-// }
-// .event{
-//     font-size: 16px;
-//     line-height: 24px;
-//     font-weight: 400;
-//     color: #323232;
-//     margin-top: 10px;
-// }
-//Event end
