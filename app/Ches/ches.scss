@@ -156,7 +156,6 @@
         line-height: 16px;
         color: #2b2b2b;
         margin: 0 auto;
-        
     }
 }
 
@@ -359,16 +358,22 @@
 .ship-img__first{
     background-image: url('../images/ship/ship.jpg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .ship-img__second{
     background-image: url('../images/ship/ship_2.jpg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .ship-img__three{
     background-image: url('../images/ship/ship_3.jpg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .ship-other__item-component {
