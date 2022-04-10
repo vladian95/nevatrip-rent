@@ -92,16 +92,6 @@
     }
 }
 
-.offers__img {
-    background-image: url('../images/wedding/wedding.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    width: 450px;
-    height: 280px;
-}
-
 // <!-- ship Page -->
 .session {
     padding-top: 90px;
@@ -196,76 +186,6 @@
     padding-left: 30px;
 }
 
-.ship-other {
-    padding-top: 70px;
-}
 
-.ship-images {
-    padding-top: 30px ;
-    display: flex;
-}
 
-.ship-img {
-    position: relative;
-    margin-left: 20px;
-    width: 290px;
-    height: 200px;
-    &:first-child {
-        margin-left: 0;
-    }
-}
-
-.ship-img__first{
-    background-image: url('../images/ship/ship.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.ship-img__second{
-    background-image: url('../images/ship/ship_2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.ship-img__three{
-    background-image: url('../images/ship/ship_3.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.ship-other__item-component {
-    position: absolute;
-    padding: 12px 14px;
-    min-width: 157px;
-    background-color: #dce8ff;
-    border-radius: 13px 0px 15px 0px;
-    left: 0px;
-    top: 0px;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 600;
-}
-.ship-other__link {
-    position: absolute;
-    right: 22px;
-    bottom: 10px;
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 600;
-    color: #fff;
-    &:hover {
-        color: #fff;
-    }
-    &::before {
-        content: "";
-        position: absolute;
-        background-image: url(../images/speedboat-link-img.svg);
-        width: 5px;
-        height: 9px;
-        bottom: 4px;
-        right: -12px;
-    }
-}
+// <!-- specific Page -->

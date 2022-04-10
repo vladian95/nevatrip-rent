@@ -1,0 +1,99 @@
+@media (min-width : 360px){
+    .ship-other {
+        padding-top: 40px;
+    }
+    
+    .ship-other__inner {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ship-other__item {
+        position: relative;
+        width: 246px;
+        height: 160px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 16px;
+    }
+    
+    .ship-other__item1{
+        background-image: url('../images/ship/ship.jpg');
+        
+    }
+    
+    .ship-other__item2{
+        background-image: url('../images/ship/ship_2.jpg');
+        display: none;
+    }
+    
+    .ship-other__item3{
+        background-image: url('../images/ship/ship_3.jpg');
+        display: none;
+    }
+    
+    .ship-other__item-component {
+        position: absolute;
+        padding: 12px 14px;
+        min-width: 157px;
+        background-color: #dce8ff;
+        border-radius: 10px 0px 15px 0px;
+        left: 0px;
+        top: -1px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+    .ship-other__link {
+        position: absolute;
+        right: 22px;
+        bottom: 10px;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../images/speedboat-link-img.svg);
+            width: 5px;
+            height: 9px;
+            bottom: 4px;
+            right: -12px;
+        }
+    }
+}
+
+@media (min-width : 768px) {
+    .ship-other {
+        padding-top: 80px;
+    }
+    .ship-other__inner {
+        margin-top: 36px;
+        justify-content: space-between;
+    }
+    .ship-other__item{
+        width: 290px;
+        height: 200px;
+    }
+    .ship-other__item2{
+        display: block;
+    }
+    .ship-other__item-component,
+    .ship-other__link{
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+@media (min-width : 992px){
+    .ship-other__item3{
+        display: block;
+    }
+}
+
