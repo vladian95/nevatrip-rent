@@ -66,24 +66,25 @@
 
     //Offers block start
     .offers{
-        padding-top: 60px;
+        padding-top: 40px;
     }
-    // .offers__inner {
-    //     margin-top: 20px;
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    .offers__inner {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .offers__item {
-        width: 335px;
+        max-width: 335px;
         border-radius: 12px;
         box-shadow: 0px 1.34328px 36.2687px rgba(0, 0, 0, 0.13);
         border-radius: 20px;
         margin-bottom: 20px;
         border-radius: 0px 0px 16px 16px;
         margin-right: 20px;
-        margin: 0 auto;
+    }
+    .offers__item2{
+        display: none;
     }
     .offers__img{
         background-image: url(../images/wedding/wedding-offers.jpeg);
@@ -101,14 +102,19 @@
         font-size: 14px;
         line-height: 22px;
         font-weight: 600;
+        color: $main;
     }
     .offers__list {
-        
-        font-size: 15px;
+        margin-top: 16px;
         li {
             position: relative;
             padding-left: 30px;
-            
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            & + li{
+                margin-top: 11px;
+            }
             &::before {
                 position: absolute;
                 content: url('../images/regata/yellow_arrow.svg');
@@ -117,17 +123,37 @@
             }
         }
     } 
+    .offers__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 23px;
+        span{
+            display: block;
+        }
+    }
     .offers__price {
-        padding: 0 0 0 20px;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 24px;
+        color: $dark;
         &::after {
             content: url('../images/regata/ruble-currency-sign.png');
         }
     }
     .offers__star {
-        padding: 0 0 40px 20px;
         font-size: 12px;
+        color: $dark;
+    }
+    .offers__btn{
+        padding: 12px 35px;
+        background-color: $yellow;
+        border: none;
+        color: #404040;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        border-radius: 30px;
+        cursor: pointer;
     }
     //Offers block end
 }
@@ -167,8 +193,6 @@
             }
         }
     }
-    
-
     //Keytering block start
     .keytering__btn{
         padding: 38px 100px;
@@ -200,6 +224,51 @@
 
     // Keytering block end
 
+    //Offers block start
+    .offers{
+        padding-top: 80px;
+    }
+    .offers__inner{
+        margin-top: 26px;
+    }
+    .offers__item-content{
+        padding: 20px 15px 41px 15px;
+    }
+    .offers__item{
+        max-width: 450px;
+    }
+    .offers__item-title{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .offers__list {
+        margin-top: 20px;
+        li {
+            padding-left: 40px;
+            font-size: 18px;
+            & + li{
+                margin-top: 16px;
+            }
+            &::before {
+                position: absolute;
+                content: url('../images/regata/yellow_arrow.svg');
+                left: 0px;
+                top: 2px;
+            }
+        }
+    } 
+    .offers__box{
+        margin-top: 37px;
+    }
+    .offers__price{
+        font-size: 30px;
+    }
+    .offers__btn{
+        padding: 16px 55px;
+        font-size: 18px;
+    }
+    //Offers block end
 
     
 }
@@ -229,8 +298,18 @@
         padding: 38px 95px 38px 0px;
         width: 450px;
     }
-
     // Keytering block end
+
+    //Offers block start 
+    .offers__inner{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .offers__item2{
+        display: block;
+    }
+    //Offers block end
 }
 
 @media (min-width: 1200px) {
