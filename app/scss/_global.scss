@@ -484,10 +484,12 @@ body {
     //Accordion start
     .regata-accordion,
     .speedboat-accordion,
-    .wedding-accordion,
     .ship-accordion,
     .specific-accordion {
         padding-top: 60px;
+    }
+    .wedding-accordion{
+        padding-top: 50px;
     }
     .regata-accordion__inner,
     .speedboat-accordion__inner,
@@ -870,6 +872,9 @@ body {
     //Routes end
 
     //Accordion start
+    .wedding-accordion{
+        padding-top: 90px;
+    }
     .regata-accordion__inner,
     .speedboat-accordion__inner,
     .wedding-accordion__inner,
