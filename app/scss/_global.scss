@@ -46,11 +46,624 @@ body {
     padding-bottom: 100px;
 }
 
+
+
+// ВСЕ ОБЩИЕ СТИЛИ ОТ 0 ДО 360
+.container{
+    padding: 0px 10px;
+}
+
+h1 {
+    font-weight: 600; 
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: $dark;
+}
+
+//Top background start
+.regata-main,
+.speedboat-main,
+.wedding-main,
+.ship-main,
+.specific-main {
+    min-height: 365px;
+    background-image: url(../images/mobile-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.regata-main__inner,
+.speedboat-main__inner,
+.wedding-main__inner,
+.ship-main__inner,
+.specific-main__inner {
+    position: relative;
+}
+.regata-main__title,
+.wedding-main__title{
+    position: absolute;
+    top: 286px;
+    left: 0;
+}
+.speedboat-main__title,
+.ship-main__title,
+.specific-main__title {
+    position: absolute;
+    top: 261px;
+}
+.regata-main__rectangle,
+.speedboat-main__rectangle,
+.wedding-main__rectangle,
+.ship-main__rectangle,
+.specific-main__rectangle {
+    height: 46px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -23px;
+    background-color: #fff;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        width: 59px;
+        height: 5px;
+        background-color: #e4e4e4;
+    }
+}
+//Top background start
+
+//BreadScrumbs start
+.bread-crumbs__inner {
+    margin-top: 25px;
+}
+.bread-crumbs__item {
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+}
+.bread-crumbs__item--active {
+    color: $dark-gray;
+}
+.bread-crumbs__link {
+    color: $main;
+}
+a.bread-crumbs__link:hover {
+    text-decoration: underline;
+    color: $main;
+}
+//BreadScrumbs end
+
+//About start
+.regata-about__container,
+.speedboat-about__container,
+.wedding-about__container,
+.ship-about__container,
+.specific-about__container {
+    position: relative;
+}
+.regata-about__sideBar,
+.speedboat-about__sideBar,
+.wedding-about__sideBar,
+.ship-about__sideBar,
+.specific-about__sideBar {
+    display: none;
+}
+.regata-about__text,
+.wedding-about__text,
+.speedboat-about__text,
+.ship-about__text,
+.specific-about__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $main;
+    margin-top: 20px;
+}
+//About end
+
+//Important start
+.regata-important__inner,
+.speedboat-important__inner,
+.wedding-important__inner,
+.ship-important__inner,
+.specific-important__inner {
+    background: $light-blue;
+    box-shadow: 2px 2px 5px rgba(150, 150, 150, 0.25);
+    border-radius: 12px;
+    padding: 20px 30px 22px 58px;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    margin-top: 30px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: 23px;
+        background-image: url(../images/important-megaphone.svg);
+        width: 24px;
+        height: 23px;
+    }
+}
+.regata-important__title,
+.speedboat-important__title,
+.wedding-important__title,
+.ship-important__title,
+.specific-important__title {
+    color: $dark;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 16px;
+}
+.regata-important__text,
+.speedboat-important__text,
+.wedding-important__text,
+.ship-important__text,
+.specific-important__text {
+    color: $main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 8px 0px 0px 0px;
+}
+//Important end
+
+//Transport slider start
+.speedboat-transport,
+.wedding-transport,
+.ship-transport,
+.specific-transport {
+    padding-top: 50px;
+}
+.speedboat-transport__inner,
+.wedding-transport__inner,
+.ship-transport__inner,
+.specific-transport__inner {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.speedboat-transport__item,
+.wedding-transport__item,
+.ship-transport__item,
+.specific-transport__item {
+    width: 246px;
+    box-shadow: 0px 1.17886px 31.8293px rgba(0, 0, 0, 0.13);
+    border-radius: 16px;
+    padding: 12px;
+}
+.speedboat-transport__bg,
+.wedding-transport__bg,
+.ship-transport__bg,
+.specific-transport__bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(../images/otherItemImg.jpeg);
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+    position: relative;
+}
+.speedboat-transport__component,
+.wedding-transport__component,
+.ship-transport__component,
+.specific-transport__component {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 122px;
+    height: 36px;
+    padding: 12px 14px;
+    top: 10px;
+    right: 10px;
+    background-color: #fff3c7;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark;
+}
+.speedboat-transport__text,
+.wedding-transport__text,
+.ship-transport__text,
+.specific-transport__text {
+    margin: 12px 0px 8px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: $dark;
+}
+.speedboat-transport__price,
+.wedding-transport__price {
+    font-size: 18px;
+    font-weight: 400;
+}
+.speedboat-transport__item1,
+.wedding-transport__item1,
+.ship-transport__item1,
+.specific-transport__item1 {
+    margin: 0 auto;
+}
+.speedboat-transport__item2,
+.speedboat-transport__item3,
+.wedding-transport__item2,
+.wedding-transport__item3,
+.ship-transport__item2,
+.ship-transport__item3,
+.specific-transport__item2,
+.specific-transport__item3 {
+    display: none;
+}
+//Transport slider end
+
+//Start price start
+.speedboat-price,
+.ship-price,
+.specific-price {
+    padding-top: 60px;
+}
+.speedboat-price__title,
+.ship-price__title,
+.specific-price__title {
+    margin-bottom: 10px;
+}
+.speedboat-price__text,
+.ship-price__text,
+.specific-price__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 0;
+    color: $main;
+}
+//Start price end
+
+//Routes start
+.speedboat-routes,
+.ship-routes,
+.specific-routes {
+    padding-top: 60px;
+}
+.speedboat-routes__inner,
+.ship-routes__inner,
+.specific-routes__inner {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.speedboat-routes__slider-item,
+.ship-routes__slider-item,
+.specific-routes__slider-item {
+    width: 335px;
+    box-shadow: 0px 0.866635px 23.3991px rgba(0, 0, 0, 0.13);
+    border-radius: 16px;
+    padding: 25px 20px 20px 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.speedboat-routes__slider-item1,
+.ship-routes__slider-item1,
+.specific-routes__slider-item1 {
+    margin: 0 auto;
+}
+.speedboat-routes__slider-item2,
+.speedboat-routes__slider-item3,
+.ship-routes__slider-item2,
+.ship-routes__slider-item3,
+.specific-routes__slider-item2,
+.specific-routes__slider-item3 {
+    display: none;
+}
+.speedboat-routes__slider-bg,
+.ship-routes__slider-bg,
+.specific-routes__slider-bg {
+    background-image: url(../images/otherItemImg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    width: 100%;
+    height: 295px;
+    position: relative;
+}
+.speedboat-routes__slider-component,
+.ship-routes__slider-component,
+.specific-routes__slider-component {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+    width: 118px;
+    height: 42px;
+    padding: 10px 20px;
+    background-color: $blue;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 0px 13px 0px 16px;
+    color: $main;
+}
+.speedboat-routes__slider-title,
+.ship-routes__slider-title,
+.specific-routes__slider-title {
+    color: $main;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 15px 0px 6px;
+}
+.speedboat-routes__slider-text,
+.ship-routes__slider-text,
+.specific-routes__slider-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: $main;
+    font-weight: 400;
+    margin: 0;
+}
+//Routes end
+
+//Variants slider start
+.variants-slider {
+    padding-top: 60px;
+}
+.variants-slider__inner {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.variants-slider__item {
+    padding: 22px 20px;
+    max-width: 335px;
+    min-height: 355px;
+    border-radius: 12px;
+    border: 1px solid $light-gray;
+    box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
+}
+.variants-slider__item2{
+    display: none;
+}
+.variants-slider__title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $dark;
+}
+.variants-slider__list {
+    margin-top: 14px;
+    li {
+        color: $main;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        padding-left: 36px;
+        position: relative;
+        & + li{
+            margin-top: 14px;
+        }
+        &::before {
+            position: absolute;
+            content: url("../images/regata/yellow_arrow.svg");
+            left: 0px;
+            top: 2px;
+        }
+    }
+}
+
+.variants-slider__price {
+    color: $dark;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 19px;
+    &::after {
+        content: url("../images/regata/ruble-currency-sign.png");
+    }
+}
+//Varients slider end
+
+//Accordion start
+.regata-accordion,
+.speedboat-accordion,
+.ship-accordion,
+.specific-accordion {
+    padding-top: 60px;
+}
+.wedding-accordion{
+    padding-top: 50px;
+}
+.regata-accordion__inner,
+.speedboat-accordion__inner,
+.wedding-accordion__inner,
+.ship-accordion__inner,
+.specific-accordion__inner {
+    margin-top: 17px;
+}
+.regata-accordion__item,
+.speedboat-accordion__item,
+.wedding-accordion__item,
+.ship-accordion__item,
+.specific-accordion__item {
+    padding: 17px 0px;
+    border-top: 1px solid $light-gray;
+    &:last-child {
+        border-bottom: 1px solid $light-gray;
+    }
+}
+.regata-accordion__item-wrapper,
+.speedboat-accordion__item-wrapper,
+.wedding-accordion__item-wrapper,
+.ship-accordion__item-wrapper,
+.specific-accordion__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        p {
+            color: $dark-blue;
+            text-decoration: underline;
+        }
+        div {
+            &:last-child {
+                border: $dark-blue 2px solid;
+            }
+        }
+    }
+}
+.regata-accordion__content-left,
+.speedboat-accordion__content-left,
+.wedding-accordion__content-left,
+.ship-accordion__content-left,
+.specific-accordion__content-left{
+    width: 90%;
+}
+.regata-accordion__item-title,
+.speedboat-accordion__item-title,
+.wedding-accordion__item-title,
+.ship-accordion__item-title,
+.specific-accordion__item-title {
+    font-weight: 600;
+    line-height: 19px;
+    font-size: 14px;
+    color: $dark;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+.regata-accordion__item-price,
+.speedboat-accordion__item-price,
+.wedding-accordion__item-price,
+.ship-accordion__item-price,
+.specific-accordion__item-price {
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    transition: all 0.3s;
+}
+.regata-accordion__icon,
+.speedboat-accordion__icon,
+.wedding-accordion__icon,
+.ship-accordion__icon,
+.specific-accordion__icon {
+    transition: all 0.3s;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: solid $light-gray 2px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../images/accordion-plus-mobile.svg);
+        width: 8.83px;
+        height: 8.83px;
+        &:hover {
+            text-decoration: underline;
+            color: $dark-blue;
+        }
+    }
+}
+.regata-accordion__dropDown,
+.speedboat-accordion__dropDown,
+.wedding-accordion__dropDown,
+.ship-accordion__dropDown,
+.specific-accordion__dropDown {
+    display: none;
+}
+//Accordion end
+
+//sideBar mobile start
+// .regata-sideBar,
+// .speedboat-sideBar,
+// .wedding-sideBar,
+// .ship-sideBar,
+// .specific-sideBar {
+//     box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
+//     border-radius: 20px 20px 0px 0px;
+//     margin: 60px 0 90px;
+//     padding: 14px 0px;
+// }
+// .regata-sideBar__inner,
+// .speedboat-sideBar__inner,
+// .wedding-sideBar__inner,
+// .ship-sideBar__inner,
+// .specific-sideBar__inner {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+.fixed-sideBar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
+    // border-radius: 20px 20px 0px 0px;
+    // margin: 60px 0 90px;
+    // padding: 14px 0px;
+    // min-width: 400px;
+    
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.regata-sideBar__text,
+.speedboat-sideBar__text,
+.wedding-sideBar__text,
+.ship-sideBar__text,
+.specific-sideBar__text {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: $dark;
+}
+.regata-sideBar__btn,
+.speedboat-sideBar__btn,
+.wedding-sideBar__btn,
+.ship-sideBar__btn,
+.specific-sideBar__btn {
+    padding: 13px 14px;
+    font-size: 11px;
+    line-height: 26px;
+    font-weight: 400;
+    border: none;
+    border-radius: 33px;
+    min-height: 52px;
+    width: 157px;
+    background-color: $yellow;
+}
+//sideBar mobile end
+
 @media (min-width: 360px) {
     .container {
-        max-width: 365px;
-        padding: 0px 15px;
-        margin: 0 auto;
+        padding: 0px 20px;
     }
     h1 {
         font-weight: 600; 
@@ -602,20 +1215,20 @@ body {
     .wedding-sideBar,
     .ship-sideBar,
     .specific-sideBar {
-        // box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
-        // border-radius: 20px 20px 0px 0px;
-        // margin: 60px 0 90px;
-        // padding: 14px 0px;
+        box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
+        border-radius: 20px 20px 0px 0px;
+        margin: 60px 0 90px;
+        padding: 14px 0px;
     }
-    .regata-sideBar__inner,
-    .speedboat-sideBar__inner,
-    .wedding-sideBar__inner,
-    .ship-sideBar__inner,
-    .specific-sideBar__inner {
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-    }
+    // .regata-sideBar__inner,
+    // .speedboat-sideBar__inner,
+    // .wedding-sideBar__inner,
+    // .ship-sideBar__inner,
+    // .specific-sideBar__inner {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
     .fixed-sideBar__inner {
         display: flex;
         justify-content: space-between;
