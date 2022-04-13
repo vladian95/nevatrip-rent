@@ -1049,6 +1049,8 @@ body {
     // Sidebar mobile end
 
     //Sidebar about start
+
+
     .regata-about__sideBar,
     .wedding-about__sideBar,
     .ship-about__sideBar,
@@ -1060,12 +1062,11 @@ body {
         height: 109px;
         box-shadow: 0px 0.731903px 19.7614px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
-        top: 0;
+        top: 430px;
         right: -100px;
         padding: 0px 7px;
-
-        
     }
+
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
     .ship-about__sidebar-inner,
@@ -1134,7 +1135,7 @@ body {
         position: absolute;
         width: 197px;
         height: 176px;
-        top: 0;
+        top: 430px;
         padding: 22px 20px 10px 20px;
         left: 957px;
         padding: 22px 20px 10px 20px;
@@ -1144,7 +1145,7 @@ body {
         position: fixed;
         top: 0;
         // right: -1100px;  
-        z-index: 2;
+        z-index: 300000;
     }
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
