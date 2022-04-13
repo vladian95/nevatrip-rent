@@ -84,9 +84,7 @@
         border-radius: 12px;
         box-shadow: 0px 1.34328px 36.2687px rgba(0, 0, 0, 0.13);
         border-radius: 20px;
-        margin-bottom: 20px;
         border-radius: 0px 0px 16px 16px;
-        margin-right: 20px;
     }
     .offers__item2{
         display: none;
@@ -101,7 +99,7 @@
         background-position: center;
     }
     .offers__item-content{
-        padding: 16px 20px 35px 12px;
+        padding: 16px 20px 25px 12px;
     }
     .offers__item-title{
         font-size: 14px;
@@ -147,6 +145,7 @@
     }
     .offers__star {
         font-size: 12px;
+        line-height: 20px;
         color: $dark;
     }
     .offers__btn{
@@ -246,11 +245,15 @@
     .offers__inner{
         margin-top: 26px;
     }
-    .offers__item-content{
-        padding: 20px 15px 41px 15px;
-    }
     .offers__item{
-        max-width: 450px;
+        min-width: 450px;
+        // min-height: 731px;
+    }
+    .offers__img{
+        min-height: 280px;
+    }
+    .offers__item-content{
+        padding: 20px 15px 20px 15px;
     }
     .offers__item-title{
         font-size: 18px;
@@ -262,6 +265,7 @@
         li {
             padding-left: 40px;
             font-size: 18px;
+            line-height: 27px;
             & + li{
                 margin-top: 16px;
             }
@@ -278,6 +282,12 @@
     }
     .offers__price{
         font-size: 30px;
+        line-height: 50px;
+    }
+    .offers__star{
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
     }
     .offers__btn{
         padding: 16px 55px;
@@ -334,5 +344,5 @@
 }
 
 @media (min-width: 1400px) {
-    
+
 }
