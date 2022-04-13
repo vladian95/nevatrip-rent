@@ -621,11 +621,17 @@ a.bread-crumbs__link:hover {
     justify-content: space-between;
     align-items: center;
 
-    // box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
-    // border-radius: 20px 20px 0px 0px;
-    // margin: 60px 0 90px;
-    // padding: 14px 0px;
-    // min-width: 400px;
+    border: 1px solid red;
+
+    box-shadow: 0px 1px 27px rgba(2, 156, 221, 0.13);
+    border-radius: 20px 20px 0px 0px;
+    margin: 60px 0 90px;
+    padding: 14px 0px;
+    max-width: 982px;
+    width: 100%;
+
+    margin-left: -20px;
+    padding-left: 20px;
     
     position: fixed;
     bottom: 0;
@@ -650,7 +656,8 @@ a.bread-crumbs__link:hover {
 .ship-sideBar__btn,
 .specific-sideBar__btn {
     padding: 13px 14px;
-    font-size: 11px;
+    margin-right: 10px;
+    font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     border: none;
@@ -1661,22 +1668,21 @@ a.bread-crumbs__link:hover {
     // Sidebar mobile end
 
     //Sidebar about start
-
-
     .regata-about__sideBar,
     .wedding-about__sideBar,
     .ship-about__sideBar,
     .speedboat-about__sideBar,
     .specific-about__sideBar {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 105px;
         height: 109px;
         box-shadow: 0px 0.731903px 19.7614px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
-        top: 430px;
-        right: -100px;
+        top: 414px;
+        right: 20px;
         padding: 0px 7px;
+        z-index: 30000;
     }
 
     .regata-about__sidebar-inner,
