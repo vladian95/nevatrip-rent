@@ -596,48 +596,55 @@ a.bread-crumbs__link:hover {
 }
 //Accordion end
 
-//sideBar mobile start
-// .regata-sideBar,
-// .speedboat-sideBar,
-// .wedding-sideBar,
-// .ship-sideBar,
-// .specific-sideBar {
-//     box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
-//     border-radius: 20px 20px 0px 0px;
-//     margin: 60px 0 90px;
-//     padding: 14px 0px;
-// }
-// .regata-sideBar__inner,
-// .speedboat-sideBar__inner,
-// .wedding-sideBar__inner,
-// .ship-sideBar__inner,
-// .specific-sideBar__inner {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-.fixed-sideBar__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border: 1px solid red;
-
-    box-shadow: 0px 1px 27px rgba(2, 156, 221, 0.13);
+// sideBar mobile start
+.regata-sideBar,
+.speedboat-sideBar,
+.wedding-sideBar,
+.ship-sideBar,
+.specific-sideBar {
+    box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
     border-radius: 20px 20px 0px 0px;
     margin: 60px 0 90px;
     padding: 14px 0px;
-    max-width: 982px;
-    width: 100%;
 
-    margin-left: -20px;
-    padding-left: 20px;
-    
+    border: 1px solid red;
+
     position: fixed;
     bottom: 0;
     background-color: #fff;
     z-index: 2;
 }
+.regata-sideBar__inner,
+.speedboat-sideBar__inner,
+.wedding-sideBar__inner,
+.ship-sideBar__inner,
+.specific-sideBar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// .fixed-sideBar__inner {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     border: 1px solid red;
+
+//     box-shadow: 0px 1px 27px rgba(2, 156, 221, 0.13);
+//     border-radius: 20px 20px 0px 0px;
+//     margin: 60px 0 90px;
+//     padding: 14px 0px;
+//     max-width: 982px;
+//     width: 100%;
+
+//     margin-left: -20px;
+//     padding-left: 20px;
+    
+//     position: fixed;
+//     bottom: 0;
+//     background-color: #fff;
+//     z-index: 2;
+// }
 
 .regata-sideBar__text,
 .speedboat-sideBar__text,
@@ -1236,22 +1243,6 @@ a.bread-crumbs__link:hover {
     //     justify-content: space-between;
     //     align-items: center;
     // }
-    .fixed-sideBar__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        // box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
-        // border-radius: 20px 20px 0px 0px;
-        // margin: 60px 0 90px;
-        // padding: 14px 0px;
-        // min-width: 400px;
-        
-        position: fixed;
-        bottom: 0;
-        background-color: #fff;
-        z-index: 2;
-    }
 
     .regata-sideBar__text,
     .speedboat-sideBar__text,
