@@ -596,43 +596,31 @@ a.bread-crumbs__link:hover {
 }
 //Accordion end
 
-//sideBar mobile start
-// .regata-sideBar,
-// .speedboat-sideBar,
-// .wedding-sideBar,
-// .ship-sideBar,
-// .specific-sideBar {
-//     box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
-//     border-radius: 20px 20px 0px 0px;
-//     margin: 60px 0 90px;
-//     padding: 14px 0px;
-// }
-// .regata-sideBar__inner,
-// .speedboat-sideBar__inner,
-// .wedding-sideBar__inner,
-// .ship-sideBar__inner,
-// .specific-sideBar__inner {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-.fixed-sideBar__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    // box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
-    // border-radius: 20px 20px 0px 0px;
-    // margin: 60px 0 90px;
-    // padding: 14px 0px;
-    // min-width: 400px;
-    
+// sideBar mobile start
+.regata-sideBar,
+.speedboat-sideBar,
+.wedding-sideBar,
+.ship-sideBar,
+.specific-sideBar {
+    box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
+    border-radius: 20px 20px 0px 0px;
+    margin: 60px 0 90px;
+    padding: 14px 0px;
+    width: 100%;
     position: fixed;
     bottom: 0;
     background-color: #fff;
-    z-index: 2;
+    z-index: 30001;
 }
-
+.regata-sideBar__inner,
+.speedboat-sideBar__inner,
+.wedding-sideBar__inner,
+.ship-sideBar__inner,
+.specific-sideBar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .regata-sideBar__text,
 .speedboat-sideBar__text,
 .wedding-sideBar__text,
@@ -650,7 +638,7 @@ a.bread-crumbs__link:hover {
 .ship-sideBar__btn,
 .specific-sideBar__btn {
     padding: 13px 14px;
-    font-size: 11px;
+    font-size: 9px;
     line-height: 26px;
     font-weight: 400;
     border: none;
@@ -1219,33 +1207,21 @@ a.bread-crumbs__link:hover {
         border-radius: 20px 20px 0px 0px;
         margin: 60px 0 90px;
         padding: 14px 0px;
-    }
-    // .regata-sideBar__inner,
-    // .speedboat-sideBar__inner,
-    // .wedding-sideBar__inner,
-    // .ship-sideBar__inner,
-    // .specific-sideBar__inner {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-    .fixed-sideBar__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        // box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
-        // border-radius: 20px 20px 0px 0px;
-        // margin: 60px 0 90px;
-        // padding: 14px 0px;
-        // min-width: 400px;
-        
+        width: 100%;
         position: fixed;
         bottom: 0;
         background-color: #fff;
-        z-index: 2;
+        z-index: 30001;
     }
-
+    .regata-sideBar__inner,
+    .speedboat-sideBar__inner,
+    .wedding-sideBar__inner,
+    .ship-sideBar__inner,
+    .specific-sideBar__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .regata-sideBar__text,
     .speedboat-sideBar__text,
     .wedding-sideBar__text,
@@ -1661,8 +1637,6 @@ a.bread-crumbs__link:hover {
     // Sidebar mobile end
 
     //Sidebar about start
-
-
     .regata-about__sideBar,
     .wedding-about__sideBar,
     .ship-about__sideBar,
@@ -1675,10 +1649,16 @@ a.bread-crumbs__link:hover {
         box-shadow: 0px 0.731903px 19.7614px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
         top: 430px;
-        right: -100px;
+        left: 957px;
         padding: 0px 7px;
+        
     }
-
+    .fixed-about__sideBar {
+        position: fixed;
+        top: 0;
+        // right: -1100px;  
+        z-index: 300000;
+    }
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
     .ship-about__sidebar-inner,
@@ -1747,17 +1727,10 @@ a.bread-crumbs__link:hover {
         position: absolute;
         width: 197px;
         height: 176px;
-        top: 430px;
         padding: 22px 20px 10px 20px;
         left: 957px;
         padding: 22px 20px 10px 20px;
         background-color: #fff;
-    }
-    .fixed-about__sideBar {
-        position: fixed;
-        top: 0;
-        // right: -1100px;  
-        z-index: 300000;
     }
     .regata-about__sidebar-inner,
     .wedding-about__sidebar-inner,
