@@ -611,6 +611,7 @@ body {
             top: 4px;
         }
     }
+    
     .regata-accordion__icon,
     .speedboat-accordion__icon,
     .wedding-accordion__icon,
@@ -859,6 +860,9 @@ body {
     .ship-price,
     .specific-price {
         padding-top: 80px;
+    }
+    .specific-price__title{
+        margin-bottom: 26px;
     }
     .speedboat-price__text,
     .ship-price__text,
