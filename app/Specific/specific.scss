@@ -1,85 +1,10 @@
 @media (min-width : 360px) { 
-    .specific-session {
-        padding-top: 90px;
-    }   
+     
+
+
+    //Specific Other start
     .specific-other {
         padding-top: 40px;
-    }
-    .specific-session__buttons {
-        padding-top: 36px;
-        display: flex;
-    }
-    .specific-session__btn-name {
-        font-weight: 600;
-        font-size: 16px;
-    }
-    .specific-session__btn-gray {
-        color: $gray;
-    }
-    .specific-session-block {
-        display: flex;
-        padding: 30px 0px 25px 30px;
-    }
-    .specific-session__item {
-        width: 270px;
-        height: 350px;
-        margin-right: 30px;
-        border: 1px solid #fff;
-        border-radius: 18px;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
-    }
-    .specific-session__item-about {
-        padding-top: 25px;
-        margin-left: 13px;
-        margin-right: 13px;
-        border-bottom: 1px solid $gray;
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &:last-child {
-            border-bottom: none;
-        }
-    }
-    .specific-session__item-title {
-        width: 252px;
-        height: 48px;
-        background-color: $blue;
-        padding-top: 10px;
-        padding-left: 20px;
-        border-top-left-radius: 18px;
-        border-bottom-right-radius: 18px;
-        font-weight: 600;
-    }
-
-    .specific-session__item-price {
-        font-size: 22px;
-        margin-bottom: 10px;
-        &::after {
-            content: url('../images/regata/ruble-currency-sign.png');
-        }
-    }
-
-    .specific-session__item-name {
-        font-weight: 700;
-    }
-    .specific-session__list  {
-        width: 930px;
-        height: 420px;
-        border: 1px solid #fff;
-        border-bottom-left-radius: 18px;
-        border-bottom-right-radius: 18px;
-        border-top-right-radius: 18px;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
-    }
-    .specific-session__btn {
-        width: 240px;
-        height: 54px;
-        border: 2px solid #fff;
-        background-color: #fff;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
     }
     .specific-other__inner {
         display: flex;
@@ -133,9 +58,94 @@
             right: -12px;
         }
     }
+    //Specific other end
 }
 
 @media (min-width : 768px) {
+    //Specific session start
+    .specific-session {
+        padding-top: 90px;
+    }  
+    .specific-session__btn-inner{
+        display: flex;
+
+    }
+    .specific-session__btn-item{
+        padding: 8px 10px;
+        text-align: center;
+        min-width: 240px;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 20px 20px 0px 0px;
+        font-size: 30px;
+        color: $dark;
+        line-height: 19px;
+        cursor: pointer;
+    }
+    .specific-session__btn-title{
+        font-weight: 600;
+    }
+    .specific-session__btn-date{
+        font-weight: 400;
+        display: block;
+    }
+
+    .specific-session__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        padding: 30px 40px 40px 20px;
+        border-radius: 0px 0px 20px 20px;  
+    }
+    .specific-session__content-item{
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        padding: 84px 20px 40px 20px;
+        max-width: 270px;
+        border-radius: 16px;
+        position: relative;
+        min-width: 270px;
+        max-height: 348px;
+    }
+    .specific-session__content-component{
+        padding: 16px 20px;
+        max-width: 225px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        background-color: $blue;
+        border-radius: 16px 0px 16px 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $dark;
+    }
+    .specific-session__content-top{
+        padding-bottom: 36px;
+        border-bottom: 1px solid $light-gray;
+    }
+    .specific-session__content-bottom{
+        margin-top: 36px;
+    }
+    .specific-session__content-price{
+        font-size: 22px;
+        font-weight: 400;
+        color: $dark;
+    }
+    .specific-session__content-text{
+        margin-top: 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: $dark;
+    }
+
+    //Specific session end
+
+
+
+
+    //Specific other start
     .specific-other {
         padding-top: 80px;
     }
@@ -154,6 +164,7 @@
         font-size: 16px;
         line-height: 21px;
     }
+    //Specific other end
 }
 
 @media (min-width : 992px)  {

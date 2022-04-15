@@ -870,7 +870,9 @@ body {
     .specific-price {
         padding-top: 80px;
     }
-    .specific-price__title {
+    .speedboat-price__title,
+    .ship-price__title,
+    .specific-price__title{
         margin-bottom: 26px;
     }
     .speedboat-price__text,
