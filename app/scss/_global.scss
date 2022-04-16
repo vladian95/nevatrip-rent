@@ -558,10 +558,18 @@ body {
                 color: $dark-blue;
                 text-decoration: underline;
             }
-            .regata-accordion__icon {
+            .regata-accordion__icon,
+            .speedboat-accordion__icon,
+            .wedding-accordion__icon,
+            .ship-accordion__icon,
+            .specific-accordion__icon {
                 border: $dark-blue 2px solid;
             }
-            .regata-accordion__icon-line{
+            .regata-accordion__icon-line,
+            .speedboat-accordion__icon-line,
+            .wedding-accordion__icon-line,
+            .ship-accordion__icon-line,
+            .specific-accordion__icon-line{
                 background-color: $dark-blue;
             }
         }
@@ -621,7 +629,11 @@ body {
         position: relative;
         cursor: pointer;
     }
-    .regata-accordion__icon-line{
+    .regata-accordion__icon-line,
+    .speedboat-accordion__icon-line,
+    .wedding-accordion__icon-line,
+    .ship-accordion__icon-line,
+    .specific-accordion__icon-line{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -629,11 +641,19 @@ body {
         background-color: $gray;
         border-radius: 1px;
     }
-    .regata-accordion__icon-minus{
+    .regata-accordion__icon-minus,
+    .speedboat-accordion__icon-minus,
+    .wedding-accordion__icon-minus,
+    .ship-accordion__icon-minus,
+    .specific-accordion__icon-minus{
         width: 9px;
         height: 1px;
     }
-    .regata-accordion__icon-plus{
+    .regata-accordion__icon-plus,
+    .speedboat-accordion__icon-plus,
+    .wedding-accordion__icon-plus,
+    .ship-accordion__icon-plus,
+    .specific-accordion__icon-plus{
         width: 1px;
         height: 9px;
     }
@@ -645,6 +665,10 @@ body {
         display: none;
         margin-top: 30px;
     }
+    .regata-accordion__dropDown-text,
+    .speedboat-accordion__dropDown-text,
+    .wedding-accordion__dropDown-text,
+    .ship-accordion__dropDown-text,
     .specific-accordion__dropDown-text {
         font-size: 16px;
         line-height: 24px;
