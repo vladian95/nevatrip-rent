@@ -1,24 +1,31 @@
 //Accordion JS
-const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
+// const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
 
-for (let i = 0; i < ACCORDION.length; i++) {
-  ACCORDION[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+// for (let i = 0; i < ACCORDION.length; i++) {
+//   ACCORDION[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     let panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
 
-    this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ; //ES6
-  });
-}
+//     this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ; //ES6
+
 
 //     // const PANEL = this.nextElementSibling; 
 //     // if (PANEL.style.display === "block") {
 //     //   PANEL.style.display = "none";
 //     // } else {
-//     //   PANEL.style.display = "block"; 
-//     // }   //ES5
-
-
+//     //   PANEL.style.display = "block"; //ES5
+//     // }
 //   });
 // }
+
+
 
 // Tabs 
 const tabs = document.querySelector(".specific-session__tabs");
@@ -41,6 +48,7 @@ tabs.addEventListener("click", event => {
       }
     }
   }
+  
 });
 
 //Sliders
