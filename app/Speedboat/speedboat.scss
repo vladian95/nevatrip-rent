@@ -10,14 +10,22 @@
         margin-top: 15px;
     }
     .speedboat-other__item {
-        background-image: url(../images/otherItemImg.jpeg);
+        background-image: linear-gradient(to bottom, #6c6464 0%, transparent 100%), url('../images/otherItemImg.jpeg');
+        background-size: cover;
+        background-position: center;
         min-width: 246px;
         min-height: 160px;
         border-radius: 16px;
-        background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+
         position: relative;
+        cursor: pointer;
+        &:hover {
+            background-image: url('../images/otherItemImg.jpeg');
+            transform: scale(1.04);
+            transition: transform 0.25s;
+            transition: 0.5s;
+        }
     }
     .speedboat-other__item1 {
         margin: 0 auto;

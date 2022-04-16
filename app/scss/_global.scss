@@ -278,6 +278,11 @@ body {
         box-shadow: 0px 1.17886px 31.8293px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
         padding: 12px;
+        cursor: pointer;
+        &:hover .ship-transport__component {
+            background-color: $orange;
+            transition: 0.5s;
+        }
     }
     .speedboat-transport__bg,
     .wedding-transport__bg,
