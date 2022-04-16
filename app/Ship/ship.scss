@@ -22,18 +22,45 @@
     }
     
     .ship-other__item1{
-        background-image: url('../images/ship/ship.jpg');
-        
+        width: 290px;
+        height: 200px;
+        background-image: linear-gradient(to bottom, #6c6464 0%, transparent 100%), url('../images/ship/ship.jpg');
+        background-size: cover;
+        background-position: center;
+        &:hover {
+            background-image: url('../images/ship/ship_l.jpg');
+            transform: scale(1.1);
+            transition: transform 0.25s;
+            transition: 0.5s;
+        }
     }
     
     .ship-other__item2{
-        background-image: url('../images/ship/ship_2.jpg');
-        display: none;
+        width: 290px;
+        height: 200px;
+        background-image: linear-gradient(to bottom, #6c6464 0%, transparent 100%), url('../images/ship/ship_2.jpg');
+        background-size: cover;
+        background-position: center;
+        &:hover {
+            background-image: url('../images/ship/ship_2.jpg');
+            transform: scale(1.1);
+            transition: transform 0.25s;
+            transition: 0.5s;
+        }
     }
     
     .ship-other__item3{
-        background-image: url('../images/ship/ship_3.jpg');
-        display: none;
+        width: 290px;
+        height: 200px;
+        background-image: linear-gradient(to bottom, #6c6464 0%, transparent 100%), url('../images/ship/ship_3.jpg');
+        background-size: cover;
+        background-position: center;
+        &:hover {
+            background-image: url('../images/ship/ship_3.jpg');
+            transform: scale(1.1);
+            transition: transform 0.25s;
+            transition: 0.5s;
+        }
     }
     
     .ship-other__item-component {

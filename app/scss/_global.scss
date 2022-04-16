@@ -553,6 +553,7 @@ body {
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+       
         &:hover {
             p{
                 color: $dark-blue;
@@ -664,6 +665,7 @@ body {
     .specific-accordion__dropDown {
         display: none;
         margin-top: 30px;
+        transition: height 0.35s ease;
     }
     .regata-accordion__dropDown-text,
     .speedboat-accordion__dropDown-text,
