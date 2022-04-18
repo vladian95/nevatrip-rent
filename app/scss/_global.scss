@@ -686,6 +686,12 @@ body {
 
         // }
     }
+    .accordion__dropDown--active{
+        display: block;
+    }
+    .accordion__icon-plus--active{
+        display: none;
+    }
     //Accordion end
 
     //sideBar mobile start
@@ -997,8 +1003,8 @@ body {
     .ship-accordion__item-title,
     .specific-accordion__title {
         font-weight: 600;
-        line-height: 22px;
-        font-size: 16px;
+        line-height: 26px;
+        font-size: 22px;
         color: $dark;
         margin-bottom: 10px;
     }
