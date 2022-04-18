@@ -558,7 +558,6 @@ body {
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-       
         &:hover {
             p{
                 color: $dark-blue;
@@ -685,6 +684,12 @@ body {
         // &:first-child{
 
         // }
+    }
+    .accordion__dropDown--active{
+        display: block;
+    }
+    .accordion__icon-plus--active{
+        display: none;
     }
     //Accordion end
 
@@ -997,8 +1002,8 @@ body {
     .ship-accordion__item-title,
     .specific-accordion__title {
         font-weight: 600;
-        line-height: 22px;
-        font-size: 16px;
+        line-height: 26px;
+        font-size: 22px;
         color: $dark;
         margin-bottom: 10px;
     }

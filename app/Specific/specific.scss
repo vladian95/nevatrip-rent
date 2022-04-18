@@ -1,7 +1,4 @@
-@media (min-width : 360px) { 
-     
-
-
+@media (min-width: 360px) {
     //Specific Other start
     .specific-other {
         padding-top: 40px;
@@ -22,7 +19,7 @@
         background-size: cover;
         position: relative;
     }
-    .specific-other__item1{
+    .specific-other__item1 {
         margin: 0 auto;
     }
     .specific-other__item-component {
@@ -61,17 +58,54 @@
     //Specific other end
 }
 
-@media (min-width : 768px) {
+@media (min-width: 768px) {
     //Specific session start
+
+    /**   <!-- !!!!ONLY CSS TABS !!!! -->*/
     .specific-session {
         padding-top: 90px;
-    }  
-    .specific-session__btn-inner{
+    }
+
+    .specific-session__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 36px;
+    }
+
+    .specific-session__tabs label {
+        order: 1;
+        display: block;
+        cursor: pointer;
+        transition: background ease 0.2s;
+    }
+
+    .specific-session__tabs .tab {
+        order: 99;
+        flex-grow: 1;
+        width: 100%;
+        display: none;
+        background: #fff;
+    }
+
+    .specific-session__tabs input[type="radio"] {
+        display: none;
+    }
+
+    .specific-session__tabs input[type="radio"]:checked + label {
+        background: #fff;
+    }
+
+    .specific-session__tabs input[type="radio"]:checked + label + .tab {
+        display: block;
+    }
+    
+    .specific-session__btn-inner {
         display: flex;
         align-items: center;
         justify-content: flex-start;
     }
-    .specific-session__btn-item{
+    .specific-session__btn-item {
         padding: 8px 10px;
         text-align: center;
         min-width: 240px;
@@ -84,84 +118,33 @@
         font-size: 14px;
     }
 
+    .specific-session__btn-item2{
+        position: absolute;
+        left: 210px;
+        top: 0;
+    }
+    .specific-session__btn-item3{
+        top: 0;
+        position: absolute;
+        left: 410px;
+    }
 
-
-
-/**   <!-- !!!!ONLY CSS TABS !!!! -->*/
-.tabs {
-	display: flex;
-	flex-wrap: wrap; 
-}
-
-.tabs label {
-	order: 1; 
-	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
-	cursor: pointer;
-    background: #90CAF9;
-    font-weight: bold;
-    transition: background ease 0.2s;
-}
-
-.tabs .tab {
-  order: 99;
-  flex-grow: 1;
-  width: 100%;
-  display: none;
-  padding: 1rem;
-  background: #fff;
-}
-
-.tabs input[type="radio"] {
-	display: none;
-}
-
-.tabs input[type="radio"]:checked + label {
-	background: #fff;
-}
-
-.tabs input[type="radio"]:checked + label + .tab {
-	display: block;
-}
-// @media (min-width : 360px) { 
-//   .tabs .tab,
-//   .tabs label {
-//     order: initial;
-//   }
-//   .tabs label {
-//     width: 100%;
-//     margin-right: 0;
-//     margin-top: 0.2rem;
-//   }
-// }
-
-// !!!!ONLY CSS TABS !!!! 
-
-
-
-
-
-
-
-
-    .specific-session__btn-title{
+    .specific-session__btn-title {
         font-weight: 600;
     }
-    .specific-session__btn-date{
+    .specific-session__btn-date {
         font-weight: 400;
         display: block;
     }
-
-    .specific-session__content{
+    .specific-session__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 40px 20px;
-        border-radius: 0px 0px 20px 20px;  
+        border-radius: 0px 20px 20px 20px;
     }
-    .specific-session__content-item{
+    .specific-session__content-item {
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         padding: 84px 20px 40px 20px;
         max-width: 270px;
@@ -170,7 +153,7 @@
         min-width: 270px;
         max-height: 348px;
     }
-    .specific-session__content-component{
+    .specific-session__content-component {
         padding: 16px 20px;
         max-width: 225px;
         font-size: 14px;
@@ -183,19 +166,19 @@
         left: 0;
         color: $dark;
     }
-    .specific-session__content-top{
+    .specific-session__content-top {
         padding-bottom: 36px;
         border-bottom: 1px solid $light-gray;
     }
-    .specific-session__content-bottom{
+    .specific-session__content-bottom {
         margin-top: 36px;
     }
-    .specific-session__content-price{
+    .specific-session__content-price {
         font-size: 22px;
         font-weight: 400;
         color: $dark;
     }
-    .specific-session__content-text{
+    .specific-session__content-text {
         margin-top: 12px;
         margin-bottom: 0;
         font-size: 14px;
@@ -203,11 +186,21 @@
         font-weight: 600;
         color: $dark;
     }
+    
+    // @media (min-width : 360px) {
+    //   .tabs .tab,
+    //   .tabs label {
+    //     order: initial;
+    //   }
+    //   .tabs label {
+    //     width: 100%;
+    //     margin-right: 0;
+    //     margin-top: 0.2rem;
+    //   }
+    // }
 
+    // !!!!ONLY CSS TABS !!!!
     //Specific session end
-
-
-
 
     //Specific other start
     .specific-other {
@@ -231,7 +224,7 @@
     //Specific other end
 }
 
-@media (min-width : 992px)  {
+@media (min-width: 992px) {
     .specific-other__item {
         min-width: 450px;
         min-height: 300px;
@@ -239,9 +232,7 @@
 }
 
 @media (min-width: 1200px) {
-    
 }
 
-@media (min-width : 1400px) {
-    
+@media (min-width: 1400px) {
 }
