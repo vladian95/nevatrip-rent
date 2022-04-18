@@ -5,15 +5,15 @@
 // )
 
 
-const wrapper = document.querySelector('.accordion__item-wrapper');
-const plus = document.querySelector('.accordion__icon-plus');
-const dropDownWrap = document.querySelector('.accordion__dropDown');
+// const wrapper = document.querySelector('.accordion__item-wrapper');
+// const plus = document.querySelector('.accordion__icon-plus');
+// const dropDownWrap = document.querySelector('.accordion__dropDown');
 
 
-  wrapper.addEventListener('click', () => {
-    dropDownWrap.classList.toggle('accordion__dropDown--active');
-    plus.classList.toggle('accordion__icon-plus--active');
-  });
+//   wrapper.addEventListener('click', () => {
+//     dropDownWrap.classList.toggle('accordion__dropDown--active');
+//     plus.classList.toggle('accordion__icon-plus--active');
+//   });
 
   
 
@@ -22,29 +22,29 @@ const dropDownWrap = document.querySelector('.accordion__dropDown');
 
 
 
-// const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
+const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
 
-// for (let i = 0; i < ACCORDION.length; i++) {
-//   ACCORDION[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     let panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
+for (let i = 0; i < ACCORDION.length; i++) {
+  ACCORDION[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
-//     this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ; //ES6
+    // this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ; //ES6
 
 
-//     // const PANEL = this.nextElementSibling; 
-//     // if (PANEL.style.display === "block") {
-//     //   PANEL.style.display = "none";
-//     // } else {
-//     //   PANEL.style.display = "block"; //ES5
-//     // }
+    // const PANEL = this.nextElementSibling; 
+    // if (PANEL.style.display === "block") {
+    //   PANEL.style.display = "none";
+    // } else {
+    //   PANEL.style.display = "block"; //ES5
+    // }
 //   });
 // }
 
