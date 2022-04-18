@@ -682,15 +682,12 @@ body {
         font-weight: 400;
         color: $main;
         margin-bottom: 0;
-        // &:first-child{
-
-        // }
     }
-    .accordion__dropDown--active{
-        display: block;
-    }
-    .accordion__icon-plus--active{
-        display: none;
+    .active {
+        .accordion__icon-plus{
+            display: none;
+        }
+        
     }
     //Accordion end
 
@@ -1003,8 +1000,8 @@ body {
     .ship-accordion__item-title,
     .specific-accordion__title {
         font-weight: 600;
-        line-height: 26px;
-        font-size: 22px;
+        line-height: 22px;
+        font-size: 16px;
         color: $dark;
         margin-bottom: 10px;
     }

@@ -1,28 +1,5 @@
 //Accordion JS
-
-// document.querySelectorAll('').forEach(() =>
-    
-// )
-
-
-// const wrapper = document.querySelector('.accordion__item-wrapper');
-// const plus = document.querySelector('.accordion__icon-plus');
-// const dropDownWrap = document.querySelector('.accordion__dropDown');
-
-
-//   wrapper.addEventListener('click', () => {
-//     dropDownWrap.classList.toggle('accordion__dropDown--active');
-//     plus.classList.toggle('accordion__icon-plus--active');
-//   });
-
-  
-
-
-
-
-
-
-const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
+const ACCORDION = document.getElementsByClassName("accordion__item-wrapper");
 
 for (let i = 0; i < ACCORDION.length; i++) {
   ACCORDION[i].addEventListener("click", function() {
