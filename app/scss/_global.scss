@@ -52,6 +52,28 @@ body {
     padding: 0px 10px;
 }
 
+// swiper
+.swiper{
+    width: 100% !important;
+    height: 100% !important;
+    padding-top: 0px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $dark-gray;                                                     
+}
+
+
+// div.specific-routes__slider-item.swiper-slide.swiper-slide-active {
+    // width: 270px !important;
+    // margin-right: 0 !important;
+
+// }
+
+// .specific-routes__inner.swiper-wrapper {
+    // transform: translate3d(0px, 0px, 0px);
+// }
+
 // h1 {
 //     font-weight: 600;
 //     font-size: 24px;
@@ -81,6 +103,14 @@ body {
         line-height: 26px;
         font-weight: 600;
         color: $dark;
+    }
+    // swiper
+    .swiper-pagination {
+        display: block;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
     }
 
     //General
@@ -383,9 +413,6 @@ body {
     .ship-routes__inner,
     .specific-routes__inner {
         margin-top: 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     .speedboat-routes__slider-item,
     .ship-routes__slider-item,
@@ -396,19 +423,6 @@ body {
         padding: 25px 20px 20px 20px;
         font-size: 14px;
         line-height: 22px;
-    }
-    .speedboat-routes__slider-item1,
-    .ship-routes__slider-item1,
-    .specific-routes__slider-item1 {
-        margin: 0 auto;
-    }
-    .speedboat-routes__slider-item2,
-    .speedboat-routes__slider-item3,
-    .ship-routes__slider-item2,
-    .ship-routes__slider-item3,
-    .specific-routes__slider-item2,
-    .specific-routes__slider-item3 {
-        display: none;
     }
     .speedboat-routes__slider-bg,
     .ship-routes__slider-bg,
@@ -749,6 +763,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
     .container {
         max-width: 738px;
         padding: 0px 15px;
@@ -767,6 +785,14 @@ body {
         color: $dark;
     }
 
+     // swiper
+     .swiper-pagination {
+        display: none;
+    }
+    // .swiper-button-prev,
+    // .swiper-button-next {
+    //     display: none;
+    // }
     //General
 
     //Top background start
@@ -931,10 +957,8 @@ body {
     }
     .speedboat-routes__inner,
     .ship-routes__inner,
-    .specific-routes__inner,
     .specific-routes__inner {
         margin-top: 36px;
-        justify-content: space-around;
     }
     .speedboat-routes__slider-item,
     .ship-routes__slider-item,
@@ -946,16 +970,16 @@ body {
         font-size: 16px;
         line-height: 22px;
     }
-    .speedboat-routes__slider-item1,
-    .ship-routes__slider-item1,
-    .specific-routes__slider-item1 {
-        margin: 0;
-    }
-    .speedboat-routes__slider-item2,
-    .ship-routes__slider-item2,
-    .specific-routes__slider-item2 {
-        display: block;
-    }
+    // .speedboat-routes__slider-item1,
+    // .ship-routes__slider-item1,
+    // .specific-routes__slider-item1 {
+    //     margin: 0;
+    // }
+    // .speedboat-routes__slider-item2,
+    // .ship-routes__slider-item2,
+    // .specific-routes__slider-item2 {
+    //     display: block;
+    // }
     .speedboat-routes__slider-bg,
     .ship-routes__slider-bg {
         height: 260px;
@@ -1090,6 +1114,10 @@ body {
         margin: 0 auto;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
     //Transport slider start
     .speedboat-transport__inner,
     .wedding-transport__inner,
@@ -1106,16 +1134,8 @@ body {
     //Transport slider end
 
     //Routes start
-    .speedboat-routes__inner,
-    .ship-routes__inner,
-    .specific-routes__inner {
-        justify-content: space-between;
-    }
-    .speedboat-routes__slider-item3,
-    .ship-routes__slider-item3,
-    .specific-routes__slider-item3 {
-        display: block;
-    }
+    
+
     //Routes end
 
     //Varients slider start
@@ -1219,6 +1239,31 @@ body {
 }
 
 @media (min-width: 1440px) {
+
+    .swiper.swiper-initialized.swiper-horizontal.swiper-autoheight.swiper-android 
+    .swiper-backface-hidden {
+        position: relative;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after{
+        content: '';
+    }
+    .swiper-button-prev {
+        position: absolute;
+        top: 500px;
+        left: 422px;
+        background-image: url("../images/leftArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+    
+      .swiper-button-next {
+        position: absolute;
+        top: 500px;
+        right: 382px;
+        background-image: url("../images/rightArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+
     //Sidebar about start
     .regata-about__sideBar,
     .wedding-about__sideBar,

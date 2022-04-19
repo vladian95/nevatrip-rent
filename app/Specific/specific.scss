@@ -117,17 +117,21 @@
         line-height: 19px;
         cursor: pointer;
         font-size: 14px;
+        background-color: #fff;
+    }
 
+    .specific-session__btn-item1{
+        z-index: 5;
     }
 
     .specific-session__btn-item2{
         position: absolute;
         left: 110px;
         top: 0;
-        // z-index: 2;
+        z-index: 4;
     }
     .specific-session__btn-item3{
-        // z-index: 3;
+        z-index: 5;
         top: 0;
         position: absolute;
         left: 220px;

@@ -15,11 +15,7 @@ for (let i = 0; i < ACCORDION.length; i++) {
   });
 }
 
-
-// УДАЛИТЬ
- // this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ;//ES6
-// УДАЛИТЬ
-
+  
 // Tabs 
 // const tabs = document.querySelector(".specific-session__tabs");
 // const tabsBtns = tabs.querySelectorAll(".specific-session__btn-item");
