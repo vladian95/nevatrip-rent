@@ -1,69 +1,21 @@
 //Accordion JS
+const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
 
-// document.querySelectorAll('').forEach(() =>
-    
-// )
-
-
-// const wrapper = document.querySelector('.accordion__item-wrapper');
-// const plus = document.querySelector('.accordion__icon-plus');
-// const dropDownWrap = document.querySelector('.accordion__dropDown');
-
-
-//   wrapper.addEventListener('click', () => {
-//     dropDownWrap.classList.toggle('accordion__dropDown--active');
-//     plus.classList.toggle('accordion__icon-plus--active');
-//   });
-
-  
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (let i = 0; i < ACCORDION.length; i++) {
+  ACCORDION[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+
+    this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ;//ES6
   });
 }
-
-
-
-
-
-
-// const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
-
-// for (let i = 0; i < ACCORDION.length; i++) {
-//   ACCORDION[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     let panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
-
-    // this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ; //ES6
-
-
-    // const PANEL = this.nextElementSibling; 
-    // if (PANEL.style.display === "block") {
-    //   PANEL.style.display = "none";
+// УДАЛИТЬ
+    // let panel = this.nextElementSibling;
+    // if (panel.style.display === "block") {
+    //   panel.style.display = "none";
     // } else {
-    //   PANEL.style.display = "block"; //ES5
+    //   panel.style.display = "block";  //ES5
     // }
-//   });
-// }
-
-
+// УДАЛИТЬ
 
 // Tabs 
 // const tabs = document.querySelector(".specific-session__tabs");

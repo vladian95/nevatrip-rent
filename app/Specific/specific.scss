@@ -120,18 +120,14 @@
 
     }
 
-    .specific-session__btn-item1{
-        z-index: 3;
-    }
-
     .specific-session__btn-item2{
         position: absolute;
         left: 110px;
         top: 0;
-        z-index: 2;
+        // z-index: 2;
     }
     .specific-session__btn-item3{
-        z-index: 1;
+        // z-index: 3;
         top: 0;
         position: absolute;
         left: 220px;
@@ -243,51 +239,4 @@
 }
 
 @media (min-width: 1400px) {
-}
-
-
-
-
-
-
-
-
-
-.accordion {
-    background-color: #CFD8DC;
-    color: #fff;
-    cursor: pointer;
-    padding: 16px;
-    width: 50%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-    transition: 0.5s;
-}
-
-.active, .accordion:hover {
-    background-color: #607D8B;
-}
-
-.accordion:after {
-    content: '\002B';
-    color: #fff;
-	font-size: 78px;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.panel {
-    padding: 0 18px;
-	color: #212121;
-    background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
 }
