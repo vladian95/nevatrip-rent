@@ -13,20 +13,7 @@ for (let i = 0; i < ACCORDION.length; i++) {
   });
 }
 
-    // this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ; //ES6
-
-
-    // const PANEL = this.nextElementSibling; 
-    // if (PANEL.style.display === "block") {
-    //   PANEL.style.display = "none";
-    // } else {
-    //   PANEL.style.display = "block"; //ES5
-    // }
-//   });
-// }
-
-
-
+  
 // Tabs 
 // const tabs = document.querySelector(".specific-session__tabs");
 // const tabsBtns = tabs.querySelectorAll(".specific-session__btn-item");
