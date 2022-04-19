@@ -59,9 +59,19 @@ body {
     padding-top: 0px !important;
 }
 
+// общее РАЗМЕМЫ БЛОКОВ СДЕЛАТЬ!!! 
+.specific-routes__slider-item.swiper-slide.swiper-slide-active,
+.specific-routes__slider-item.swiper-slide swiper-slide-next {
+    width: 330px!important;
+}
+// .specific-routes__inner.swiper-wrapper {
+//     // transform: translate3d(0px, 0px, 0px)!important;
+// }
+
 .swiper-pagination-bullet-active {
     background-color: $dark-gray;                                                     
 }
+
 
 
 // div.specific-routes__slider-item.swiper-slide.swiper-slide-active {
@@ -112,6 +122,8 @@ body {
     .swiper-button-next {
         display: none;
     }
+
+    
 
     //General
 
@@ -1138,6 +1150,14 @@ body {
         max-width: 960px;
         margin: 0 auto;
     }
+
+    .swiper-button-prev {
+        background-image: url("../images/leftArr.svg") !important;
+      }
+    
+      .swiper-button-next {
+        background-image: url("../images/rightArr.svg") !important;
+      }
    
     //Transport slider start
     .speedboat-transport__inner,
