@@ -20,12 +20,6 @@ const swiper = new Swiper('.swiper', {
             spaceBetween: 30,
         },
         992: {
-            
-        },
-        1200: {
-          
-        },
-        1440: {
           slidesPerView: 3,
           spaceBetween: 30,
           navigation: {
@@ -33,6 +27,12 @@ const swiper = new Swiper('.swiper', {
             prevEl: ".swiper-button-prev",
             clickable: true,
           },
+        },
+        1200: {
+          
+        },
+        1440: {
+          
       },
     },
   });

@@ -763,10 +763,42 @@ body {
 }
 
 @media (min-width: 768px) {
+     // swiper
+     .swiper-pagination {
+        display: none;
+    }
     .swiper-button-prev,
     .swiper-button-next {
         display: block;
     }
+
+    .swiper.swiper-initialized.swiper-horizontal.swiper-autoheight.swiper-android 
+    .swiper-backface-hidden {
+        position: relative;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after{
+        content: '';
+    }
+    
+    .swiper-button-prev {
+        position: absolute;
+        top: 500px;
+        left: 422px;
+        background-image: url("../images/rightArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+    
+      .swiper-button-next {
+        position: absolute;
+        top: 500px;
+        right: 382px;
+
+        background-image: url("../images/leftArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+
+
     .container {
         max-width: 738px;
         padding: 0px 15px;
@@ -785,15 +817,8 @@ body {
         color: $dark;
     }
 
-     // swiper
-     .swiper-pagination {
-        display: none;
-    }
-    // .swiper-button-prev,
-    // .swiper-button-next {
-    //     display: none;
-    // }
-    //General
+    
+
 
     //Top background start
     .regata-main,
@@ -1113,11 +1138,7 @@ body {
         max-width: 960px;
         margin: 0 auto;
     }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: block;
-    }
+   
     //Transport slider start
     .speedboat-transport__inner,
     .wedding-transport__inner,
@@ -1239,30 +1260,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-
-    .swiper.swiper-initialized.swiper-horizontal.swiper-autoheight.swiper-android 
-    .swiper-backface-hidden {
-        position: relative;
-    }
-    .swiper-button-prev:after,
-    .swiper-button-next:after{
-        content: '';
-    }
-    .swiper-button-prev {
-        position: absolute;
-        top: 500px;
-        left: 422px;
-        background-image: url("../images/leftArr.svg") !important;
-        background-repeat: no-repeat;
-      }
-    
-      .swiper-button-next {
-        position: absolute;
-        top: 500px;
-        right: 382px;
-        background-image: url("../images/rightArr.svg") !important;
-        background-repeat: no-repeat;
-      }
 
     //Sidebar about start
     .regata-about__sideBar,
