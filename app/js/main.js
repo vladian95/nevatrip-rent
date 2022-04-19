@@ -5,16 +5,19 @@ for (let i = 0; i < ACCORDION.length; i++) {
   ACCORDION[i].addEventListener("click", function() {
     this.classList.toggle("active");
 
-    this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ;//ES6
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";  //ES5
+    }
+    
   });
 }
+
+
 // УДАЛИТЬ
-    // let panel = this.nextElementSibling;
-    // if (panel.style.display === "block") {
-    //   panel.style.display = "none";
-    // } else {
-    //   panel.style.display = "block";  //ES5
-    // }
+ // this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none' ;//ES6
 // УДАЛИТЬ
 
 // Tabs 
