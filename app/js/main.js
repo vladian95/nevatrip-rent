@@ -1,5 +1,5 @@
 //Accordion JS
-const ACCORDION = document.getElementsByClassName("specific-accordion__item-wrapper");
+const ACCORDION = document.getElementsByClassName("accordion__item-wrapper");
 
 for (let i = 0; i < ACCORDION.length; i++) {
   ACCORDION[i].addEventListener("click", function() {
@@ -9,7 +9,7 @@ for (let i = 0; i < ACCORDION.length; i++) {
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
-      panel.style.display = "block";  //ES5
+      panel.style.display = "block";  
     }
     
   });

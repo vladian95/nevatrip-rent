@@ -32,7 +32,7 @@ const swiper = new Swiper('.swiper', {
           
         },
         1440: {
-          
+            spaceBetween: 30,
       },
     },
   });
