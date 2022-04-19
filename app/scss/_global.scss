@@ -580,6 +580,7 @@ body {
             }
         }
     }
+
     .regata-accordion__content-left,
     .speedboat-accordion__content-left,
     .wedding-accordion__content-left,
@@ -627,6 +628,7 @@ body {
     .wedding-accordion__icon,
     .ship-accordion__icon,
     .specific-accordion__icon {
+        content: "1";
         transition: all 0.3s;
         width: 19px;
         height: 19px;
@@ -662,6 +664,7 @@ body {
     .specific-accordion__icon-plus{
         width: 1px;
         height: 9px;
+
     }
     .regata-accordion__dropDown,
     .speedboat-accordion__dropDown,
