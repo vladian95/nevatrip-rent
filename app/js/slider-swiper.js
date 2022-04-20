@@ -1,8 +1,15 @@
-const swiper = new Swiper('.swiper', {
-// loop: true,
+// Ches Swiper test
+// import Swiper from "swiper";
+
+document.addEventListener('DOMContentLoaded',() => {
+
+  const swiper = new Swiper('.swiper', {
+  loop: false,
   autoHeight: true,
   autoWidth: true,
- 
+  mousewheel: {
+    invert: false,
+  },
   pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -14,27 +21,25 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
         360: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 19,
         },
         // 460: {
         //   slidesPerView: 2,
         //   spaceBetween: 20,
         // },
         768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
+
         },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            clickable: true,
-          },
+        992: {
+          // slidesPerView: 2,
+          spaceBetween: 30,
         },
         1440: {
-          spaceBetween: 30,
+           slidesPerView: 3,
+           spaceBetween: 30,
       },
     },
   });
+
+});
+
