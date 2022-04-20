@@ -27,7 +27,6 @@ li {
     list-style: none;
 }
 
-
 h1,
 h2,
 h3,
@@ -82,11 +81,31 @@ h2 {
         font-weight: 600;
         color: $dark;
     }
-
-
-    
-
     //General
+
+    // swiper 
+    .swiper {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .swiper-pagination {
+        display: block;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after{
+        content: '' !important;
+    }
+    // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
+    .specific-routes__slider-item.swiper-slide {
+        width: 260px !important;
+    }
 
     //Top background start
     .regata-main,
@@ -547,7 +566,7 @@ h2 {
         align-items: center;
         cursor: pointer;
         &:hover {
-            p{
+            p {
                 color: $dark-blue;
                 text-decoration: underline;
             }
@@ -562,7 +581,7 @@ h2 {
             .speedboat-accordion__icon-line,
             .wedding-accordion__icon-line,
             .ship-accordion__icon-line,
-            .specific-accordion__icon-line{
+            .specific-accordion__icon-line {
                 background-color: $dark-blue;
             }
         }
@@ -628,7 +647,7 @@ h2 {
     .speedboat-accordion__icon-line,
     .wedding-accordion__icon-line,
     .ship-accordion__icon-line,
-    .specific-accordion__icon-line{
+    .specific-accordion__icon-line {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -640,7 +659,7 @@ h2 {
     .speedboat-accordion__icon-minus,
     .wedding-accordion__icon-minus,
     .ship-accordion__icon-minus,
-    .specific-accordion__icon-minus{
+    .specific-accordion__icon-minus {
         width: 9px;
         height: 1px;
     }
@@ -648,10 +667,9 @@ h2 {
     .speedboat-accordion__icon-plus,
     .wedding-accordion__icon-plus,
     .ship-accordion__icon-plus,
-    .specific-accordion__icon-plus{
+    .specific-accordion__icon-plus {
         width: 1px;
         height: 9px;
-
     }
     .regata-accordion__dropDown,
     .speedboat-accordion__dropDown,
@@ -674,10 +692,9 @@ h2 {
         margin-bottom: 0;
     }
     .active {
-        .accordion__icon-plus{
+        .accordion__icon-plus {
             display: none;
         }
-        
     }
     //Accordion end
 
@@ -735,8 +752,14 @@ h2 {
     //sideBar mobile end
 }
 
+// РАЗБОР SWIPER
+@media (min-width : 460px) {   
+    .specific-routes__slider-item.swiper-slide {
+        width: 350px!important;
+    }
+}
+
 @media (min-width: 768px) {
-    
     .container {
         max-width: 738px;
         padding: 0px 15px;
@@ -755,8 +778,44 @@ h2 {
         color: $dark;
     }
 
-    
+    //Swiper start
+    .swiper {
+        height: 100%;
+        width: 708px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
+    .swiper-pagination-bullet-active {
+    background-color: $dark-gray;                                                     
+    }
+    .specific-routes__slider-item.swiper-slide {
+        width: 260px!important;
+    }
 
+    .swiper-button-prev {
+        position: absolute;
+        top: 500px !important;
+        left: 45% !important;
+        background-image: url("../images/leftArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+
+      .swiper-button-next {
+        position: absolute;
+        top: 500px !important;
+        left: 55% !important;
+        background-image: url("../images/rightArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+    //Swiper send
 
     //Top background start
     .regata-main,
@@ -898,7 +957,7 @@ h2 {
     }
     .speedboat-price__title,
     .ship-price__title,
-    .specific-price__title{
+    .specific-price__title {
         margin-bottom: 26px;
     }
     .speedboat-price__text,
@@ -933,16 +992,6 @@ h2 {
         font-size: 16px;
         line-height: 22px;
     }
-    // .speedboat-routes__slider-item1,
-    // .ship-routes__slider-item1,
-    // .specific-routes__slider-item1 {
-    //     margin: 0;
-    // }
-    // .speedboat-routes__slider-item2,
-    // .ship-routes__slider-item2,
-    // .specific-routes__slider-item2 {
-    //     display: block;
-    // }
     .speedboat-routes__slider-bg,
     .ship-routes__slider-bg {
         height: 260px;
@@ -1076,7 +1125,26 @@ h2 {
         max-width: 960px;
         margin: 0 auto;
     }
-   
+
+    //SWIPER START
+    .swiper {
+        height: 100%;
+        width: 930px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    // .swiper-button-prev {
+    //     background-image: url("../images/leftArr.svg") !important;
+    //  }
+
+    // .swiper-button-next {
+    //     background-image: url("../images/rightArr.svg") !important;
+    //  }
+
+
+    //SWIPER END    
+
     //Transport slider start
     .speedboat-transport__inner,
     .wedding-transport__inner,
@@ -1093,7 +1161,6 @@ h2 {
     //Transport slider end
 
     //Routes start
-    
 
     //Routes end
 
@@ -1198,7 +1265,6 @@ h2 {
 }
 
 @media (min-width: 1440px) {
-
     //Sidebar about start
     .regata-about__sideBar,
     .wedding-about__sideBar,
