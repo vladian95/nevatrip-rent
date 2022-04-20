@@ -99,13 +99,22 @@
 
     .specific-session__tabs input[type="radio"]:checked + label + .tab {
         display: block;
+        
     }
     
-    .specific-session__btn-inner {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+    .specific-session__btn-label1{
+        z-index: 10;
     }
+
+    .specific-session__btn-label2{
+        z-index: 9;
+        color: $gray;
+    }
+
+    .specific-session__btn-label3{
+        z-index: 8;
+    }
+
     .specific-session__btn-item {
         padding: 8px 10px;
         text-align: center;
@@ -120,21 +129,17 @@
         background-color: #fff;
     }
 
-    .specific-session__btn-item1{
-        z-index: 5;
-    }
-
     .specific-session__btn-item2{
         position: absolute;
-        left: 110px;
+        left: 210px;
         top: 0;
-        z-index: 4;
+        color: $gray;
     }
     .specific-session__btn-item3{
-        z-index: 5;
         top: 0;
         position: absolute;
-        left: 220px;
+        left: 420px;
+        color: $gray;
     }
 
     .specific-session__btn-title {
