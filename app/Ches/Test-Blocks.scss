@@ -94,84 +94,24 @@
 // }
 
 
-// swiper TEST
-.swiper {
-    height: 100%;
-    width: 930px;
-    overflow: hidden;
-    position: relative; 
-    padding-bottom: 50px !important;
-}
+
 
 
 @media (min-width : 360px) {  
         // swiper
-     .swiper-pagination {
-        display: block;
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: none;
-    }
-    .swiper-button-prev:after,
-    .swiper-button-next:after{
-        content: '' !important;
-    }
-    // общее РАЗМЕМЫ БЛОКОВ СДЕЛАТЬ - разбор!!! 
-    .specific-routes__slider-item.swiper-slide {
-        width: 260px!important;
-    }
+    
 
 }
 
-@media (min-width : 460px) {   
-    .specific-routes__slider-item.swiper-slide {
-        width: 350px!important;
-    }
-}
+
 
 @media (min-width : 768px) { 
-     // swiper
-     .swiper-pagination {
-        display: none;
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: block;
-    }
-    .swiper-pagination-bullet-active {
-    background-color: $dark-gray;                                                     
-    }
-    .specific-routes__slider-item.swiper-slide {
-        width: 260px!important;
-    }
-
-    .swiper-button-prev {
-        position: absolute;
-        top: 500px !important;
-        left: 45% !important;
-        background-image: url("../images/leftArr.svg") !important;
-        background-repeat: no-repeat;
-      }
-
-      .swiper-button-next {
-        position: absolute;
-        top: 500px !important;
-        left: 55% !important;
-        background-image: url("../images/rightArr.svg") !important;
-        background-repeat: no-repeat;
-      }
+     
 
 }
 
 @media (min-width : 992px)  {
-    // .swiper-button-prev {
-    //     background-image: url("../images/leftArr.svg") !important;
-    //  }
 
-    // .swiper-button-next {
-    //     background-image: url("../images/rightArr.svg") !important;
-    //  }
 }
 
 
