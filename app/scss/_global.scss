@@ -66,6 +66,7 @@ h2 {
 }
 
 @media (min-width: 360px) {
+    // ЕСЛИ ВООБЩЕ УБРАТЬ КОНТЕЙНИР ВЕЗДЕ В ЭТО СЕКТШЕНЕ БУДЕТ ВСЕ ИДЕАЛНО
     .container {
         padding: 0px 20px;
     }
@@ -94,6 +95,12 @@ h2 {
     .swiper-pagination {
         display: block;
     }
+    .swiper-pagination-bullet {
+        background-color: $light-gray;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $dark-gray;
+    }
     .swiper-button-prev,
     .swiper-button-next {
         display: none;
@@ -104,7 +111,7 @@ h2 {
     }
     // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
     .specific-routes__slider-item.swiper-slide {
-        width: 260px !important;
+        width: 280px !important;
     }
 
     //Top background start
@@ -309,8 +316,7 @@ h2 {
     }
     .speedboat-transport__bg,
     .wedding-transport__bg,
-    .ship-transport__bg,
-    .specific-transport__bg {
+    .ship-transport__bg {
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
             url(../images/otherItemImg.jpeg);
         width: 100%;
@@ -320,6 +326,25 @@ h2 {
         background-position: center;
         border-radius: 16px;
         position: relative;
+    }
+    .specific-transport__bg { 
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(../images/otherItemImg.jpeg);
+        width: 100%;
+        height: 160px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+        position: relative;
+    }
+    .specific-transport__bg-2 {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(../images/otherItemImg2.jpeg);
+    }
+    .specific-transport__bg-3 {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(../images/otherItemImg3.jpeg);
     }
     .speedboat-transport__component,
     .wedding-transport__component,
@@ -369,7 +394,7 @@ h2 {
     .ship-transport__item3,
     .specific-transport__item2,
     .specific-transport__item3 {
-        display: none;
+        display: block;
     }
     //Transport slider end
 
@@ -566,7 +591,7 @@ h2 {
         align-items: center;
         cursor: pointer;
         &:hover {
-            p {
+            p{
                 color: $dark-blue;
                 text-decoration: underline;
             }
@@ -622,13 +647,39 @@ h2 {
         &::before {
             content: "";
             background-image: url(../images/new-img/ruble.svg);
+            background-repeat: no-repeat;
             position: absolute;
-            width: 9px;
-            height: 12px;
+            width: 49px;
+            height: 42px;
             left: 62px;
             top: 4px;
+            // &:hover {
+            //     content: "";
+            //     background-image: url(../images/new-img/ruble.svg);
+            //     position: absolute;
+            //     width: 49px;
+            //     height: 42px;
+            //     left: 62px;
+            //     top: 4px;
+            // }
         }
     }
+    .regata-accordion__item-price:hover::before,
+    .speedboat-accordion__item-price:hover::before,
+    .wedding-accordion__item-price:hover::before,
+    .ship-accordion__item-price:hover::before,
+    .specific-accordion__item-price:hover::before {
+        content: "";
+        background-image: url(../images/new-img/ruble_2.svg);
+        position: absolute;
+        width: 49px;
+        height: 42px;
+        left: 62px;
+        top: 4px;
+    }
+
+
+
     .regata-accordion__icon,
     .speedboat-accordion__icon,
     .wedding-accordion__icon,
@@ -753,11 +804,11 @@ h2 {
 }
 
 // РАЗБОР SWIPER
-@media (min-width : 460px) {   
-    .specific-routes__slider-item.swiper-slide {
-        width: 350px!important;
-    }
-}
+// @media (min-width : 460px) {   
+//     // .specific-routes__slider-item.swiper-slide {
+//     //     // width: 350px!important;
+//     // }
+// }
 
 @media (min-width: 768px) {
     .container {
@@ -781,7 +832,7 @@ h2 {
     //Swiper start
     .swiper {
         height: 100%;
-        width: 708px;
+        width: 100%;
         overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
@@ -793,12 +844,12 @@ h2 {
     .swiper-button-next {
         display: block;
     }
-    .swiper-pagination-bullet-active {
-    background-color: $dark-gray;                                                     
+    .swiper-pagination-active  {
+        background-color: red;
     }
-    .specific-routes__slider-item.swiper-slide {
-        width: 260px!important;
-    }
+    // .specific-routes__slider-item.swiper-slide {
+    //     width: 350px!important;
+    // }
 
     .swiper-button-prev {
         position: absolute;
@@ -1130,9 +1181,12 @@ h2 {
     .swiper {
         height: 100%;
         width: 930px;
-        overflow: hidden;
-        position: relative;
-        padding-bottom: 50px !important;
+        // overflow: hidden;
+        // position: relative;
+        // padding-bottom: 50px !important;
+    }
+    .specific-routes__slider-item.swiper-slide {
+        width: 260px!important;
     }
     // .swiper-button-prev {
     //     background-image: url("../images/leftArr.svg") !important;

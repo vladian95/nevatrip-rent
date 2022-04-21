@@ -1,21 +1,112 @@
-
-
-
 @media (min-width : 360px) {  
-
+  // swiperTransport 
+    .swiper-transport {
+        height: 100%;
+        width: 100%;
+        // overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .swiper-transport-pagination {
+        display: none;
+    }
+    .swiper-transport-button-prev,
+    .swiper-transport-button-next {
+        display: none;
+    }
+    .swiper-transport-button-prev:after,
+    .swiper-transport-button-next:after{
+        content: '' !important;
+    }
+    // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
+    .specific-transport__item1.swiper-slide,
+    .specific-transport__item2.swiper-slide,
+    .specific-transport__item3.swiper-slide {
+        width: 260px !important;
+    }
 
 }
 
+// РАЗБОР SWIPER
 @media (min-width : 460px) {   
-
+    .specific-transport__item1.swiper-slide,
+    .specific-transport__item2.swiper-slide,
+    .specific-transport__item3.swiper-slide {
+        width: 350px!important;
+    }
 }
 
 @media (min-width : 768px) { 
-    
+     //Swiper start
+     .swiper-transport {
+        height: 100%;
+        width: 708px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+   
+    .specific-transport__item1.swiper-slide,
+    .specific-transport__item2.swiper-slide,
+    .specific-transport__item3.swiper-slide {
+        width: 260px!important;
+    }
+
+   
+    //Swiper send
 }
 
 @media (min-width : 992px)  {
-  
+  //SWIPER START
+    .swiper-transport {
+        height: 100%;
+        width: 930px;
+        // overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+
+    .swiper-transport-button-prev,
+    .swiper-transport-button-next {
+        display: block;
+    }
+    .swiper-pagination-bullet-active {
+        background-color:  $dark-gray;                                                
+    }
+    .swiper-transport-button-prev {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 340px !important;
+        left: 45% !important;
+        background-image: url("../images/leftArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+
+      .swiper-transport-button-next {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 340px !important;
+        left: 55% !important;
+        background-image: url("../images/rightArr.svg") !important;
+        background-repeat: no-repeat;
+      }
+      .swiper-transport-button-next.swiper-transport-button-disabled, .swiper-transport-button-prev.swiper-transport-button-disabled {
+        opacity: .35;
+        cursor: auto;
+        pointer-events: none;
+    }
+    // .swiper-button-prev {
+    //     background-image: url("../images/leftArr.svg") !important;
+    //  }
+
+    // .swiper-button-next {
+    //     background-image: url("../images/rightArr.svg") !important;
+    //  }
+
+
+//SWIPER END  
 }
 
 
