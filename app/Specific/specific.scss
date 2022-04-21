@@ -56,10 +56,6 @@
         }
     }
     //Specific other end
-}
-
-@media (min-width: 768px) {
-    //Specific session start
 
     /**   <!-- !!!!ONLY CSS TABS !!!! -->*/
     .specific-session {
@@ -94,27 +90,167 @@
     }
 
     .specific-session__tabs input[type="radio"]:checked + label {
-        background: #fff;
+        z-index: 50;
+        background: $light-blue;
+       
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        .specific-session__btn-item{
+            color: $dark;   
+        }     
     }
-
     .specific-session__tabs input[type="radio"]:checked + label + .tab {
         display: block;
-        
     }
-    
-    .specific-session__btn-label1{
-        z-index: 10;
-    }
-
     .specific-session__btn-label2{
-        z-index: 9;
-        color: $gray;
+        position: absolute;
+        left: 105px;
+        z-index: 49;
     }
-
     .specific-session__btn-label3{
-        z-index: 8;
+        position: absolute;
+        left: 210px;
+        z-index: 48;
+    }
+    .specific-session__btn-item {
+        padding: 8px 10px;
+        text-align: center;
+        max-width: 135px;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 20px 20px 0px 0px;
+        font-size: 30px;
+        color: $gray;
+        line-height: 19px;
+        cursor: pointer;
+        font-size: 14px;
+        background-color: #fff;   
+    }
+    .specific-session__btn-title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .specific-session__btn-date {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        display: block;
+    }
+    .specific-session__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 30px 0px 40px 20px;
+        border-radius: 0px 0px 0px 20px;
+    }
+    .specific-session__content-item {
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        padding: 84px 20px 40px 20px;
+        width: 246px;
+        border-radius: 16px;
+        position: relative;
+        min-width: 270px;
+        max-height: 348px;
+        & + .specific-session__content-item{
+            margin-left: 20px;
+        }
+    }
+    .specific-session__content-component {
+        padding: 16px 20px;
+        max-width: 225px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        background-color: $blue;
+        border-radius: 16px 0px 16px 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $dark;
+    }
+    .specific-session__content-top {
+        padding-bottom: 36px;
+        border-bottom: 1px solid $light-gray;
+    }
+    .specific-session__content-bottom {
+        margin-top: 36px;
+    }
+    .specific-session__content-price {
+        font-size: 18px;
+        font-weight: 400;
+        color: $dark;
+    }
+    .specific-session__content-text {
+        margin-top: 12px;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        color: $dark;
     }
 
+}
+
+@media (min-width: 768px) {
+    //Specific session start
+    /**   <!-- !!!!ONLY CSS TABS !!!! -->*/
+    .specific-session {
+        padding-top: 90px;
+    }
+
+    .specific-session__container{
+        padding-left: 3%;
+    }
+
+    .specific-session__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 36px;
+    }
+
+    .specific-session__tabs label {
+        order: 1;
+        display: block;
+        cursor: pointer;
+        transition: background ease 0.2s;
+    }
+
+    .specific-session__tabs .tab {
+        order: 99;
+        flex-grow: 1;
+        width: 100%;
+        display: none;
+        background: #fff;
+        z-index: -4;
+    }
+
+    .specific-session__tabs input[type="radio"] {
+        display: none;
+    }
+
+    .specific-session__tabs input[type="radio"]:checked + label {
+        z-index: 50;
+        background: $light-blue;
+       
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        .specific-session__btn-item{
+            color: $dark;   
+        }     
+    }
+    .specific-session__tabs input[type="radio"]:checked + label + .tab {
+        display: block;
+    }
+    .specific-session__btn-label2{
+        position: absolute;
+        left: 210px;
+        z-index: 49;
+    }
+    .specific-session__btn-label3{
+        position: absolute;
+        left: 410px;
+        z-index: 48;
+    }
     .specific-session__btn-item {
         padding: 8px 10px;
         text-align: center;
@@ -122,26 +258,13 @@
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         border-radius: 20px 20px 0px 0px;
         font-size: 30px;
-        color: $dark;
+        color: $gray;
         line-height: 19px;
         cursor: pointer;
         font-size: 14px;
         background-color: #fff;
+        
     }
-
-    .specific-session__btn-item2{
-        position: absolute;
-        left: 210px;
-        top: 0;
-        color: $gray;
-    }
-    .specific-session__btn-item3{
-        top: 0;
-        position: absolute;
-        left: 420px;
-        color: $gray;
-    }
-
     .specific-session__btn-title {
         font-weight: 600;
     }
@@ -153,9 +276,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 40px 20px;
-        border-radius: 0px 20px 20px 20px;
+        border-radius: 0px 0px 0px 20px;
     }
     .specific-session__content-item {
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
@@ -199,21 +322,7 @@
         font-weight: 600;
         color: $dark;
     }
-    
-    // @media (min-width : 360px) {
-    //   .tabs .tab,
-    //   .tabs label {
-    //     order: initial;
-    //   }
-    //   .tabs label {
-    //     width: 100%;
-    //     margin-right: 0;
-    //     margin-top: 0.2rem;
-    //   }
-    // }
-
-    // !!!!ONLY CSS TABS !!!!
-    //Specific session end
+    //specific-session end
 
     //Specific other start
     .specific-other {
@@ -238,6 +347,20 @@
 }
 
 @media (min-width: 992px) {
+    .specific-session__container{
+        max-width: 960px;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+    .specific-session__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 30px 40px 40px 20px;
+        border-radius: 0px 20px 20px 20px;
+    }
+
     .specific-other__item {
         min-width: 450px;
         min-height: 300px;

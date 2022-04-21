@@ -550,8 +550,9 @@ h2 {
     .wedding-accordion__item,
     .ship-accordion__item,
     .specific-accordion__item {
-        padding: 17px 0px;
         border-top: 1px solid $light-gray;
+        padding: 17px 0px;
+        cursor: pointer;
         &:last-child {
             border-bottom: 1px solid $light-gray;
         }
@@ -565,6 +566,7 @@ h2 {
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+        user-select: none;
         &:hover {
             p {
                 color: $dark-blue;
@@ -586,7 +588,6 @@ h2 {
             }
         }
     }
-
     .regata-accordion__content-left,
     .speedboat-accordion__content-left,
     .wedding-accordion__content-left,
@@ -660,7 +661,7 @@ h2 {
     .wedding-accordion__icon-minus,
     .ship-accordion__icon-minus,
     .specific-accordion__icon-minus {
-        width: 9px;
+        width: 6px;
         height: 1px;
     }
     .regata-accordion__icon-plus,
@@ -669,7 +670,7 @@ h2 {
     .ship-accordion__icon-plus,
     .specific-accordion__icon-plus {
         width: 1px;
-        height: 9px;
+        height: 6px;
     }
     .regata-accordion__dropDown,
     .speedboat-accordion__dropDown,
@@ -678,7 +679,7 @@ h2 {
     .specific-accordion__dropDown {
         display: none;
         margin-top: 30px;
-        transition: height 0.35s ease;
+        transition: 0.35s ease;
     }
     .regata-accordion__dropDown-text,
     .speedboat-accordion__dropDown-text,
@@ -1059,6 +1060,22 @@ h2 {
     .specific-accordion__icon {
         width: 30px;
         height: 30px;
+    }
+    .regata-accordion__icon-minus,
+    .speedboat-accordion__icon-minus,
+    .wedding-accordion__icon-minus,
+    .ship-accordion__icon-minus,
+    .specific-accordion__icon-minus {
+        width: 9px;
+        height: 1px;
+    }
+    .regata-accordion__icon-plus,
+    .speedboat-accordion__icon-plus,
+    .wedding-accordion__icon-plus,
+    .ship-accordion__icon-plus,
+    .specific-accordion__icon-plus {
+        width: 1px;
+        height: 9px;
     }
     //Accordion end
 
