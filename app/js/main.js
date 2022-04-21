@@ -15,7 +15,17 @@ for (let i = 0; i < ACCORDION.length; i++) {
   });
 }
 
-  
+ 
+
+
+
+
+
+// const lab = document.querySelector(".specific-session__btn-label1 .specific-session__btn-label2 .specific-session__btn-label3");
+
+// lab.addEventListener('click', () => {
+//   lab.classList.toggle('specific-session__btn-label--active');
+// })
 // Tabs 
 // const tabs = document.querySelector(".specific-session__tabs");
 // const tabsBtns = tabs.querySelectorAll(".specific-session__btn-item");
