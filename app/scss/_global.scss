@@ -66,8 +66,8 @@ h2 {
 }
 
 @media (min-width: 360px) {
-    // ЕСЛИ ВООБЩЕ УБРАТЬ КОНТЕЙНИР ВЕЗДЕ В ЭТО СЕКТШЕНЕ БУДЕТ ВСЕ ИДЕАЛНО
     .container {
+        // width: 100%;  Сделать для  .swiper 
         padding: 0px 20px;
     }
     h1 {
@@ -84,13 +84,17 @@ h2 {
     }
     //General
 
-    // swiper 
+    // swiper Сделать для  .swiper 
     .swiper {
         height: 100%;
-        width: 100%;
-        overflow: hidden;
+        width: 335px;
+        overflow: visible !important;
         position: relative;
         padding-bottom: 50px !important;
+    }
+        // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
+    .specific-routes__slider-item.swiper-slide {
+        width: 291px !important;
     }
     .swiper-pagination {
         display: block;
@@ -109,10 +113,7 @@ h2 {
     .swiper-button-next:after{
         content: '' !important;
     }
-    // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
-    .specific-routes__slider-item.swiper-slide {
-        width: 280px !important;
-    }
+
 
     //Top background start
     .regata-main,
@@ -805,13 +806,6 @@ h2 {
     //sideBar mobile end
 }
 
-// РАЗБОР SWIPER
-// @media (min-width : 460px) {   
-//     // .specific-routes__slider-item.swiper-slide {
-//     //     // width: 350px!important;
-//     // }
-// }
-
 @media (min-width: 768px) {
     .container {
         max-width: 738px;
@@ -835,7 +829,7 @@ h2 {
     .swiper {
         height: 100%;
         width: 100%;
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -846,12 +840,6 @@ h2 {
     .swiper-button-next {
         display: block;
     }
-    .swiper-pagination-active  {
-        background-color: red;
-    }
-    // .specific-routes__slider-item.swiper-slide {
-    //     width: 350px!important;
-    // }
 
     .swiper-button-prev {
         position: absolute;
@@ -932,7 +920,7 @@ h2 {
     }
     //Important end
 
-    //Transport slider start
+    Transport slider start
     .speedboat-transport,
     .wedding-transport,
     .ship-transport,
@@ -944,7 +932,7 @@ h2 {
     .ship-transport__inner,
     .specific-transport__inner {
         margin-top: 36px;
-        justify-content: space-around;
+        // justify-content: space-around;
     }
     .speedboat-transport__item,
     .wedding-transport__item,
@@ -1190,7 +1178,7 @@ h2 {
 
 @media (min-width: 992px) {
     .container {
-        padding: 0px 15px;
+        padding: 0px 10px;
         max-width: 960px;
         margin: 0 auto;
     }
@@ -1199,22 +1187,13 @@ h2 {
     .swiper {
         height: 100%;
         width: 930px;
-        // overflow: hidden;
-        // position: relative;
-        // padding-bottom: 50px !important;
+        overflow: hidden !important;
+        position: relative;
+        padding-bottom: 50px !important;
     }
     .specific-routes__slider-item.swiper-slide {
-        width: 260px!important;
+        width: 260px !important;
     }
-    // .swiper-button-prev {
-    //     background-image: url("../images/leftArr.svg") !important;
-    //  }
-
-    // .swiper-button-next {
-    //     background-image: url("../images/rightArr.svg") !important;
-    //  }
-
-
     //SWIPER END    
 
     //Transport slider start

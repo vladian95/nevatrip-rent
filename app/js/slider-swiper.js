@@ -21,15 +21,15 @@ document.addEventListener('DOMContentLoaded',() => {
       breakpoints: {
           360: {
               slidesPerView: 1,
-              spaceBetween: 30,
+              spaceBetween: 20,
               pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
             },
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
+            slidesPerView: 2,
+            spaceBetween: 30,
           },
           992: {
             slidesPerView: 3,
@@ -49,31 +49,27 @@ document.addEventListener('DOMContentLoaded',() => {
     mousewheel: {
       invert: false,
     },
-    pagination: {
-      el: ".swiper-transport-pagination",
-      clickable: true,
-    },
     navigation: {
-        nextEl: ".swiper-transport-button-next",
-        prevEl: ".swiper-transport-button-prev",
+      nextEl: ".swiper-transport-button-next",
+      prevEl: ".swiper-transport-button-prev",
     },
       breakpoints: {
-          360: {
-              slidesPerView: 1,
-              spaceBetween: 20,
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-transport-button-next",
+            prevEl: ".swiper-transport-button-prev",
           },
-          // 460: {
-          //   slidesPerView: 2,
-          //   spaceBetween: 20,
-          // },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
+        },
           1440: {
             slidesPerView: 3,
             spaceBetween: 30,
