@@ -28,20 +28,12 @@
 }
 
 // РАЗБОР SWIPER
-@media (min-width : 460px) {   
-    .specific-transport__item1.swiper-slide,
-    .specific-transport__item2.swiper-slide,
-    .specific-transport__item3.swiper-slide {
-        width: 350px!important;
-    }
-}
-
 @media (min-width : 768px) { 
      //Swiper start
      .swiper-transport {
         height: 100%;
         width: 708px;
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -61,10 +53,15 @@
     .swiper-transport {
         height: 100%;
         width: 930px;
-        // overflow: hidden;
+        overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
     }
+    // .specific-transport__item1.swiper-slide,
+    // .specific-transport__item2.swiper-slide,
+    // .specific-transport__item3.swiper-slide {
+    //     width: 260px!important;
+    // }
 
     .swiper-transport-button-prev,
     .swiper-transport-button-next {
@@ -110,25 +107,31 @@
 }
 
 
+
+
+
+
+
+
 // .accordion__heading
-.accordion {
-    max-width: 600px; margin: 0 auto;
-    border: 1px solid cornflowerblue;
-  }
+// .accordion {
+//     max-width: 600px; margin: 0 auto;
+//     border: 1px solid cornflowerblue;
+//   }
   
-  .accordion__heading {
-    display: block; position: relative; cursor: pointer;
-    padding: 10px 15px; margin: 0;
-    background: cornflowerblue;color: white;
-  }
+//   .accordion__heading {
+//     display: block; position: relative; cursor: pointer;
+//     padding: 10px 15px; margin: 0;
+//     background: cornflowerblue;color: white;
+//   }
   
-  .accordion__heading:after, .accordion__heading:before {
-    content: ""; position: absolute;
-    width: 12px; height: 3px;
-    top: 50%; right: 20px;
-    background: white;
-    transition: all 0.9s;
-  }
+//   .accordion__heading:after, .accordion__heading:before {
+//     content: ""; position: absolute;
+//     width: 12px; height: 3px;
+//     top: 50%; right: 20px;
+//     background: white;
+//     transition: all 0.9s;
+//   }
   
   .accordion__checkbox:checked~.accordion__heading:before {
     transform: rotate(90deg);
@@ -141,13 +144,13 @@
     transition: all 0.3s;
   }
   
-  .accordion__checkbox:checked~.accordion__heading:after {
-    transform: rotate(180deg);
-  }
+//   .accordion__checkbox:checked~.accordion__heading:after {
+//     transform: rotate(180deg);
+//   }
   
-  .accordion__checkbox {
-    display: none; position: absolute; left: -9999em;
-  }
+//   .accordion__checkbox {
+//     display: none; position: absolute; left: -9999em;
+//   }
   
   .accordion__checkbox:checked~.accordion__content {
     max-height: 1000px;

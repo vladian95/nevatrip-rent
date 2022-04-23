@@ -795,12 +795,6 @@ h2 {
     }
     //sideBar mobile end
 }
-// РАЗБОР SWIPER
-// @media (min-width : 460px) {
-//     // .specific-routes__slider-item.swiper-slide {
-//     //     // width: 350px!important;
-//     // }
-// }
 
 @media (min-width: 768px) {
     .container {
@@ -839,10 +833,6 @@ h2 {
     .swiper-pagination-active {
         background-color: red;
     }
-    // .specific-routes__slider-item.swiper-slide {
-    //     width: 350px!important;
-    // }
-
     .swiper-button-prev {
         position: absolute;
         top: 500px !important;
@@ -850,7 +840,6 @@ h2 {
         background-image: url("../images/leftArr.svg") !important;
         background-repeat: no-repeat;
     }
-
     .swiper-button-next {
         position: absolute;
         top: 500px !important;
@@ -934,26 +923,13 @@ h2 {
     .ship-transport__inner,
     .specific-transport__inner {
         margin-top: 36px;
-        justify-content: space-around;
     }
     .speedboat-transport__item,
     .wedding-transport__item,
     .ship-transport__item,
     .specific-transport__item {
         padding: 15px 15px 30px 15px;
-        min-width: 290px;
-    }
-    .speedboat-transport__item1,
-    .wedding-transport__item1,
-    .ship-transport__item1,
-    .specific-transport__item1 {
-        margin: 0;
-    }
-    .speedboat-transport__item2,
-    .wedding-transport__item2,
-    .ship-transport__item2,
-    .specific-transport__item2 {
-        display: block;
+        max-width: 290px;
     }
     .speedboat-transport__bg,
     .wedding-transport__bg,
@@ -1207,18 +1183,7 @@ h2 {
     //SWIPER END
 
     //Transport slider start
-    .speedboat-transport__inner,
-    .wedding-transport__inner,
-    .ship-transport__inner,
-    .specific-transport__inner {
-        justify-content: space-between;
-    }
-    .speedboat-transport__item3,
-    .wedding-transport__item3,
-    .ship-transport__item3,
-    .specific-transport__item3 {
-        display: block;
-    }
+    
     //Transport slider end
 
     //Routes start
@@ -1265,7 +1230,6 @@ h2 {
     .fixed-about__sideBar {
         position: fixed;
         top: 0;
-        // right: -1100px;
         z-index: 300000;
     }
     .regata-about__sidebar-inner,
