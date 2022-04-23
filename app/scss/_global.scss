@@ -66,8 +66,8 @@ h2 {
 }
 
 @media (min-width: 360px) {
-    // ЕСЛИ ВООБЩЕ УБРАТЬ КОНТЕЙНИР ВЕЗДЕ В ЭТО СЕКТШЕНЕ БУДЕТ ВСЕ ИДЕАЛНО
     .container {
+        // width: 100%;  Сделать для  .swiper
         padding: 0px 20px;
     }
     h1 {
@@ -84,13 +84,17 @@ h2 {
     }
     //General
 
-    // swiper
+    // swiper Сделать для  .swiper
     .swiper {
         height: 100%;
-        width: 100%;
-        overflow: hidden;
+        width: 335px;
+        overflow: visible !important;
         position: relative;
         padding-bottom: 50px !important;
+    }
+    // общее РАЗМЕРЫ БЛОКОВ - разбор!!!
+    .specific-routes__slider-item.swiper-slide {
+        width: 291px !important;
     }
     .swiper-pagination {
         display: block;
@@ -108,10 +112,6 @@ h2 {
     .swiper-button-prev:after,
     .swiper-button-next:after {
         content: "" !important;
-    }
-    // общее РАЗМЕРЫ БЛОКОВ - разбор!!!
-    .specific-routes__slider-item.swiper-slide {
-        width: 280px !important;
     }
 
     //Top background start
@@ -581,21 +581,16 @@ h2 {
         &:last-child {
             border-bottom: 1px solid $light-gray;
         }
-    }
-    .regata-accordion__item-wrapper,
-    .speedboat-accordion__item-wrapper,
-    .wedding-accordion__item-wrapper,
-    .ship-accordion__item-wrapper,
-    .specific-accordion__item-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        user-select: none;
         &:hover {
-            p {
-                color: $dark-blue;
-                text-decoration: underline;
+            .regata-accordion__content-left,
+            .speedboat-accordion__content-left,
+            .wedding-accordion__content-left,
+            .ship-accordion__content-left,
+            .specific-accordion__content-left {
+                p {
+                    color: $dark-blue;
+                    text-decoration: underline;
+                }
             }
             .regata-accordion__icon,
             .speedboat-accordion__icon,
@@ -603,6 +598,9 @@ h2 {
             .ship-accordion__icon,
             .specific-accordion__icon {
                 border: $dark-blue 2px solid;
+                &::before{
+                    background-image: url(../images/new-img/plus-mobile-active.svg);
+                }
             }
             .regata-accordion__icon-line,
             .speedboat-accordion__icon-line,
@@ -627,6 +625,17 @@ h2 {
                 }
             }
         }
+    }
+    .regata-accordion__item-wrapper,
+    .speedboat-accordion__item-wrapper,
+    .wedding-accordion__item-wrapper,
+    .ship-accordion__item-wrapper,
+    .specific-accordion__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
     }
     .regata-accordion__content-left,
     .speedboat-accordion__content-left,
@@ -677,50 +686,34 @@ h2 {
     .wedding-accordion__icon,
     .ship-accordion__icon,
     .specific-accordion__icon {
-        content: "1";
         transition: all 0.3s;
-        width: 19px;
-        height: 19px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         border: solid $light-gray 2px;
         position: relative;
         cursor: pointer;
-    }
-    .regata-accordion__icon-line,
-    .speedboat-accordion__icon-line,
-    .wedding-accordion__icon-line,
-    .ship-accordion__icon-line,
-    .specific-accordion__icon-line {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: $gray;
-        border-radius: 1px;
-    }
-    .regata-accordion__icon-minus,
-    .speedboat-accordion__icon-minus,
-    .wedding-accordion__icon-minus,
-    .ship-accordion__icon-minus,
-    .specific-accordion__icon-minus {
-        width: 6px;
-        height: 1px;
-    }
-    .regata-accordion__icon-plus,
-    .speedboat-accordion__icon-plus,
-    .wedding-accordion__icon-plus,
-    .ship-accordion__icon-plus,
-    .specific-accordion__icon-plus {
-        width: 1px;
-        height: 6px;
+        &::before{
+            content: '';
+            background-image: url(../images/new-img/plus-mobile.svg);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 9px;
+            height: 9px;
+            transition: all 0.3s;
+        }
     }
     .regata-accordion__dropDown,
     .speedboat-accordion__dropDown,
     .wedding-accordion__dropDown,
     .ship-accordion__dropDown,
     .specific-accordion__dropDown {
-        display: none;
-        margin-top: 30px;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
     }
     .regata-accordion__dropDown-text,
     .speedboat-accordion__dropDown-text,
@@ -733,12 +726,15 @@ h2 {
         color: $main;
         margin-bottom: 0;
     }
-    .active {
-        .accordion__icon-plus {
-            display: none;
+    .accordion__item.accordion__item--active {
+        .regata-accordion__dropDown,
+        .speedboat-accordion__dropDown,
+        .wedding-accordion__dropDown,
+        .ship-accordion__dropDown,
+        .specific-accordion__dropDown {
+            height: 130px;
         }
     }
-
     //Accordion end
 
     //sideBar mobile start
@@ -819,7 +815,7 @@ h2 {
     .swiper {
         height: 100%;
         width: 100%;
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -829,9 +825,6 @@ h2 {
     .swiper-button-prev,
     .swiper-button-next {
         display: block;
-    }
-    .swiper-pagination-active {
-        background-color: red;
     }
     .swiper-button-prev {
         position: absolute;
@@ -911,8 +904,7 @@ h2 {
     }
     //Important end
 
-    //Transport slider start
-    .speedboat-transport,
+    Transport slider start .speedboat-transport,
     .wedding-transport,
     .ship-transport,
     .specific-transport {
@@ -1156,7 +1148,7 @@ h2 {
 
 @media (min-width: 992px) {
     .container {
-        padding: 0px 15px;
+        padding: 0px 10px;
         max-width: 960px;
         margin: 0 auto;
     }
@@ -1165,25 +1157,17 @@ h2 {
     .swiper {
         height: 100%;
         width: 930px;
-        // overflow: hidden;
-        // position: relative;
-        // padding-bottom: 50px !important;
+        overflow: hidden !important;
+        position: relative;
+        padding-bottom: 50px !important;
     }
     .specific-routes__slider-item.swiper-slide {
         width: 260px !important;
     }
-    // .swiper-button-prev {
-    //     background-image: url("../images/leftArr.svg") !important;
-    //  }
-
-    // .swiper-button-next {
-    //     background-image: url("../images/rightArr.svg") !important;
-    //  }
-
     //SWIPER END
 
     //Transport slider start
-    
+
     //Transport slider end
 
     //Routes start
