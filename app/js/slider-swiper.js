@@ -78,5 +78,41 @@ document.addEventListener('DOMContentLoaded',() => {
       
   })
 
+  const swiperVariants = new Swiper('.swiper-variants', {
+    loop: false,
+    autoHeight: true,
+    autoWidth: true,
+    mousewheel: {
+      invert: false,
+    },
+    navigation: {
+      nextEl: ".swiper-variants-button-next",
+      prevEl: ".swiper-variants-button-prev",
+    },
+      breakpoints: {
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-variants-button-next",
+            prevEl: ".swiper-variants-button-prev",
+          },
+        },
+          1440: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+      },
+      
+  })
+
 });
 

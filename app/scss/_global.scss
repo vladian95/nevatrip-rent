@@ -114,6 +114,29 @@ h2 {
         content: "" !important;
     }
 
+    .swiper-variants {
+        height: 100%;
+        width: 335px;
+        // overflow: hidden;
+        position: relative;
+        padding-bottom: 60px !important;
+    }
+    .variants-slider__item1.swiper-slide,
+    .variants-slider__item2.swiper-slide,
+    .variants-slider__item3.swiper-slide,
+    .variants-slider__item4.swiper-slide  {
+        display: block;
+    }
+    .variants-slider__item1.swiper-slide,
+    .variants-slider__item2.swiper-slide,
+    .variants-slider__item3.swiper-slide,
+    .variants-slider__item4.swiper-slide {
+        width: 293px !important;
+    }
+   
+    // swiper
+
+
     //Top background start
     .regata-main,
     .speedboat-main,
@@ -428,7 +451,7 @@ h2 {
     }
     .speedboat-routes__inner,
     .ship-routes__inner,
-    .specific-routes__inner {
+    .specific-routes__inner{
         margin-top: 15px;
     }
     .speedboat-routes__slider-item,
@@ -498,9 +521,9 @@ h2 {
     }
     .variants-slider__inner {
         margin-top: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    //     // display: flex;
+    //     // justify-content: center;
+    //     // align-items: center;
     }
     .variants-slider__item {
         padding: 22px 20px;
@@ -510,9 +533,9 @@ h2 {
         border: 1px solid $light-gray;
         box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
     }
-    .variants-slider__item2 {
-        display: none;
-    }
+    // .variants-slider__item2 {
+    //     display: none;
+    // }
     .variants-slider__title {
         margin: 0;
         font-size: 15px;
@@ -840,6 +863,21 @@ h2 {
         background-image: url("../images/rightArr.svg") !important;
         background-repeat: no-repeat;
     }
+
+    .swiper-variants {
+        height: 100%;
+        width: 710px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 60px !important;
+    }
+
+    .variants-slider__item1.swiper-slide,
+    .variants-slider__item2.swiper-slide,
+    .variants-slider__item3.swiper-slide,
+    .variants-slider__item4.swiper-slide {
+        width: 408px !important;
+    }
     //Swiper send
 
     //Top background start
@@ -1119,7 +1157,7 @@ h2 {
     }
     .variants-slider__item {
         padding: 40px 20px;
-        min-width: 450px;
+        max-width: 450px;
         max-height: 450px;
     }
     .variants-slider__title {
@@ -1164,6 +1202,21 @@ h2 {
     .specific-routes__slider-item.swiper-slide {
         width: 260px !important;
     }
+
+    .swiper-variants {
+        height: 100%;
+        width: 930px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 60px !important;
+    }
+    .variants-slider__item1.swiper-slide,
+    .variants-slider__item2.swiper-slide,
+    .variants-slider__item3.swiper-slide,
+    .variants-slider__item4.swiper-slide {
+        width: 408px !important;
+    }
+
     //SWIPER END
 
     //Transport slider start
@@ -1175,12 +1228,12 @@ h2 {
     //Routes end
 
     //Varients slider start
-    .variants-slider__inner {
-        justify-content: space-between;
-    }
-    .variants-slider__item2 {
-        display: block;
-    }
+    // .variants-slider__inner {
+    //     // justify-content: space-between;
+    // }
+    // .variants-slider__item2 {
+    //     // display: block;
+    // }
     //Varients slider end
 }
 
