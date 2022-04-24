@@ -866,8 +866,8 @@ h2 {
 
     .swiper-variants {
         height: 100%;
-        width: 710px;
-        overflow: hidden;
+        // width: 703px;
+        // overflow: hidden;
         position: relative;
         padding-bottom: 60px !important;
     }
@@ -1215,6 +1215,35 @@ h2 {
     .variants-slider__item3.swiper-slide,
     .variants-slider__item4.swiper-slide {
         width: 408px !important;
+    }
+    .swiper-transport-button-prev,
+    .swiper-transport-button-next{
+        display: block;
+    }
+    .swiper-variants-button-prev {
+      position: absolute;
+      top: 510px !important;
+      left: 45% !important;
+      background-image: url("../images/leftArr.svg") !important;
+      width: 20px;
+      height: 44px;
+      background-repeat: no-repeat;
+      // cursor: pointer;
+    }
+    .swiper-variants-button-next {
+        position: absolute;
+        top: 510px !important;
+        left: 55% !important;
+        width: 20px;
+        height: 44px;
+        background-image: url("../images/rightArr.svg") !important;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+      .swiper-variants-button-next.swiper-button-disabled, 
+      .swiper-variants-button-prev.swiper-button-disabled {
+        opacity: .35;
+        cursor: pointer;
     }
 
     //SWIPER END
