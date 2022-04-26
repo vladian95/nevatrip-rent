@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded',() => {
       breakpoints: {
         360: {
           slidesPerView: 1,
-          spaceBetween: 30,
+          spaceBetween: 15,
         },
         768: {
           slidesPerView: 1,
@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded',() => {
         clickable: true,
     },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-offers-button-next",
+        prevEl: ".swiper-offers-button-prev",
       },
       breakpoints: {
         360: {

@@ -67,8 +67,8 @@ h2 {
 
 @media (min-width: 360px) {
     .container {
-        // width: 100%;  Сделать для  .swiper
-        padding: 0px 20px;
+        max-width: 340px;  
+        padding: 0px 10px;
     }
     h1 {
         font-weight: 600;
@@ -99,11 +99,7 @@ h2 {
     .swiper-pagination,
     .swiper-offers-pagination {
         display: block;
-    }
-    .swiper-offers-pagination {
-        position: absolute;
-        left: 150px !important;
-        display: block;
+        text-align: center;
     }
     .swiper-pagination-bullet {
         background-color: $light-gray;
@@ -1269,9 +1265,9 @@ h2 {
 
 
     .swiper-transport-button-prev,
+    .swiper-transport-button-next,
     .swiper-offers-button-prev,
-    .swiper-offers-button-next,
-    .swiper-transport-button-next{
+    .swiper-offers-button-next{
         display: block;
     }
     .swiper-variants-button-prev {
