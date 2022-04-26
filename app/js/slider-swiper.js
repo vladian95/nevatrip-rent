@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded',() => {
         },
       },
       
-  })
+  });
 
   const swiperVariants = new Swiper('.swiper-variants', {
     loop: false,
@@ -112,7 +112,51 @@ document.addEventListener('DOMContentLoaded',() => {
         },
       },
       
-  })
+  });
+
+  const swiperOffers = new Swiper('.swiper-offers', {
+    loop: false,
+    autoHeight: true,
+    autoWidth: true,
+    mousewheel: {
+      invert: false,
+    },
+    pagination: {
+        el: ".swiper-offers-pagination",
+        clickable: true,
+    },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-offers-pagination",
+            type: "bullets",
+        },
+      },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-offers-button-next",
+            prevEl: ".swiper-offers-button-prev",
+          },
+        },
+          1440: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+      },
+      
+  });
 
 });
 

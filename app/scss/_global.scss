@@ -96,7 +96,13 @@ h2 {
     .specific-routes__slider-item.swiper-slide {
         width: 291px !important;
     }
-    .swiper-pagination {
+    .swiper-pagination,
+    .swiper-offers-pagination {
+        display: block;
+    }
+    .swiper-offers-pagination {
+        position: absolute;
+        left: 150px !important;
         display: block;
     }
     .swiper-pagination-bullet {
@@ -133,6 +139,18 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 293px !important;
     }
+    .swiper-offers {
+        height: 100%;
+        width: 335px;
+        // overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .offers__item.offers__item1.swiper-slide,
+    .offers__item.offers__item2.swiper-slide {
+        width: 335px !important;
+    }
+    
    
     // swiper
 
@@ -320,8 +338,8 @@ h2 {
     .specific-transport__inner {
         margin-top: 20px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // justify-content: space-between;
+        // align-items: center;
     }
     .speedboat-transport__item,
     .wedding-transport__item,
@@ -416,8 +434,13 @@ h2 {
     .ship-transport__item2,
     .ship-transport__item3,
     .specific-transport__item2,
-    .specific-transport__item3 {
+    .specific-transport__item3,
+    .offers__item.offers__item1,
+    .offers__item.offers__item2 {
         display: block;
+    }
+    .swiper-offers__inner {
+        padding-top: 30px;
     }
     //Transport slider end
 
@@ -521,9 +544,9 @@ h2 {
     }
     .variants-slider__inner {
         margin-top: 15px;
-    //     // display: flex;
-    //     // justify-content: center;
-    //     // align-items: center;
+        // display: flex;
+        // justify-content: center;
+        //   align-items: center;
     }
     .variants-slider__item {
         padding: 22px 20px;
@@ -842,7 +865,8 @@ h2 {
         position: relative;
         padding-bottom: 50px !important;
     }
-    .swiper-pagination {
+    .swiper-pagination,
+    .swiper-offers-pagination {
         display: none;
     }
     .swiper-button-prev,
@@ -866,8 +890,8 @@ h2 {
 
     .swiper-variants {
         height: 100%;
-        // width: 703px;
-        // overflow: hidden;
+        width: 703px;  //раЗОБРАТЬСЯ
+        overflow: hidden;
         position: relative;
         padding-bottom: 60px !important;
     }
@@ -877,6 +901,18 @@ h2 {
     .variants-slider__item3.swiper-slide,
     .variants-slider__item4.swiper-slide {
         width: 408px !important;
+    }
+
+     .swiper-offers {
+        height: 100%;
+        width: 708px; //раЗОБРАТЬСЯ
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .offers__item.offers__item1.swiper-slide,
+    .offers__item.offers__item2.swiper-slide {
+        width: 450px !important;
     }
     //Swiper send
 
@@ -1205,7 +1241,7 @@ h2 {
 
     .swiper-variants {
         height: 100%;
-        width: 930px;
+        min-width: 930px;
         overflow: hidden;
         position: relative;
         padding-bottom: 60px !important;
@@ -1216,7 +1252,25 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 408px !important;
     }
+
+    .swiper-offers {
+        height: 100%;
+        min-width: 930px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 60px !important;
+    }
+    .offers__item.offers__item1.swiper-slide,
+    .offers__item.offers__item2.swiper-slide {
+        width: 408px !important;
+    }
+
+
+
+
     .swiper-transport-button-prev,
+    .swiper-offers-button-prev,
+    .swiper-offers-button-next,
     .swiper-transport-button-next{
         display: block;
     }
@@ -1245,6 +1299,31 @@ h2 {
         opacity: .35;
         cursor: pointer;
     }
+    .swiper-offers-button-prev {
+        position: absolute;
+        top: 96% !important;
+        left: 45% !important;
+        background-image: url("../images/leftArr.svg") !important;
+        width: 20px;
+        height: 44px;
+        background-repeat: no-repeat;
+        // cursor: pointer;
+      }
+      .swiper-offers-button-next {
+          position: absolute;
+          top: 96% !important;
+          left: 55% !important;
+          width: 20px;
+          height: 44px;
+          background-image: url("../images/rightArr.svg") !important;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        .swiper-offers-button-next.swiper-button-disabled, 
+        .swiper-offers-button-prev.swiper-button-disabled {
+          opacity: .35;
+          cursor: pointer;
+      }
 
     //SWIPER END
 
