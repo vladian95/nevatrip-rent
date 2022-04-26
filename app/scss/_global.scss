@@ -135,17 +135,17 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 293px !important;
     }
-    .swiper-offers {
-        height: 100%;
-        width: 335px;
-        // overflow: hidden;
-        position: relative;
-        padding-bottom: 50px !important;
-    }
-    .offers__item.offers__item1.swiper-slide,
-    .offers__item.offers__item2.swiper-slide {
-        width: 335px !important;
-    }
+    // .swiper-offers {
+    //     height: 100%;
+    //     width: 335px;
+    //     overflow: visible !important;
+    //     position: relative;
+    //     padding-bottom: 50px !important;
+    // }
+    // .offers__item.offers__item1.swiper-slide,
+    // .offers__item.offers__item2.swiper-slide {
+    //     width: 335px !important;
+    // }
     
    
     // swiper
@@ -430,13 +430,16 @@ h2 {
     .ship-transport__item2,
     .ship-transport__item3,
     .specific-transport__item2,
-    .specific-transport__item3,
-    .offers__item.offers__item1,
-    .offers__item.offers__item2 {
+    .specific-transport__item3 {
         display: block;
     }
+     .offers__item.offers__item1,
+    .offers__item.offers__item2 {
+        display: block; //ращобраться 
+    }
+
     .swiper-offers__inner {
-        padding-top: 30px;
+        margin-top: 30px;   
     }
     //Transport slider end
 
@@ -901,15 +904,15 @@ h2 {
 
      .swiper-offers {
         height: 100%;
-        width: 708px; //раЗОБРАТЬСЯ
-        overflow: hidden;
+        width: 100%; //раЗОБРАТЬСЯ
+        // overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
     }
-    .offers__item.offers__item1.swiper-slide,
-    .offers__item.offers__item2.swiper-slide {
-        width: 450px !important;
-    }
+    // .offers__item.offers__item1.swiper-slide,
+    // .offers__item.offers__item2.swiper-slide {
+    //     width: 450px !important;
+    // }
     //Swiper send
 
     //Top background start
@@ -1256,14 +1259,10 @@ h2 {
         position: relative;
         padding-bottom: 60px !important;
     }
-    .offers__item.offers__item1.swiper-slide,
-    .offers__item.offers__item2.swiper-slide {
-        width: 408px !important;
-    }
-
-
-
-
+    // .offers__item.offers__item1.swiper-slide,
+    // .offers__item.offers__item2.swiper-slide {
+    //     width: 408px !important;
+    // }
     .swiper-transport-button-prev,
     .swiper-transport-button-next,
     .swiper-offers-button-prev,
