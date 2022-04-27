@@ -543,9 +543,6 @@ h2 {
     }
     .variants-slider__inner {
         margin-top: 15px;
-        // display: flex;
-        // justify-content: center;
-        //   align-items: center;
     }
     .variants-slider__item {
         padding: 22px 20px;
@@ -555,9 +552,6 @@ h2 {
         border: 1px solid $light-gray;
         box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
     }
-    // .variants-slider__item2 {
-    //     display: none;
-    // }
     .variants-slider__title {
         margin: 0;
         font-size: 15px;
@@ -663,10 +657,6 @@ h2 {
                     content: "";
                     background-image: url(../images/new-img/ruble_2.svg);
                     position: absolute;
-                    width: 49px;
-                    height: 42px;
-                    left: 62px;
-                    top: 4px;
                 }
             }
         }
@@ -721,7 +711,7 @@ h2 {
             position: absolute;
             width: 49px;
             height: 42px;
-            left: 62px;
+            left: 54px;
             top: 4px;
             transition: all 0.3s;
         }
@@ -778,6 +768,28 @@ h2 {
         .ship-accordion__dropDown,
         .specific-accordion__dropDown {
             height: 130px;
+        }
+        .regata-accordion__icon,
+        .speedboat-accordion__icon,
+        .wedding-accordion__icon,
+        .ship-accordion__icon,
+        .specific-accordion__icon{
+            &::before{
+                background-image: url(../images/new-img/minus-mobile.svg);
+                width: 9px;
+                height: 3px;
+            }
+        }
+        &:hover{
+            .regata-accordion__icon,
+            .speedboat-accordion__icon,
+            .wedding-accordion__icon,
+            .ship-accordion__icon,
+            .specific-accordion__icon{
+                &::before{
+                    background-image: url(../images/new-img/minus-mobile-active.svg);
+                }
+            }
         }
     }
     //Accordion end
@@ -943,7 +955,6 @@ h2 {
     .specific-main__rectangle {
         display: none;
     }
-
     //Top background end
 
     //BreadCrumbs start
@@ -977,7 +988,8 @@ h2 {
     }
     //Important end
 
-    Transport slider start .speedboat-transport,
+    // Transport slider start 
+    .speedboat-transport,
     .wedding-transport,
     .ship-transport,
     .specific-transport {
@@ -1116,6 +1128,17 @@ h2 {
     .ship-accordion__item,
     .specific-accordion__item {
         padding: 30px 0px;
+        &:hover{
+            .regata-accordion__icon,
+            .speedboat-accordion__icon,
+            .wedding-accordion__icon,
+            .ship-accordion__icon,
+            .specific-accordion__icon {
+                &::before{
+                    background-image: url(../images/new-img/plus-desktop-active.svg);
+                }
+            }
+        }
     }
     .regata-accordion__item-title,
     .speedboat-accordion__item-title,
@@ -1135,6 +1158,9 @@ h2 {
     .specific-accordion__item-price {
         line-height: 21px;
         font-size: 16px;
+        &::before{
+            left: 60px;
+        }
     }
     .regata-accordion__icon,
     .speedboat-accordion__icon,
@@ -1143,22 +1169,35 @@ h2 {
     .specific-accordion__icon {
         width: 30px;
         height: 30px;
+        &::before{
+            background-image: url(../images/new-img/plus-desktop.svg);
+            width: 14px;
+            height: 14px;
+        }
     }
-    .regata-accordion__icon-minus,
-    .speedboat-accordion__icon-minus,
-    .wedding-accordion__icon-minus,
-    .ship-accordion__icon-minus,
-    .specific-accordion__icon-minus {
-        width: 9px;
-        height: 1px;
-    }
-    .regata-accordion__icon-plus,
-    .speedboat-accordion__icon-plus,
-    .wedding-accordion__icon-plus,
-    .ship-accordion__icon-plus,
-    .specific-accordion__icon-plus {
-        width: 1px;
-        height: 9px;
+    .accordion__item.accordion__item--active {
+        .regata-accordion__icon,
+        .speedboat-accordion__icon,
+        .wedding-accordion__icon,
+        .ship-accordion__icon,
+        .specific-accordion__icon{
+            &::before{
+                background-image: url(../images/new-img/minus-desktop.svg);
+                width: 14px;
+                height: 3px;
+            }
+        }
+        &:hover{
+            .regata-accordion__icon,
+            .speedboat-accordion__icon,
+            .wedding-accordion__icon,
+            .ship-accordion__icon,
+            .specific-accordion__icon{
+                &::before{
+                    background-image: url(../images/new-img/minus-desktop-active.svg);
+                }
+            }
+        }
     }
     //Accordion end
 
