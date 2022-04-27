@@ -67,8 +67,8 @@ h2 {
 
 @media (min-width: 360px) {
     .container {
-        max-width: 340px;  
-        padding: 0px 10px;
+        // max-width: 340px;  
+        padding: 0px 12px;
     }
     h1 {
         font-weight: 600;
@@ -88,7 +88,7 @@ h2 {
     .swiper {
         height: 100%;
         width: 335px;
-        overflow: visible !important;
+        overflow: hidden; 
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -117,7 +117,6 @@ h2 {
     }
 
     .swiper-variants {
-        height: 100%;
         width: 335px;
         // overflow: hidden;
         position: relative;
@@ -145,7 +144,7 @@ h2 {
     // .offers__item.offers__item1.swiper-slide,
     // .offers__item.offers__item2.swiper-slide {
     //     width: 335px !important;
-    // }
+    // } 
     
    
     // swiper
@@ -322,6 +321,28 @@ h2 {
     //Important end
 
     //Transport slider start
+    // swiperTransport START
+    .swiper-transport {
+        height: 100%;
+        width: 250px;
+        // overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+       // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
+      .specific-transport__item1.swiper-slide,
+      .specific-transport__item2.swiper-slide,
+      .specific-transport__item3.swiper-slide {
+          width: 225px !important;
+      }
+    .swiper-transport-pagination {
+        display: none;
+    }
+    .swiper-transport-button-prev,
+    .swiper-transport-button-next {
+        display: none;
+    }
+    // swiperTransport END
     .speedboat-transport,
     .wedding-transport,
     .ship-transport,
@@ -333,9 +354,6 @@ h2 {
     .ship-transport__inner,
     .specific-transport__inner {
         margin-top: 20px;
-        display: flex;
-        // justify-content: space-between;
-        // align-items: center;
     }
     .speedboat-transport__item,
     .wedding-transport__item,
@@ -392,8 +410,7 @@ h2 {
         justify-content: center;
         align-items: center;
         width: 122px;
-        height: 36px;
-        padding: 12px 14px;
+        padding: 12px 0px;
         top: 10px;
         right: 10px;
         background-color: #fff3c7;
@@ -417,25 +434,10 @@ h2 {
         font-size: 18px;
         font-weight: 400;
     }
-    .speedboat-transport__item1,
-    .wedding-transport__item1,
-    .ship-transport__item1,
-    .specific-transport__item1 {
-        margin: 0 auto;
-    }
-    .speedboat-transport__item2,
-    .speedboat-transport__item3,
-    .wedding-transport__item2,
-    .wedding-transport__item3,
-    .ship-transport__item2,
-    .ship-transport__item3,
-    .specific-transport__item2,
-    .specific-transport__item3 {
-        display: block;
-    }
-     .offers__item.offers__item1,
+    
+    .offers__item.offers__item1,
     .offers__item.offers__item2 {
-        display: block; //раЗОБРАТЬСЯ
+        display: block; //раЗОБРАТь 
     }
 
     .swiper-offers__inner {
@@ -547,7 +549,6 @@ h2 {
     .variants-slider__item {
         padding: 22px 20px;
         max-width: 335px;
-        min-height: 355px;
         border-radius: 12px;
         border: 1px solid $light-gray;
         box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.13);
@@ -579,7 +580,6 @@ h2 {
             }
         }
     }
-
     .variants-slider__price {
         color: $dark;
         font-size: 18px;
@@ -806,7 +806,7 @@ h2 {
         padding: 14px 0px;
         width: 100%;
         position: fixed;
-        bottom: 0;
+        bottom: -90px;
         background-color: #fff;
         z-index: 30001;
     }
@@ -872,7 +872,7 @@ h2 {
     .swiper {
         height: 100%;
         width: 100%;
-        // overflow: hidden;
+        // overflow: hidden; //раЗОБРАТЬСЯ
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -886,17 +886,20 @@ h2 {
     }
     .swiper-button-prev {
         position: absolute;
-        top: 500px !important;
+        top: 450px !important;
         left: 45% !important;
         background-image: url("../images/leftArr.svg") !important;
         background-repeat: no-repeat;
     }
     .swiper-button-next {
         position: absolute;
-        top: 500px !important;
+        top: 450px !important;
         left: 55% !important;
         background-image: url("../images/rightArr.svg") !important;
         background-repeat: no-repeat;
+    }
+    .specific-routes__slider-item.swiper-slide {
+        width: 306px !important;
     }
 
     .specific-routes__slider-item.swiper-slide {
@@ -905,8 +908,8 @@ h2 {
 
     .swiper-variants {
         height: 100%;
-        width: 703px;  //раЗОБРАТЬСЯ
-        overflow: hidden;
+        width: 708px;  //раЗОБРАТЬСЯ
+        // overflow: hidden;
         position: relative;
         padding-bottom: 60px !important;
     }
@@ -995,6 +998,21 @@ h2 {
     //Important end
 
     // Transport slider start 
+     //Swiper transport start
+     .swiper-transport {
+        height: 100%;
+        width: 610px;
+        // overflow: hidden;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+   
+    .specific-transport__item1.swiper-slide,
+    .specific-transport__item2.swiper-slide,
+    .specific-transport__item3.swiper-slide {
+        width: 260px !important;
+    }
+    //Swiper transport end
     .speedboat-transport,
     .wedding-transport,
     .ship-transport,
@@ -1031,7 +1049,7 @@ h2 {
         font-size: 16px;
         line-height: 22px;
         font-weight: 600;
-        padding: 10px 16px;
+        padding: 10px 0px;
         width: 140px;
     }
     .speedboat-transport__text,
@@ -1095,7 +1113,8 @@ h2 {
         line-height: 22px;
     }
     .speedboat-routes__slider-bg,
-    .ship-routes__slider-bg {
+    .ship-routes__slider-bg,
+    .specific-routes__slider-bg {
         height: 260px;
     }
     .speedboat-routes__slider-title,
@@ -1266,11 +1285,10 @@ h2 {
 
 @media (min-width: 992px) {
     .container {
-        padding: 0px 10px;
+        padding: 0px 15px;
         max-width: 960px;
         margin: 0 auto;
     }
-
     //SWIPER START
     .swiper {
         height: 100%;
