@@ -94,7 +94,7 @@ h2 {
     }
     // общее РАЗМЕРЫ БЛОКОВ - разбор!!!
     .specific-routes__slider-item.swiper-slide {
-        width: 291px !important;
+        width: 295px !important;
     }
     .swiper-pagination,
     .swiper-offers-pagination {
@@ -899,6 +899,10 @@ h2 {
         background-repeat: no-repeat;
     }
 
+    .specific-routes__slider-item.swiper-slide {
+        width: 295px !important;
+    }
+
     .swiper-variants {
         height: 100%;
         width: 703px;  //раЗОБРАТЬСЯ
@@ -913,6 +917,8 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 408px !important;
     }
+    
+
 
      .swiper-offers {
         height: 100%;
