@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded',() => {
       invert: false,
     },
     pagination: {
-      el: ".swiper-variants-pagination",
+      el: ".swiper-pagination",
       clickable: true,
   },
     navigation: {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded',() => {
           slidesPerView: 1,
           spaceBetween: 15,
           pagination: {
-            el: ".swiper-variants-pagination",
+            el: ".swiper-pagination",
             type: "bullets",
         },
       },

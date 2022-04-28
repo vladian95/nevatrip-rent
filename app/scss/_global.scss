@@ -85,7 +85,7 @@ h2 {
     .swiper {
         height: 100%;
         width: 335px;
-        // overflow: visible !important;
+        overflow: visible !important;
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -93,11 +93,19 @@ h2 {
     .specific-routes__slider-item.swiper-slide {
         width: 295px !important;
     }
+    .specific-routes {
+        display: flex;
+    }
     .swiper-pagination,
     .swiper-offers-pagination {
         display: block;
-        text-align: center;
     }
+    .swiper-offers-pagination {
+        position: absolute;
+        bottom: 200px;
+        left: 140px !important;
+    }
+   
     .swiper-pagination-bullet {
         background-color: $light-gray;
     }
@@ -112,11 +120,40 @@ h2 {
     .swiper-button-next:after {
         content: "" !important;
     }
+    .swiper-transport-button-prev,
+    .swiper-transport-button-next{
+        display: block;
+    }
+    .swiper-transport-button-prev {
+      position: absolute;
+      top: 340px !important;
+      left: 40% !important;
+      background-image: url("../images/leftArr.svg") !important;
+      width: 20px;
+      height: 44px;
+      background-repeat: no-repeat;
+      // cursor: pointer;
+    }
+    .swiper-transport-button-next {
+        position: absolute;
+        top: 339px !important;
+        left: 60% !important;
+        width: 20px;
+        height: 44px;
+        background-image: url("../images/rightArr.svg") !important;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+      .swiper-transport-button-next.swiper-button-disabled, 
+      .swiper-transport-button-prev.swiper-button-disabled {
+        opacity: .35;
+        cursor: pointer;
+    }
 
     .swiper-variants {
         width: 335px;
         // overflow: hidden;
-        position: relative;
+        // position: relative;
         padding-bottom: 60px !important;
     }
     .variants-slider__item1.swiper-slide,
@@ -131,16 +168,24 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 293px !important;
     }
+    // .swiper-variants-pagination {
+    //     position: absolute;
+    //     bottom: 20px !important;
+    //     left: 130px !important;
+    // }
     .swiper-offers {
         height: 100%;
         width: 335px;
-        position: relative;
+        // position: relative;
         padding-bottom: 50px !important;
     }
     .offers__item.offers__item1.swiper-slide,
     .offers__item.offers__item2.swiper-slide {
         width: 335px !important;
     } 
+    // .specific-routes__inner.swiper-wrapper {
+    //     transform: translate3d(-200px, 0px, 0px) !important;
+    // }
     // swiper
 
 
@@ -320,7 +365,7 @@ h2 {
         height: 100%;
         width: 250px;
         // overflow: hidden;
-        position: relative;
+        // position: relative;
         padding-bottom: 50px !important;
     }
        // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
@@ -332,16 +377,16 @@ h2 {
     .swiper-transport-pagination {
         display: none;
     }
-    .swiper-transport-button-prev,
-    .swiper-transport-button-next {
-        display: none;
-    }
+
     // swiperTransport END
     .speedboat-transport,
     .wedding-transport,
     .ship-transport,
     .specific-transport {
         padding-top: 50px;
+    }
+    .specific-transport {
+        position: relative;
     }
     .speedboat-transport__inner,
     .wedding-transport__inner,
@@ -536,6 +581,7 @@ h2 {
     //Variants slider start
     .variants-slider {
         padding-top: 60px;
+        position: relative;
     }
     .variants-slider__inner {
         margin-top: 15px;
@@ -865,10 +911,13 @@ h2 {
     //Swiper start
     .swiper {
         height: 100%;
-        width: 100%;
-        // overflow: hidden;
+        width: 708px;
+        overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
+    }
+    .specific-routes__slider-item.swiper-slide {
+        width: 290px !important;
     }
     .swiper-pagination,
     .swiper-offers-pagination {
@@ -892,10 +941,7 @@ h2 {
         background-image: url("../images/rightArr.svg") !important;
         background-repeat: no-repeat;
     }
-    .specific-routes__slider-item.swiper-slide {
-        width: 306px !important;
-    }
-
+    
     .swiper-variants {
         height: 100%;
         position: relative;
@@ -913,7 +959,7 @@ h2 {
         height: 100%;
         width: 400px;
         // overflow: hidden;
-        position: relative;
+        // position: relative;
         padding-bottom: 50px !important;
     }
     // .offers__item.offers__item1.swiper-slide,
@@ -997,6 +1043,14 @@ h2 {
     .specific-transport__item2.swiper-slide,
     .specific-transport__item3.swiper-slide {
         width: 260px !important;
+    }
+    .swiper-transport-button-prev {
+        top: 270px !important;
+        left: 55% !important;
+      }
+      .swiper-transport-button-next {
+        top: 270px !important;
+        left: 70% !important;
     }
     //Swiper transport end
     .speedboat-transport,
@@ -1083,6 +1137,8 @@ h2 {
     .specific-routes {
         padding-top: 80px;
     }
+
+
     .speedboat-routes__inner,
     .ship-routes__inner,
     .specific-routes__inner {
@@ -1304,36 +1360,15 @@ h2 {
     .specific-transport__item1.swiper-slide,
     .specific-transport__item2.swiper-slide,
     .specific-transport__item3.swiper-slide {
-        width: 260px!important;
-    }
-    .swiper-transport-button-prev,
-    .swiper-transport-button-next{
-        display: block;
+        width: 260px !important;
     }
     .swiper-transport-button-prev {
-      position: absolute;
-      top: 350px !important;
-      left: 45% !important;
-      background-image: url("../images/leftArr.svg") !important;
-      width: 20px;
-      height: 44px;
-      background-repeat: no-repeat;
-      // cursor: pointer;
-    }
-    .swiper-transport-button-next {
-        position: absolute;
-        top: 349px !important;
-        left: 55% !important;
-        width: 20px;
-        height: 44px;
-        background-image: url("../images/rightArr.svg") !important;
-        background-repeat: no-repeat;
-        cursor: pointer;
+        top: 315px !important;
+        left: 45% !important;
       }
-      .swiper-transport-button-next.swiper-button-disabled, 
-      .swiper-transport-button-prev.swiper-button-disabled {
-        opacity: .35;
-        cursor: pointer;
+      .swiper-transport-button-next {
+        top: 315px !important;
+        left: 52% !important;
     }
 
     .swiper-variants {
@@ -1349,20 +1384,21 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 408px !important;
     }
+    .swiper-variants-pagination {
+       display: none;
+    }
 
     .swiper-offers {
         height: 100%;
         min-width: 930px;
         overflow: hidden;
-        position: relative;
+        // position: relative;
         padding-bottom: 60px !important;
     }
     // .offers__item.offers__item1.swiper-slide,
     // .offers__item.offers__item2.swiper-slide {
     //     width: 408px !important;
     // }
-    .swiper-transport-button-prev,
-    .swiper-transport-button-next,
     .swiper-offers-button-prev,
     .swiper-offers-button-next{
         display: block;
