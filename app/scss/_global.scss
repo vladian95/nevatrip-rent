@@ -82,8 +82,6 @@ h2 {
         color: $dark;
     }
     //General
-
-    // swiper Сделать для  .swiper
     .swiper {
         height: 100%;
         width: 335px;
@@ -91,7 +89,7 @@ h2 {
         position: relative;
         padding-bottom: 50px !important;
     }
-    // общее РАЗМЕРЫ БЛОКОВ - разбор!!!
+
     .specific-routes__slider-item.swiper-slide {
         width: 295px !important;
     }
@@ -133,19 +131,16 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 293px !important;
     }
-    // .swiper-offers {
-    //     height: 100%;
-    //     width: 335px;
-    //     overflow: visible !important;
-    //     position: relative;
-    //     padding-bottom: 50px !important;
-    // }
-    // .offers__item.offers__item1.swiper-slide,
-    // .offers__item.offers__item2.swiper-slide {
-    //     width: 335px !important;
-    // } 
-    
-   
+    .swiper-offers {
+        height: 100%;
+        width: 335px;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .offers__item.offers__item1.swiper-slide,
+    .offers__item.offers__item2.swiper-slide {
+        width: 335px !important;
+    } 
     // swiper
 
 
@@ -850,7 +845,7 @@ h2 {
 
 @media (min-width: 768px) {
     .container {
-        max-width: 738px; //раЗОБРАТЬСЯ
+        max-width: 738px;
         padding: 0px 15px;
         margin: 0 auto;
     }
@@ -903,8 +898,6 @@ h2 {
 
     .swiper-variants {
         height: 100%;
-        width: 708px;  //раЗОБРАТЬСЯ
-        // overflow: hidden;
         position: relative;
         padding-bottom: 60px !important;
     }
@@ -913,12 +906,12 @@ h2 {
     .variants-slider__item2.swiper-slide,
     .variants-slider__item3.swiper-slide,
     .variants-slider__item4.swiper-slide {
-        width: 408px !important;
+        width: 358px !important;
     }
 
      .swiper-offers {
         height: 100%;
-        width: 100%; //раЗОБРАТЬСЯ
+        width: 400px;
         // overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
@@ -1301,6 +1294,48 @@ h2 {
         width: 260px !important;
     }
 
+    .swiper-transport {
+        height: 100%;
+        width: 930px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 60px !important;
+    }
+    .specific-transport__item1.swiper-slide,
+    .specific-transport__item2.swiper-slide,
+    .specific-transport__item3.swiper-slide {
+        width: 260px!important;
+    }
+    .swiper-transport-button-prev,
+    .swiper-transport-button-next{
+        display: block;
+    }
+    .swiper-transport-button-prev {
+      position: absolute;
+      top: 350px !important;
+      left: 45% !important;
+      background-image: url("../images/leftArr.svg") !important;
+      width: 20px;
+      height: 44px;
+      background-repeat: no-repeat;
+      // cursor: pointer;
+    }
+    .swiper-transport-button-next {
+        position: absolute;
+        top: 349px !important;
+        left: 55% !important;
+        width: 20px;
+        height: 44px;
+        background-image: url("../images/rightArr.svg") !important;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+      .swiper-transport-button-next.swiper-button-disabled, 
+      .swiper-transport-button-prev.swiper-button-disabled {
+        opacity: .35;
+        cursor: pointer;
+    }
+
     .swiper-variants {
         height: 100%;
         min-width: 930px;
@@ -1332,6 +1367,7 @@ h2 {
     .swiper-offers-button-next{
         display: block;
     }
+   
     .swiper-variants-button-prev {
       position: absolute;
       top: 510px !important;

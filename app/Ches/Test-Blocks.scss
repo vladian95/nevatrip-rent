@@ -1,90 +1,13 @@
 @media (min-width : 360px) {  
-  // swiperTransport START
-    .swiper-transport {
-        height: 100%;
-        width: 250px;
-        // overflow: hidden;
-        position: relative;
-        padding-bottom: 50px !important;
-    }
-       // общее РАЗМЕРЫ БЛОКОВ - разбор!!! 
-      .specific-transport__item1.swiper-slide,
-      .specific-transport__item2.swiper-slide,
-      .specific-transport__item3.swiper-slide {
-          width: 225px !important;
-      }
-    .swiper-transport-pagination {
-        display: none;
-    }
-    .swiper-transport-button-prev,
-    .swiper-transport-button-next {
-        display: none;
-    }
-    // swiperTransport END
+
 }
-// РАЗБОР SWIPER
+
 @media (min-width : 768px) { 
-     //Swiper transport start
-     .swiper-transport {
-        height: 100%;
-        width: 610px;
-        // overflow: hidden;
-        position: relative;
-        padding-bottom: 50px !important;
-    }
    
-    .specific-transport__item1.swiper-slide,
-    .specific-transport__item2.swiper-slide,
-    .specific-transport__item3.swiper-slide {
-        width: 260px !important;
-    }
-    //Swiper transport end
 }
 
 @media (min-width : 992px)  {
-  //SWIPER transport START
-    .swiper-transport {
-        height: 100%;
-        width: 930px;
-       
-        overflow: hidden;
-        position: relative;
-        padding-bottom: 60px !important;
-    }
-    .specific-transport__item1.swiper-slide,
-    .specific-transport__item2.swiper-slide,
-    .specific-transport__item3.swiper-slide {
-        width: 260px!important;
-    }
-    .swiper-transport-button-prev,
-    .swiper-transport-button-next{
-        display: block;
-    }
-    .swiper-transport-button-prev {
-      position: absolute;
-      top: 350px !important;
-      left: 45% !important;
-      background-image: url("../images/leftArr.svg") !important;
-      width: 20px;
-      height: 44px;
-      background-repeat: no-repeat;
-      // cursor: pointer;
-    }
-    .swiper-transport-button-next {
-        position: absolute;
-        top: 349px !important;
-        left: 55% !important;
-        width: 20px;
-        height: 44px;
-        background-image: url("../images/rightArr.svg") !important;
-        background-repeat: no-repeat;
-        cursor: pointer;
-      }
-      .swiper-transport-button-next.swiper-button-disabled, 
-      .swiper-transport-button-prev.swiper-button-disabled {
-        opacity: .35;
-        cursor: pointer;
-    }
-    //SWIPER transport END  
+ 
+   
 }
 
