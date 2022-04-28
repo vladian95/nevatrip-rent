@@ -67,7 +67,6 @@ h2 {
 
 @media (min-width: 360px) {
     .container {
-        // max-width: 340px;  
         padding: 0px 12px;
     }
     h1 {
@@ -88,7 +87,7 @@ h2 {
     .swiper {
         height: 100%;
         width: 335px;
-        overflow: hidden; 
+        // overflow: visible !important;
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -437,7 +436,8 @@ h2 {
     
     .offers__item.offers__item1,
     .offers__item.offers__item2 {
-        display: block; //раЗОБРАТь 
+        display: block; 
+        // разобрать
     }
 
     .swiper-offers__inner {
@@ -507,11 +507,10 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 0px;
-        right: 0px;
+        top: -1px;
+        right: -1px;
         width: 118px;
-        height: 42px;
-        padding: 10px 20px;
+        padding: 10px 0px;
         background-color: $blue;
         font-size: 16px;
         font-weight: 600;
@@ -767,7 +766,7 @@ h2 {
         .wedding-accordion__dropDown,
         .ship-accordion__dropDown,
         .specific-accordion__dropDown {
-            height: 130px;
+            height: 220px;
         }
         .regata-accordion__icon,
         .speedboat-accordion__icon,
@@ -872,7 +871,7 @@ h2 {
     .swiper {
         height: 100%;
         width: 100%;
-        // overflow: hidden; //раЗОБРАТЬСЯ
+        // overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
     }
@@ -886,24 +885,20 @@ h2 {
     }
     .swiper-button-prev {
         position: absolute;
-        top: 450px !important;
+        top: 460px !important;
         left: 45% !important;
         background-image: url("../images/leftArr.svg") !important;
         background-repeat: no-repeat;
     }
     .swiper-button-next {
         position: absolute;
-        top: 450px !important;
+        top: 460px !important;
         left: 55% !important;
         background-image: url("../images/rightArr.svg") !important;
         background-repeat: no-repeat;
     }
     .specific-routes__slider-item.swiper-slide {
         width: 306px !important;
-    }
-
-    .specific-routes__slider-item.swiper-slide {
-        width: 295px !important;
     }
 
     .swiper-variants {
@@ -920,8 +915,6 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 408px !important;
     }
-    
-
 
      .swiper-offers {
         height: 100%;
@@ -1115,7 +1108,7 @@ h2 {
     .speedboat-routes__slider-bg,
     .ship-routes__slider-bg,
     .specific-routes__slider-bg {
-        height: 260px;
+        max-height: 260px;
     }
     .speedboat-routes__slider-title,
     .ship-routes__slider-title,
@@ -1222,6 +1215,13 @@ h2 {
                     background-image: url(../images/new-img/minus-desktop-active.svg);
                 }
             }
+        }
+        .regata-accordion__dropDown,
+        .speedboat-accordion__dropDown,
+        .wedding-accordion__dropDown,
+        .ship-accordion__dropDown,
+        .specific-accordion__dropDown {
+            height: 125px;
         }
     }
     //Accordion end
