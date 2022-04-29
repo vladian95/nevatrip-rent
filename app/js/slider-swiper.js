@@ -166,5 +166,47 @@ document.addEventListener('DOMContentLoaded',() => {
       
   });
 
+  const swiperBlur = new Swiper('.swiper-blur', {
+        // loop: true,
+        slidesPerView: 2,
+        spaceBetween: 1,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-offers-pagination",
+          clickable: true,
+      },
+        navigation: {
+          nextEl: ".swiper-blur-button-next",
+          prevEl: ".swiper-blur-button-prev",
+        },
+    breakpoints: {
+      360: {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-blur-pagination",
+          type: "bullets",
+          dynamicBullets: true,
+      },
+    },
+      768: {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-blur-button-next",
+          prevEl: ".swiper-blur-button-prev",
+        },
+      },
+    },
+    
+  });
+
 });
 
