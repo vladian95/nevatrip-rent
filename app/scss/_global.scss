@@ -913,7 +913,7 @@ h2 {
         height: 100%;
         width: 708px;
         overflow: hidden;
-        position: relative;
+        // position: relative;
         padding-bottom: 50px !important;
     }
     .specific-routes__slider-item.swiper-slide {
@@ -937,7 +937,7 @@ h2 {
     .swiper-button-next {
         position: absolute;
         top: 460px !important;
-        left: 55% !important;
+        left: 53% !important;
         background-image: url("../images/rightArr.svg") !important;
         background-repeat: no-repeat;
     }
@@ -1044,13 +1044,14 @@ h2 {
     .specific-transport__item3.swiper-slide {
         width: 260px !important;
     }
+
     .swiper-transport-button-prev {
-        top: 270px !important;
-        left: 55% !important;
+        top: 345px !important;
+        left: 43% !important;
       }
       .swiper-transport-button-next {
-        top: 270px !important;
-        left: 70% !important;
+        top: 345px !important;
+        left: 56% !important;
     }
     //Swiper transport end
     .speedboat-transport,
@@ -1343,7 +1344,7 @@ h2 {
         height: 100%;
         width: 930px;
         overflow: hidden !important;
-        position: relative;
+        // position: relative;
         padding-bottom: 50px !important;
     }
     .specific-routes__slider-item.swiper-slide {
@@ -1363,11 +1364,11 @@ h2 {
         width: 260px !important;
     }
     .swiper-transport-button-prev {
-        top: 315px !important;
+        top: 345px !important;
         left: 45% !important;
       }
       .swiper-transport-button-next {
-        top: 315px !important;
+        top: 345px !important;
         left: 52% !important;
     }
 
@@ -1442,7 +1443,7 @@ h2 {
       .swiper-offers-button-next {
           position: absolute;
           top: 96% !important;
-          left: 55% !important;
+          left: 53% !important;
           width: 20px;
           height: 44px;
           background-image: url("../images/rightArr.svg") !important;

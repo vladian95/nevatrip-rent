@@ -7,9 +7,6 @@ document.addEventListener('DOMContentLoaded',() => {
     loop: false,
     autoHeight: true,
     autoWidth: true,
-    mousewheel: {
-      invert: false,
-    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -46,9 +43,6 @@ document.addEventListener('DOMContentLoaded',() => {
     loop: false,
     autoHeight: true,
     autoWidth: true,
-    mousewheel: {
-      invert: false,
-    },
     navigation: {
       nextEl: ".swiper-transport-button-next",
       prevEl: ".swiper-transport-button-prev",
@@ -82,9 +76,6 @@ document.addEventListener('DOMContentLoaded',() => {
     loop: false,
     autoHeight: true,
     autoWidth: true,
-    mousewheel: {
-      invert: false,
-    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -126,9 +117,6 @@ document.addEventListener('DOMContentLoaded',() => {
     loop: false,
     autoHeight: true,
     autoWidth: true,
-    mousewheel: {
-      invert: false,
-    },
     pagination: {
         el: ".swiper-offers-pagination",
         clickable: true,

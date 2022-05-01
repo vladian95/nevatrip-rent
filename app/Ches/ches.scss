@@ -1,7 +1,7 @@
 @media (min-width : 360px) { 
     .regata-slider {
         padding-top: 80px;
-       
+        
         &__item1 {
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
              url('../images/regata/piter.jpg');
@@ -78,6 +78,7 @@
 @media (min-width : 768px) {
     .regata-slider {
         padding-top: 80px;
+        padding-bottom: 220px;
         position: relative;
         &__item1 {
             background-image: url('../images/regata/piter.jpg');
