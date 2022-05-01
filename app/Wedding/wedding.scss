@@ -1,0 +1,286 @@
+@media (min-width: 360px) {
+
+    
+    
+    //Keytering block start
+    .keytering {
+        padding-top: 50px;
+    }
+
+    .keytering__inner {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .keytering__btn {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        min-width: 158px;
+        padding: 15px 0px;
+        color: $main;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        position: relative;
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            top: 17px;
+            left: 10px;   
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }   
+    .keytering__btn-buffet{
+        background-color: $blue-two;
+        &::before{
+            background-image: url(../images/wedding/cake-mobile.svg);
+            width: 30px;
+            height: 27px;
+        }
+    } 
+    .keytering__btn-banquet{
+        background-color: $blue;
+        &::after{
+            background-image: url(../images/wedding/banquet-mobile.svg);
+            width: 34px;
+            height: 21px;
+        }
+    }
+    // Keytering block end
+
+    //Offers block start
+    .offers{
+        padding-top: 40px;
+        position: relative;
+    }
+    .offers__inner {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offers__item {
+        max-width: 335px;
+        border-radius: 12px;
+        box-shadow: 0px 1.34328px 36.2687px rgba(0, 0, 0, 0.13);
+        border-radius: 20px;
+        border-radius: 0px 0px 16px 16px;
+    }
+    .offers__item2{
+        display: none;
+    }
+    .offers__img{
+        background-image: url(../images/wedding/wedding-offers.jpeg);
+        width: 100%;
+        min-height: 220px;
+        border-radius: 16px 16px 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .offers__item-content{
+        padding: 16px 20px 25px 12px;
+    }
+    .offers__item-title{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+        color: $main;
+    }
+    .offers__list {
+        margin-top: 16px;
+        li {
+            position: relative;
+            padding-left: 30px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            & + li{
+                margin-top: 11px;
+            }
+            &::before {
+                position: absolute;
+                content: url('../images/regata/yellow_arrow.svg');
+                left: 0px;
+                top: 2px;
+            }
+        }
+    } 
+    .offers__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 23px;
+        span{
+            display: block;
+        }
+    }
+    .offers__price {
+        font-weight: 400;
+        font-size: 24px;
+        color: $dark;
+        &::after {
+            content: url('../images/regata/ruble-currency-sign.png');
+        }
+    }
+    .offers__star {
+        font-size: 12px;
+        line-height: 20px;
+        color: $dark;
+    }
+    .offers__btn{
+        padding: 12px 35px;
+        background-color: $yellow;
+        border: none;
+        color: #404040;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    //Offers block end
+}
+
+@media (min-width: 768px) {
+    
+    //Keytering block start
+    .keytering{
+        padding-top: 80px;
+    }
+    .keytering__inner{
+        padding-top: 35px;
+    }
+    .keytering__btn{
+        padding: 38px 0px;
+        min-width: 344px;
+        border-radius: 22px;
+        font-size: 18px;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        br{
+            display: none;
+        }
+    }
+    .keytering__btn-buffet{
+        &::before{
+            background-image: url(../images/wedding/cake-desktop.svg);
+            width: 50px;
+            height: 46px;
+            top: 27px;
+            left: 30px;
+        }
+    }
+    .keytering__btn-banquet{
+        &::after{
+            background-image: url(../images/wedding/banquet-desktop.svg);
+            width: 52px;
+            height: 33px;
+            top: 32px;
+            left: 31px;
+        }
+    }
+
+    // Keytering block end
+
+    //Offers block start
+    .offers{
+        padding-top: 80px;
+    }
+    .offers__inner{
+        margin-top: 26px;
+    }
+    .offers__item{
+        min-width: 450px;
+        // min-height: 731px;
+    }
+    .offers__img{
+        min-height: 280px;
+    }
+    .offers__item-content{
+        padding: 20px 15px 20px 15px;
+    }
+    .offers__item-title{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .offers__list {
+        margin-top: 20px;
+        li {
+            padding-left: 40px;
+            font-size: 18px;
+            line-height: 27px;
+            & + li{
+                margin-top: 16px;
+            }
+            &::before {
+                position: absolute;
+                content: url('../images/regata/yellow_arrow.svg');
+                left: 0px;
+                top: 2px;
+            }
+        }
+    } 
+    .offers__box{
+        margin-top: 37px;
+    }
+    .offers__price{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .offers__star{
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .offers__btn{
+        padding: 16px 55px;
+        font-size: 18px;
+    }
+    //Offers block end
+
+    
+}
+
+@media (min-width: 992px) {
+
+    // Keytering block start
+    .keytering__btn {
+        display: block;
+        text-align: left;
+        min-width: 450px;
+        padding: 38px 0px 38px 110px;
+    }
+    // Keytering block end
+
+    //Offers block start 
+    .offers__inner{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .offers__item2{
+        display: block;
+    }
+    //Offers block end
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+
+}
