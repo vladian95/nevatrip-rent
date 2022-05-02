@@ -182,6 +182,11 @@ document.addEventListener('DOMContentLoaded',() => {
         loop: true,
         slidesPerView: 2,
         spaceBetween: 30,
+        pagination: {
+          el: ".swiper-blur-pagination",
+          type: "bullets",
+          dynamicBullets: true,
+      },
       },
       992: {
         loop: true,

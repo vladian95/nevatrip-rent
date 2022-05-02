@@ -63,14 +63,12 @@
         // left: 40% !important;
         z-index: 2;
     }
+    .swiper-blur-pagination.swiper-pagination-bullet.swiper-pagination-bullet {
+        background-color: $dark-gray;
+        opacity: 1;
+    }
     .swiper-blur-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: #fff;
-        width: 8px;
-        height: 8px;
-    }
-    .swiper-blur-button-prev,
-    .swiper-blur-button-next {
-        display: none;
     }
 
 }
@@ -78,7 +76,7 @@
 @media (min-width : 768px) {
     .regata-slider {
         padding-top: 80px;
-        padding-bottom: 220px;
+        padding-bottom: 80px;
         position: relative;
         &__item1 {
             background-image: url('../images/regata/piter.jpg');
@@ -135,8 +133,20 @@
         z-index: 2;
     }
     .swiper-blur-pagination {
-        display: none;
+        display: block;
+        position: absolute;
+        bottom: -60px!important;
+        z-index: 2;
     }
+    .swiper-pagination-bullet.swiper-pagination-bullet {
+        background-color: $dark-gray;
+        opacity: 1;
+    }
+    .swiper-blur-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #000;
+    }
+
+    
 
 }
 
@@ -162,8 +172,8 @@
     .swiper-blur-button-prev {
         display: block;
         position: absolute;
-        top: 480px !important;
-        left: 46% !important;  
+        top: 400px !important;
+        left: 45% !important; 
         background-image: url("../images/leftArr.svg") !important;
         width: 20px;
         height: 44px;
@@ -173,8 +183,8 @@
       .swiper-blur-button-next {
           display: block;
           position: absolute;
-          top: 480px !important;
-          left: 52% !important; 
+          top: 400px !important;
+          left: 52% !important;
           width: 20px;
           height: 44px;
           background-image: url("../images/rightArr.svg") !important;
@@ -187,31 +197,16 @@
           cursor: pointer;
       }
 
+      .swiper-blur-pagination {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
-    .swiper-blur-button-prev {
-        top: 480px !important;
-        left: 46% !important;   
-      }
-      .swiper-blur-button-next {
-        top: 480px !important;
-        left: 52% !important;
-     }
+   
 }
 
 @media (min-width : 1400px) {
-    .swiper-blur-button-prev {
-        top: 480px !important;
-        left: 47% !important;   
-      }
-      .swiper-blur-button-next {
-        top: 480px !important;
-        left: 52% !important;
-     }
-
-
-
 
 
    // /DELETE
