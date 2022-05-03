@@ -64,10 +64,7 @@ document.addEventListener('DOMContentLoaded',() => {
             prevEl: ".swiper-transport-button-prev",
           },
         },
-          1440: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
+        
       },
       
   });

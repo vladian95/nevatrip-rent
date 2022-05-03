@@ -24,7 +24,7 @@
         width: 100%;
         display: none;
         background: #fff;
-        z-index: -4;
+        // z-index: -4;
     }
 
     .session__tabs input[type="radio"] {
@@ -35,8 +35,9 @@
         background: $light-blue;
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         .session__btn-item{
-            color: $dark;   
-        }     
+            color: $dark   
+        } 
+
     }
     .session__tabs input[type="radio"]:checked + label + .tab {
         display: block;
@@ -77,6 +78,7 @@
     }
     .session__content {
         display: flex;
+        overflow: auto;
         justify-content: space-between;
         align-items: flex-start;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -310,7 +312,7 @@
         width: 100%;
         display: none;
         background: #fff;
-        z-index: -4;
+        // z-index: -4;
     }
 
     .session__tabs input[type="radio"] {
@@ -367,6 +369,7 @@
     }
     .session__content {
         display: flex;
+        overflow-y: auto;
         justify-content: space-between;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 80px 20px;
