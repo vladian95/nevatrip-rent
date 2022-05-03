@@ -104,7 +104,6 @@
     .specific-session__tabs input[type="radio"]:checked + label {
         z-index: 50;
         background: $light-blue;
-       
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         .specific-session__btn-item{
             color: $dark;   
@@ -143,17 +142,20 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
+        
+        margin: 0;
     }
     .specific-session__btn-date {
         font-weight: 400;
         font-size: 11px;
         line-height: 15px;
         display: block;
+        margin: 0;
     }
     .specific-session__content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 0px 40px 20px;
         border-radius: 0px 0px 0px 20px;
@@ -290,7 +292,7 @@
     .specific-session__content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 40px 20px;
         border-radius: 0px 0px 0px 20px;

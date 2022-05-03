@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded',() => {
     mousewheel: {
       invert: false,
     },
+    pagination: {
+      el: ".swiper-variants-pagination",
+      clickable: true,
+  },
     navigation: {
       nextEl: ".swiper-variants-button-next",
       prevEl: ".swiper-variants-button-prev",
@@ -93,7 +97,11 @@ document.addEventListener('DOMContentLoaded',() => {
         360: {
           slidesPerView: 1,
           spaceBetween: 15,
+          pagination: {
+            el: ".swiper-variants-pagination",
+            type: "bullets",
         },
+      },
         768: {
           slidesPerView: 1,
           spaceBetween: 30,
@@ -140,7 +148,7 @@ document.addEventListener('DOMContentLoaded',() => {
       },
         768: {
           slidesPerView: 1,
-          spaceBetween: 30,
+          spaceBetween: 20,
         },
         992: {
           slidesPerView: 2,

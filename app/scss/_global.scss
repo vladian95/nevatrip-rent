@@ -82,8 +82,6 @@ h2 {
         color: $dark;
     }
     //General
-
-    // swiper Сделать для  .swiper
     .swiper {
         height: 100%;
         width: 335px;
@@ -91,7 +89,7 @@ h2 {
         position: relative;
         padding-bottom: 50px !important;
     }
-    // общее РАЗМЕРЫ БЛОКОВ - разбор!!!
+
     .specific-routes__slider-item.swiper-slide {
         width: 295px !important;
     }
@@ -133,19 +131,16 @@ h2 {
     .variants-slider__item4.swiper-slide {
         width: 293px !important;
     }
-    // .swiper-offers {
-    //     height: 100%;
-    //     width: 335px;
-    //     overflow: visible !important;
-    //     position: relative;
-    //     padding-bottom: 50px !important;
-    // }
-    // .offers__item.offers__item1.swiper-slide,
-    // .offers__item.offers__item2.swiper-slide {
-    //     width: 335px !important;
-    // } 
-    
-   
+    .swiper-offers {
+        height: 100%;
+        width: 335px;
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .offers__item.offers__item1.swiper-slide,
+    .offers__item.offers__item2.swiper-slide {
+        width: 335px !important;
+    } 
     // swiper
 
 
@@ -364,7 +359,6 @@ h2 {
         box-shadow: 0px 1.17886px 31.8293px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
         padding: 12px;
-        cursor: pointer;
         &:hover .ship-transport__component {
             background-color: $orange;
             transition: 0.5s;
@@ -616,8 +610,8 @@ h2 {
     .ship-accordion__item,
     .specific-accordion__item {
         border-top: 1px solid $light-gray;
-        padding: 17px 0px;
-        cursor: pointer;
+        // padding: 17px 0px;
+        // cursor: pointer;
         &:last-child {
             border-bottom: 1px solid $light-gray;
         }
@@ -672,6 +666,7 @@ h2 {
         align-items: center;
         cursor: pointer;
         user-select: none;
+        padding: 17px 0px;
     }
     .regata-accordion__content-left,
     .speedboat-accordion__content-left,
@@ -746,10 +741,8 @@ h2 {
     .wedding-accordion__dropDown,
     .ship-accordion__dropDown,
     .specific-accordion__dropDown {
-        position: relative;
-        height: 0;
-        overflow: hidden;
-        transition: 0.5s ease-in-out;
+        display: none;
+        margin-bottom: 17px;
     }
     .regata-accordion__dropDown-text,
     .speedboat-accordion__dropDown-text,
@@ -761,15 +754,8 @@ h2 {
         font-weight: 400;
         color: $main;
         margin-bottom: 0;
-    }
-    .accordion__item.accordion__item--active {
-        .regata-accordion__dropDown,
-        .speedboat-accordion__dropDown,
-        .wedding-accordion__dropDown,
-        .ship-accordion__dropDown,
-        .specific-accordion__dropDown {
-            height: 220px;
-        }
+    }   
+    .accordion__item-wrapper.accordion__item--active {
         .regata-accordion__icon,
         .speedboat-accordion__icon,
         .wedding-accordion__icon,
@@ -852,7 +838,7 @@ h2 {
 
 @media (min-width: 768px) {
     .container {
-        max-width: 738px; //раЗОБРАТЬСЯ
+        max-width: 738px;
         padding: 0px 15px;
         margin: 0 auto;
     }
@@ -905,8 +891,6 @@ h2 {
 
     .swiper-variants {
         height: 100%;
-        width: 708px;  //раЗОБРАТЬСЯ
-        // overflow: hidden;
         position: relative;
         padding-bottom: 60px !important;
     }
@@ -915,12 +899,12 @@ h2 {
     .variants-slider__item2.swiper-slide,
     .variants-slider__item3.swiper-slide,
     .variants-slider__item4.swiper-slide {
-        width: 408px !important;
+        width: 358px !important;
     }
 
      .swiper-offers {
         height: 100%;
-        width: 100%; //раЗОБРАТЬСЯ
+        width: 400px;
         // overflow: hidden;
         position: relative;
         padding-bottom: 50px !important;
@@ -1146,7 +1130,7 @@ h2 {
     .wedding-accordion__item,
     .ship-accordion__item,
     .specific-accordion__item {
-        padding: 30px 0px;
+        // padding: 30px 0px;
         &:hover{
             .regata-accordion__icon,
             .speedboat-accordion__icon,
@@ -1158,6 +1142,13 @@ h2 {
                 }
             }
         }
+    }
+    .regata-accordion__item-wrapper,
+    .speedboat-accordion__item-wrapper,
+    .wedding-accordion__item-wrapper,
+    .ship-accordion__item-wrapper,
+    .specific-accordion__item-wrapper{
+        padding: 30px 0px;
     }
     .regata-accordion__item-title,
     .speedboat-accordion__item-title,
@@ -1194,7 +1185,15 @@ h2 {
             height: 14px;
         }
     }
-    .accordion__item.accordion__item--active {
+    .regata-accordion__dropDown,
+    .speedboat-accordion__dropDown,
+    .wedding-accordion__dropDown,
+    .ship-accordion__dropDown,
+    .specific-accordion__dropDown{
+        margin-bottom: 30px;
+    }
+
+    .accordion__item-wrapper.accordion__item--active {
         .regata-accordion__icon,
         .speedboat-accordion__icon,
         .wedding-accordion__icon,
@@ -1216,13 +1215,6 @@ h2 {
                     background-image: url(../images/new-img/minus-desktop-active.svg);
                 }
             }
-        }
-        .regata-accordion__dropDown,
-        .speedboat-accordion__dropDown,
-        .wedding-accordion__dropDown,
-        .ship-accordion__dropDown,
-        .specific-accordion__dropDown {
-            height: 125px;
         }
     }
     //Accordion end
@@ -1302,7 +1294,6 @@ h2 {
         width: 260px !important;
     }
 
-    //SWIPER transport START
     .swiper-transport {
         height: 100%;
         width: 930px;
@@ -1344,8 +1335,6 @@ h2 {
         opacity: .35;
         cursor: pointer;
     }
-    //SWIPER transport END  
-
 
     .swiper-variants {
         height: 100%;
@@ -1377,7 +1366,7 @@ h2 {
     .swiper-offers-button-prev,
     .swiper-offers-button-next{
         display: block;
-    }
+    }   
     .swiper-variants-button-prev {
       position: absolute;
       top: 510px !important;
