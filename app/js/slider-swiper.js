@@ -64,10 +64,7 @@ document.addEventListener('DOMContentLoaded',() => {
             prevEl: ".swiper-transport-button-prev",
           },
         },
-          1440: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
+        
       },
       
   });
@@ -156,9 +153,11 @@ document.addEventListener('DOMContentLoaded',() => {
 
   const swiperBlur = new Swiper('.swiper-blur', {
         // loop: true,
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 1,
         centeredSlides: true,
+        autoHeight: true,
+        // autoWidth: true,
         pagination: {
           el: ".swiper-offers-pagination",
           clickable: true,
@@ -167,6 +166,15 @@ document.addEventListener('DOMContentLoaded',() => {
           nextEl: ".swiper-blur-button-next",
           prevEl: ".swiper-blur-button-prev",
         },
+        effect: "coverflow",
+        coverflowEffect: {
+              rotate: 0,
+              stretch: 53,
+              depth: 151,
+              modifier: 2,
+              slideShadows: false
+        },
+        
     breakpoints: {
       360: {
         loop: false,
@@ -191,7 +199,15 @@ document.addEventListener('DOMContentLoaded',() => {
       992: {
         loop: true,
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 15,
+        // effect: "coverflow",
+        // coverflowEffect: {
+        //       rotate: 0,
+        //       stretch: 53,
+        //       depth: 161,
+        //       modifier: 2,
+        //       slideShadows: true
+        // },
         navigation: {
           nextEl: ".swiper-blur-button-next",
           prevEl: ".swiper-blur-button-prev",
@@ -200,6 +216,16 @@ document.addEventListener('DOMContentLoaded',() => {
     },
     
   });
+
+  const swiperPrev = document.getElementById('swiper-blur-button-prev')
+  const swiperNext = document.getElementById('swiper-blur-button-next')
+
+  swiperPrev.addEventListener('click', () => {
+    swiperBlur.slidePrev();
+  })
+  swiperNext.addEventListener('click', () => {
+    swiperBlur.slideNext();
+  })
 
 });
 
