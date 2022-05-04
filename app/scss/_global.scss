@@ -213,7 +213,7 @@ h2 {
         height: 100%;
         width: 335px;
         // position: relative;
-        overflow: hidden;
+        // overflow: hidden;
     }
     .regata-slider__item1.swiper-slide,
     .regata-slider__item2.swiper-slide,
@@ -240,6 +240,9 @@ h2 {
     }
     .swiper-blur-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: #fff;
+    }
+    .swiper-blur-navigation {
+        display: none;
     }
     // swiper
 
@@ -1028,6 +1031,7 @@ h2 {
     .swiper-blur {
         height: 100%;
         width: 708px;
+        
     }
     .regata-slider__item1.swiper-slide,
     .regata-slider__item2.swiper-slide,
@@ -1061,6 +1065,9 @@ h2 {
     .swiper-blur-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: #000;
     }
+    // .swiper-blur-navigation {
+    //     display: none;
+    // }
     //Swiper end
 
     //Top background start
@@ -1544,10 +1551,12 @@ h2 {
         opacity: 0.35;
         cursor: pointer;
     }
+  
 
     .swiper-blur {
         height: 100%;
         width: 930px;
+        overflow: hidden;
     }
     .regata-slider__item1.swiper-slide,
     .regata-slider__item2.swiper-slide,
@@ -1561,29 +1570,32 @@ h2 {
         width: 508px;
         height: 333px;
     }
-
-    button #swiper-blur-button-prev {
-        display: block;
-        position: absolute;
-        top: 400px !important;
-        left: 45% !important;
+    .swiper-blur-navigation {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    button#swiper-blur-button-prev {
+        // bottom: -10px !important;
+        // left: 45% !important;
+        padding-right: 60px;
+        background: rgb(251, 251, 251);
+        border: none;
         background-image: url("../images/leftArr.svg") !important;
         width: 20px;
         height: 44px;
         background-repeat: no-repeat;
-        z-index: 9000 !important;
     }
-    button #swiper-blur-button-next {
-        display: block;
-        position: absolute;
-        top: 400px !important;
-        left: 52% !important;
+    button#swiper-blur-button-next {
+        // bottom: -10px !important;
+        // left: 52% !important;
+        background: rgb(251, 251, 251);
         width: 20px;
+        border: none;
         height: 44px;
         background-image: url("../images/rightArr.svg") !important;
         background-repeat: no-repeat;
         cursor: pointer;
-        z-index: 9000 !important;
     }
     .swiper-blur-button-next.swiper-button-disabled,
     .swiper-blur-button-prev.swiper-button-disabled {

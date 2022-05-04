@@ -170,11 +170,10 @@ document.addEventListener('DOMContentLoaded',() => {
         coverflowEffect: {
               rotate: 0,
               stretch: 53,
-              depth: 151,
+              depth: 165,
               modifier: 2,
-              slideShadows: false
+              slideShadows: true
         },
-        
     breakpoints: {
       360: {
         loop: false,
@@ -185,6 +184,8 @@ document.addEventListener('DOMContentLoaded',() => {
           type: "bullets",
           dynamicBullets: true,
       },
+      effect: false,
+
     },
       768: {
         loop: true,
@@ -195,19 +196,27 @@ document.addEventListener('DOMContentLoaded',() => {
           type: "bullets",
           dynamicBullets: true,
       },
+      effect: "coverflow",
+        coverflowEffect: {
+              rotate: 0,
+              stretch: 53,
+              depth: 165,
+              modifier: 2,
+              slideShadows: true
+        },
       },
       992: {
         loop: true,
         slidesPerView: 2,
         spaceBetween: 15,
-        // effect: "coverflow",
-        // coverflowEffect: {
-        //       rotate: 0,
-        //       stretch: 53,
-        //       depth: 161,
-        //       modifier: 2,
-        //       slideShadows: true
-        // },
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 53,
+          depth: 165,
+          modifier: 2,
+          slideShadows: true
+        },
         navigation: {
           nextEl: ".swiper-blur-button-next",
           prevEl: ".swiper-blur-button-prev",
