@@ -152,14 +152,14 @@ document.addEventListener('DOMContentLoaded',() => {
   });
 
   const swiperBlur = new Swiper('.swiper-blur', {
-        // loop: true,
+        loop: true,
         slidesPerView: 3,
         spaceBetween: 1,
         centeredSlides: true,
         autoHeight: true,
         // autoWidth: true,
         pagination: {
-          el: ".swiper-offers-pagination",
+          el: ".swiper-blur-pagination",
           clickable: true,
       },
         navigation: {
@@ -184,47 +184,57 @@ document.addEventListener('DOMContentLoaded',() => {
           type: "bullets",
           dynamicBullets: true,
       },
-      effect: false,
-
+      effect: "coverflow",
+      coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 0,
+            slideShadows: false
+      },
     },
       768: {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 30,
+          loop: true,
+          slidesPerView: 2,
+          // spaceBetween: 45,
         pagination: {
           el: ".swiper-blur-pagination",
           type: "bullets",
           dynamicBullets: true,
       },
       effect: "coverflow",
-        coverflowEffect: {
-              rotate: 0,
-              stretch: 53,
-              depth: 165,
-              modifier: 2,
-              slideShadows: true
-        },
+      coverflowEffect: {
+            rotate: 2,
+            stretch: 58,
+            depth: 161,
+            modifier: 2,
+            slideShadows: true
+      },
+     
       },
       992: {
         loop: true,
         slidesPerView: 2,
         spaceBetween: 15,
-        effect: "coverflow",
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 53,
-          depth: 165,
-          modifier: 2,
-          slideShadows: true
-        },
         navigation: {
           nextEl: ".swiper-blur-button-next",
           prevEl: ".swiper-blur-button-prev",
         },
+        effect: "coverflow",
+        coverflowEffect: {
+              rotate: 2,
+              stretch: 53,
+              depth: 165,
+              modifier: 2,
+              slideShadows: true
+        },
+       
       },
     },
     
   });
+
+
 
   const swiperPrev = document.getElementById('swiper-blur-button-prev')
   const swiperNext = document.getElementById('swiper-blur-button-next')
