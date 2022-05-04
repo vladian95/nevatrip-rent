@@ -705,6 +705,18 @@ h2 {
         &:last-child {
             border-bottom: 1px solid $light-gray;
         }
+    }
+    .regata-accordion__item-wrapper,
+    .speedboat-accordion__item-wrapper,
+    .wedding-accordion__item-wrapper,
+    .ship-accordion__item-wrapper,
+    .specific-accordion__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        padding: 17px 0px;
         &:hover {
             .regata-accordion__content-left,
             .speedboat-accordion__content-left,
@@ -745,18 +757,6 @@ h2 {
                 }
             }
         }
-    }
-    .regata-accordion__item-wrapper,
-    .speedboat-accordion__item-wrapper,
-    .wedding-accordion__item-wrapper,
-    .ship-accordion__item-wrapper,
-    .specific-accordion__item-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        user-select: none;
-        padding: 17px 0px;
     }
     .regata-accordion__content-left,
     .speedboat-accordion__content-left,
@@ -843,7 +843,10 @@ h2 {
         line-height: 24px;
         font-weight: 400;
         color: $main;
-        margin-bottom: 0;
+        margin: 0;
+        &:last-child{
+            margin-top: 16px;
+        }
     }
     .accordion__item-wrapper.accordion__item--active {
         .regata-accordion__icon,
