@@ -711,144 +711,6 @@ h2 {
   .specific-accordion__item:last-child {
     border-bottom: 1px solid #DEDEDE;
   }
-  .regata-accordion__item:hover .regata-accordion__content-left p,
-  .regata-accordion__item:hover .speedboat-accordion__content-left p,
-  .regata-accordion__item:hover .wedding-accordion__content-left p,
-  .regata-accordion__item:hover .ship-accordion__content-left p,
-  .regata-accordion__item:hover .specific-accordion__content-left p,
-  .speedboat-accordion__item:hover .regata-accordion__content-left p,
-  .speedboat-accordion__item:hover .speedboat-accordion__content-left p,
-  .speedboat-accordion__item:hover .wedding-accordion__content-left p,
-  .speedboat-accordion__item:hover .ship-accordion__content-left p,
-  .speedboat-accordion__item:hover .specific-accordion__content-left p,
-  .wedding-accordion__item:hover .regata-accordion__content-left p,
-  .wedding-accordion__item:hover .speedboat-accordion__content-left p,
-  .wedding-accordion__item:hover .wedding-accordion__content-left p,
-  .wedding-accordion__item:hover .ship-accordion__content-left p,
-  .wedding-accordion__item:hover .specific-accordion__content-left p,
-  .ship-accordion__item:hover .regata-accordion__content-left p,
-  .ship-accordion__item:hover .speedboat-accordion__content-left p,
-  .ship-accordion__item:hover .wedding-accordion__content-left p,
-  .ship-accordion__item:hover .ship-accordion__content-left p,
-  .ship-accordion__item:hover .specific-accordion__content-left p,
-  .specific-accordion__item:hover .regata-accordion__content-left p,
-  .specific-accordion__item:hover .speedboat-accordion__content-left p,
-  .specific-accordion__item:hover .wedding-accordion__content-left p,
-  .specific-accordion__item:hover .ship-accordion__content-left p,
-  .specific-accordion__item:hover .specific-accordion__content-left p {
-    color: #1D96D4;
-    text-decoration: underline;
-  }
-  .regata-accordion__item:hover .regata-accordion__icon,
-  .regata-accordion__item:hover .speedboat-accordion__icon,
-  .regata-accordion__item:hover .wedding-accordion__icon,
-  .regata-accordion__item:hover .ship-accordion__icon,
-  .regata-accordion__item:hover .specific-accordion__icon,
-  .speedboat-accordion__item:hover .regata-accordion__icon,
-  .speedboat-accordion__item:hover .speedboat-accordion__icon,
-  .speedboat-accordion__item:hover .wedding-accordion__icon,
-  .speedboat-accordion__item:hover .ship-accordion__icon,
-  .speedboat-accordion__item:hover .specific-accordion__icon,
-  .wedding-accordion__item:hover .regata-accordion__icon,
-  .wedding-accordion__item:hover .speedboat-accordion__icon,
-  .wedding-accordion__item:hover .wedding-accordion__icon,
-  .wedding-accordion__item:hover .ship-accordion__icon,
-  .wedding-accordion__item:hover .specific-accordion__icon,
-  .ship-accordion__item:hover .regata-accordion__icon,
-  .ship-accordion__item:hover .speedboat-accordion__icon,
-  .ship-accordion__item:hover .wedding-accordion__icon,
-  .ship-accordion__item:hover .ship-accordion__icon,
-  .ship-accordion__item:hover .specific-accordion__icon,
-  .specific-accordion__item:hover .regata-accordion__icon,
-  .specific-accordion__item:hover .speedboat-accordion__icon,
-  .specific-accordion__item:hover .wedding-accordion__icon,
-  .specific-accordion__item:hover .ship-accordion__icon,
-  .specific-accordion__item:hover .specific-accordion__icon {
-    border: #1D96D4 2px solid;
-  }
-  .regata-accordion__item:hover .regata-accordion__icon::before,
-  .regata-accordion__item:hover .speedboat-accordion__icon::before,
-  .regata-accordion__item:hover .wedding-accordion__icon::before,
-  .regata-accordion__item:hover .ship-accordion__icon::before,
-  .regata-accordion__item:hover .specific-accordion__icon::before,
-  .speedboat-accordion__item:hover .regata-accordion__icon::before,
-  .speedboat-accordion__item:hover .speedboat-accordion__icon::before,
-  .speedboat-accordion__item:hover .wedding-accordion__icon::before,
-  .speedboat-accordion__item:hover .ship-accordion__icon::before,
-  .speedboat-accordion__item:hover .specific-accordion__icon::before,
-  .wedding-accordion__item:hover .regata-accordion__icon::before,
-  .wedding-accordion__item:hover .speedboat-accordion__icon::before,
-  .wedding-accordion__item:hover .wedding-accordion__icon::before,
-  .wedding-accordion__item:hover .ship-accordion__icon::before,
-  .wedding-accordion__item:hover .specific-accordion__icon::before,
-  .ship-accordion__item:hover .regata-accordion__icon::before,
-  .ship-accordion__item:hover .speedboat-accordion__icon::before,
-  .ship-accordion__item:hover .wedding-accordion__icon::before,
-  .ship-accordion__item:hover .ship-accordion__icon::before,
-  .ship-accordion__item:hover .specific-accordion__icon::before,
-  .specific-accordion__item:hover .regata-accordion__icon::before,
-  .specific-accordion__item:hover .speedboat-accordion__icon::before,
-  .specific-accordion__item:hover .wedding-accordion__icon::before,
-  .specific-accordion__item:hover .ship-accordion__icon::before,
-  .specific-accordion__item:hover .specific-accordion__icon::before {
-    background-image: url(../images/new-img/plus-mobile-active.svg);
-  }
-  .regata-accordion__item:hover .regata-accordion__icon-line,
-  .regata-accordion__item:hover .speedboat-accordion__icon-line,
-  .regata-accordion__item:hover .wedding-accordion__icon-line,
-  .regata-accordion__item:hover .ship-accordion__icon-line,
-  .regata-accordion__item:hover .specific-accordion__icon-line,
-  .speedboat-accordion__item:hover .regata-accordion__icon-line,
-  .speedboat-accordion__item:hover .speedboat-accordion__icon-line,
-  .speedboat-accordion__item:hover .wedding-accordion__icon-line,
-  .speedboat-accordion__item:hover .ship-accordion__icon-line,
-  .speedboat-accordion__item:hover .specific-accordion__icon-line,
-  .wedding-accordion__item:hover .regata-accordion__icon-line,
-  .wedding-accordion__item:hover .speedboat-accordion__icon-line,
-  .wedding-accordion__item:hover .wedding-accordion__icon-line,
-  .wedding-accordion__item:hover .ship-accordion__icon-line,
-  .wedding-accordion__item:hover .specific-accordion__icon-line,
-  .ship-accordion__item:hover .regata-accordion__icon-line,
-  .ship-accordion__item:hover .speedboat-accordion__icon-line,
-  .ship-accordion__item:hover .wedding-accordion__icon-line,
-  .ship-accordion__item:hover .ship-accordion__icon-line,
-  .ship-accordion__item:hover .specific-accordion__icon-line,
-  .specific-accordion__item:hover .regata-accordion__icon-line,
-  .specific-accordion__item:hover .speedboat-accordion__icon-line,
-  .specific-accordion__item:hover .wedding-accordion__icon-line,
-  .specific-accordion__item:hover .ship-accordion__icon-line,
-  .specific-accordion__item:hover .specific-accordion__icon-line {
-    background-color: #1D96D4;
-  }
-  .regata-accordion__item:hover .regata-accordion__item-price::before,
-  .regata-accordion__item:hover .speedboat-accordion__item-price::before,
-  .regata-accordion__item:hover .wedding-accordion__item-price::before,
-  .regata-accordion__item:hover .ship-accordion__item-price::before,
-  .regata-accordion__item:hover .specific-accordion__item-price::before,
-  .speedboat-accordion__item:hover .regata-accordion__item-price::before,
-  .speedboat-accordion__item:hover .speedboat-accordion__item-price::before,
-  .speedboat-accordion__item:hover .wedding-accordion__item-price::before,
-  .speedboat-accordion__item:hover .ship-accordion__item-price::before,
-  .speedboat-accordion__item:hover .specific-accordion__item-price::before,
-  .wedding-accordion__item:hover .regata-accordion__item-price::before,
-  .wedding-accordion__item:hover .speedboat-accordion__item-price::before,
-  .wedding-accordion__item:hover .wedding-accordion__item-price::before,
-  .wedding-accordion__item:hover .ship-accordion__item-price::before,
-  .wedding-accordion__item:hover .specific-accordion__item-price::before,
-  .ship-accordion__item:hover .regata-accordion__item-price::before,
-  .ship-accordion__item:hover .speedboat-accordion__item-price::before,
-  .ship-accordion__item:hover .wedding-accordion__item-price::before,
-  .ship-accordion__item:hover .ship-accordion__item-price::before,
-  .ship-accordion__item:hover .specific-accordion__item-price::before,
-  .specific-accordion__item:hover .regata-accordion__item-price::before,
-  .specific-accordion__item:hover .speedboat-accordion__item-price::before,
-  .specific-accordion__item:hover .wedding-accordion__item-price::before,
-  .specific-accordion__item:hover .ship-accordion__item-price::before,
-  .specific-accordion__item:hover .specific-accordion__item-price::before {
-    content: "";
-    background-image: url(../images/new-img/ruble_2.svg);
-    position: absolute;
-  }
   .regata-accordion__item-wrapper,
   .speedboat-accordion__item-wrapper,
   .wedding-accordion__item-wrapper,
@@ -869,6 +731,144 @@ h2 {
         -ms-user-select: none;
             user-select: none;
     padding: 17px 0px;
+  }
+  .regata-accordion__item-wrapper:hover .regata-accordion__content-left p,
+  .regata-accordion__item-wrapper:hover .speedboat-accordion__content-left p,
+  .regata-accordion__item-wrapper:hover .wedding-accordion__content-left p,
+  .regata-accordion__item-wrapper:hover .ship-accordion__content-left p,
+  .regata-accordion__item-wrapper:hover .specific-accordion__content-left p,
+  .speedboat-accordion__item-wrapper:hover .regata-accordion__content-left p,
+  .speedboat-accordion__item-wrapper:hover .speedboat-accordion__content-left p,
+  .speedboat-accordion__item-wrapper:hover .wedding-accordion__content-left p,
+  .speedboat-accordion__item-wrapper:hover .ship-accordion__content-left p,
+  .speedboat-accordion__item-wrapper:hover .specific-accordion__content-left p,
+  .wedding-accordion__item-wrapper:hover .regata-accordion__content-left p,
+  .wedding-accordion__item-wrapper:hover .speedboat-accordion__content-left p,
+  .wedding-accordion__item-wrapper:hover .wedding-accordion__content-left p,
+  .wedding-accordion__item-wrapper:hover .ship-accordion__content-left p,
+  .wedding-accordion__item-wrapper:hover .specific-accordion__content-left p,
+  .ship-accordion__item-wrapper:hover .regata-accordion__content-left p,
+  .ship-accordion__item-wrapper:hover .speedboat-accordion__content-left p,
+  .ship-accordion__item-wrapper:hover .wedding-accordion__content-left p,
+  .ship-accordion__item-wrapper:hover .ship-accordion__content-left p,
+  .ship-accordion__item-wrapper:hover .specific-accordion__content-left p,
+  .specific-accordion__item-wrapper:hover .regata-accordion__content-left p,
+  .specific-accordion__item-wrapper:hover .speedboat-accordion__content-left p,
+  .specific-accordion__item-wrapper:hover .wedding-accordion__content-left p,
+  .specific-accordion__item-wrapper:hover .ship-accordion__content-left p,
+  .specific-accordion__item-wrapper:hover .specific-accordion__content-left p {
+    color: #1D96D4;
+    text-decoration: underline;
+  }
+  .regata-accordion__item-wrapper:hover .regata-accordion__icon,
+  .regata-accordion__item-wrapper:hover .speedboat-accordion__icon,
+  .regata-accordion__item-wrapper:hover .wedding-accordion__icon,
+  .regata-accordion__item-wrapper:hover .ship-accordion__icon,
+  .regata-accordion__item-wrapper:hover .specific-accordion__icon,
+  .speedboat-accordion__item-wrapper:hover .regata-accordion__icon,
+  .speedboat-accordion__item-wrapper:hover .speedboat-accordion__icon,
+  .speedboat-accordion__item-wrapper:hover .wedding-accordion__icon,
+  .speedboat-accordion__item-wrapper:hover .ship-accordion__icon,
+  .speedboat-accordion__item-wrapper:hover .specific-accordion__icon,
+  .wedding-accordion__item-wrapper:hover .regata-accordion__icon,
+  .wedding-accordion__item-wrapper:hover .speedboat-accordion__icon,
+  .wedding-accordion__item-wrapper:hover .wedding-accordion__icon,
+  .wedding-accordion__item-wrapper:hover .ship-accordion__icon,
+  .wedding-accordion__item-wrapper:hover .specific-accordion__icon,
+  .ship-accordion__item-wrapper:hover .regata-accordion__icon,
+  .ship-accordion__item-wrapper:hover .speedboat-accordion__icon,
+  .ship-accordion__item-wrapper:hover .wedding-accordion__icon,
+  .ship-accordion__item-wrapper:hover .ship-accordion__icon,
+  .ship-accordion__item-wrapper:hover .specific-accordion__icon,
+  .specific-accordion__item-wrapper:hover .regata-accordion__icon,
+  .specific-accordion__item-wrapper:hover .speedboat-accordion__icon,
+  .specific-accordion__item-wrapper:hover .wedding-accordion__icon,
+  .specific-accordion__item-wrapper:hover .ship-accordion__icon,
+  .specific-accordion__item-wrapper:hover .specific-accordion__icon {
+    border: #1D96D4 2px solid;
+  }
+  .regata-accordion__item-wrapper:hover .regata-accordion__icon::before,
+  .regata-accordion__item-wrapper:hover .speedboat-accordion__icon::before,
+  .regata-accordion__item-wrapper:hover .wedding-accordion__icon::before,
+  .regata-accordion__item-wrapper:hover .ship-accordion__icon::before,
+  .regata-accordion__item-wrapper:hover .specific-accordion__icon::before,
+  .speedboat-accordion__item-wrapper:hover .regata-accordion__icon::before,
+  .speedboat-accordion__item-wrapper:hover .speedboat-accordion__icon::before,
+  .speedboat-accordion__item-wrapper:hover .wedding-accordion__icon::before,
+  .speedboat-accordion__item-wrapper:hover .ship-accordion__icon::before,
+  .speedboat-accordion__item-wrapper:hover .specific-accordion__icon::before,
+  .wedding-accordion__item-wrapper:hover .regata-accordion__icon::before,
+  .wedding-accordion__item-wrapper:hover .speedboat-accordion__icon::before,
+  .wedding-accordion__item-wrapper:hover .wedding-accordion__icon::before,
+  .wedding-accordion__item-wrapper:hover .ship-accordion__icon::before,
+  .wedding-accordion__item-wrapper:hover .specific-accordion__icon::before,
+  .ship-accordion__item-wrapper:hover .regata-accordion__icon::before,
+  .ship-accordion__item-wrapper:hover .speedboat-accordion__icon::before,
+  .ship-accordion__item-wrapper:hover .wedding-accordion__icon::before,
+  .ship-accordion__item-wrapper:hover .ship-accordion__icon::before,
+  .ship-accordion__item-wrapper:hover .specific-accordion__icon::before,
+  .specific-accordion__item-wrapper:hover .regata-accordion__icon::before,
+  .specific-accordion__item-wrapper:hover .speedboat-accordion__icon::before,
+  .specific-accordion__item-wrapper:hover .wedding-accordion__icon::before,
+  .specific-accordion__item-wrapper:hover .ship-accordion__icon::before,
+  .specific-accordion__item-wrapper:hover .specific-accordion__icon::before {
+    background-image: url(../images/new-img/plus-mobile-active.svg);
+  }
+  .regata-accordion__item-wrapper:hover .regata-accordion__icon-line,
+  .regata-accordion__item-wrapper:hover .speedboat-accordion__icon-line,
+  .regata-accordion__item-wrapper:hover .wedding-accordion__icon-line,
+  .regata-accordion__item-wrapper:hover .ship-accordion__icon-line,
+  .regata-accordion__item-wrapper:hover .specific-accordion__icon-line,
+  .speedboat-accordion__item-wrapper:hover .regata-accordion__icon-line,
+  .speedboat-accordion__item-wrapper:hover .speedboat-accordion__icon-line,
+  .speedboat-accordion__item-wrapper:hover .wedding-accordion__icon-line,
+  .speedboat-accordion__item-wrapper:hover .ship-accordion__icon-line,
+  .speedboat-accordion__item-wrapper:hover .specific-accordion__icon-line,
+  .wedding-accordion__item-wrapper:hover .regata-accordion__icon-line,
+  .wedding-accordion__item-wrapper:hover .speedboat-accordion__icon-line,
+  .wedding-accordion__item-wrapper:hover .wedding-accordion__icon-line,
+  .wedding-accordion__item-wrapper:hover .ship-accordion__icon-line,
+  .wedding-accordion__item-wrapper:hover .specific-accordion__icon-line,
+  .ship-accordion__item-wrapper:hover .regata-accordion__icon-line,
+  .ship-accordion__item-wrapper:hover .speedboat-accordion__icon-line,
+  .ship-accordion__item-wrapper:hover .wedding-accordion__icon-line,
+  .ship-accordion__item-wrapper:hover .ship-accordion__icon-line,
+  .ship-accordion__item-wrapper:hover .specific-accordion__icon-line,
+  .specific-accordion__item-wrapper:hover .regata-accordion__icon-line,
+  .specific-accordion__item-wrapper:hover .speedboat-accordion__icon-line,
+  .specific-accordion__item-wrapper:hover .wedding-accordion__icon-line,
+  .specific-accordion__item-wrapper:hover .ship-accordion__icon-line,
+  .specific-accordion__item-wrapper:hover .specific-accordion__icon-line {
+    background-color: #1D96D4;
+  }
+  .regata-accordion__item-wrapper:hover .regata-accordion__item-price::before,
+  .regata-accordion__item-wrapper:hover .speedboat-accordion__item-price::before,
+  .regata-accordion__item-wrapper:hover .wedding-accordion__item-price::before,
+  .regata-accordion__item-wrapper:hover .ship-accordion__item-price::before,
+  .regata-accordion__item-wrapper:hover .specific-accordion__item-price::before,
+  .speedboat-accordion__item-wrapper:hover .regata-accordion__item-price::before,
+  .speedboat-accordion__item-wrapper:hover .speedboat-accordion__item-price::before,
+  .speedboat-accordion__item-wrapper:hover .wedding-accordion__item-price::before,
+  .speedboat-accordion__item-wrapper:hover .ship-accordion__item-price::before,
+  .speedboat-accordion__item-wrapper:hover .specific-accordion__item-price::before,
+  .wedding-accordion__item-wrapper:hover .regata-accordion__item-price::before,
+  .wedding-accordion__item-wrapper:hover .speedboat-accordion__item-price::before,
+  .wedding-accordion__item-wrapper:hover .wedding-accordion__item-price::before,
+  .wedding-accordion__item-wrapper:hover .ship-accordion__item-price::before,
+  .wedding-accordion__item-wrapper:hover .specific-accordion__item-price::before,
+  .ship-accordion__item-wrapper:hover .regata-accordion__item-price::before,
+  .ship-accordion__item-wrapper:hover .speedboat-accordion__item-price::before,
+  .ship-accordion__item-wrapper:hover .wedding-accordion__item-price::before,
+  .ship-accordion__item-wrapper:hover .ship-accordion__item-price::before,
+  .ship-accordion__item-wrapper:hover .specific-accordion__item-price::before,
+  .specific-accordion__item-wrapper:hover .regata-accordion__item-price::before,
+  .specific-accordion__item-wrapper:hover .speedboat-accordion__item-price::before,
+  .specific-accordion__item-wrapper:hover .wedding-accordion__item-price::before,
+  .specific-accordion__item-wrapper:hover .ship-accordion__item-price::before,
+  .specific-accordion__item-wrapper:hover .specific-accordion__item-price::before {
+    content: "";
+    background-image: url(../images/new-img/ruble_2.svg);
+    position: absolute;
   }
   .regata-accordion__content-left,
   .speedboat-accordion__content-left,
@@ -969,7 +969,14 @@ h2 {
     line-height: 24px;
     font-weight: 400;
     color: #2b2b2b;
-    margin-bottom: 0;
+    margin: 0;
+  }
+  .regata-accordion__dropDown-text:last-child,
+  .speedboat-accordion__dropDown-text:last-child,
+  .wedding-accordion__dropDown-text:last-child,
+  .ship-accordion__dropDown-text:last-child,
+  .specific-accordion__dropDown-text:last-child {
+    margin-top: 16px;
   }
   .accordion__item-wrapper.accordion__item--active .regata-accordion__icon::before,
   .accordion__item-wrapper.accordion__item--active .speedboat-accordion__icon::before,
@@ -1147,6 +1154,7 @@ h2 {
   .swiper-blur {
     height: 100%;
     width: 708px;
+    overflow: hidden;
   }
   .regata-slider__item1.swiper-slide,
   .regata-slider__item2.swiper-slide,
@@ -1175,7 +1183,8 @@ h2 {
   .swiper-blur-pagination {
     display: block;
     position: absolute;
-    bottom: -60px !important;
+    bottom: -30px !important;
+    left: 365px !important;
     z-index: 2;
   }
   .swiper-pagination-bullet.swiper-pagination-bullet {
@@ -2441,18 +2450,18 @@ h2 {
   }
   .specific-session__btn-label2 {
     position: absolute;
-    left: 105px;
+    left: 117px;
     z-index: 49;
   }
   .specific-session__btn-label3 {
     position: absolute;
-    left: 210px;
+    left: 235px;
     z-index: 48;
   }
   .specific-session__btn-item {
     padding: 8px 10px;
     text-align: center;
-    max-width: 135px;
+    min-width: 135px;
     -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
             box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
     border-radius: 20px 20px 0px 0px;
@@ -2612,18 +2621,20 @@ h2 {
     -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
             box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
     border-radius: 20px 20px 0px 0px;
-    font-size: 30px;
     color: #BCBCBC;
     line-height: 19px;
     cursor: pointer;
-    font-size: 14px;
     background-color: #fff;
   }
   .specific-session__btn-title {
     font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
   }
   .specific-session__btn-date {
     font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
     display: block;
   }
   .specific-session__content {

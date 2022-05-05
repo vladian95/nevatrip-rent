@@ -186,27 +186,52 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         effect: false,
       },
-      768: {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-blur-pagination",
-          type: "bullets",
-          dynamicBullets: true,
-        },
-      },
-      992: {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 15,
-        navigation: {
-          nextEl: ".swiper-blur-button-next",
-          prevEl: ".swiper-blur-button-prev",
-        },
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 0,
+        slideShadows: false
       },
     },
+    768: {
+      loop: true,
+      slidesPerView: 2,
+      // spaceBetween: 45,
+      pagination: {
+        el: ".swiper-blur-pagination",
+        type: "bullets",
+        dynamicBullets: true,
+      },
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 2,
+        stretch: 58,
+        depth: 161,
+        modifier: 2,
+        slideShadows: true
+      },
 
+    },
+    992: {
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 15,
+      navigation: {
+        nextEl: ".swiper-blur-button-next",
+        prevEl: ".swiper-blur-button-prev",
+      },
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 2,
+        stretch: 53,
+        depth: 165,
+        modifier: 2,
+        slideShadows: true
+      },
+
+    },
   });
 
   const swiperPopup = new Swiper('.swiper-popup', {
@@ -222,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: ".swiper-popup-button-next",
       prevEl: ".swiper-popup-button-prev",
     },
-
+  
     // breakpoints: {
     //   360: {
     //     loop: true,
@@ -245,15 +270,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // },
   });
 
-  const swiperPrev = document.getElementById('swiper-blur-button-prev')
-  const swiperNext = document.getElementById('swiper-blur-button-next')
 
-  swiperPrev.addEventListener('click', () => {
-    swiperBlur.slidePrev();
-  })
-  swiperNext.addEventListener('click', () => {
-    swiperBlur.slideNext();
-  })
+
+
+
+
 
 });
+
+
+
+
+//  v Dom
+const swiperPrev = document.getElementById('swiper-blur-button-prev')
+const swiperNext = document.getElementById('swiper-blur-button-next')
+
+swiperPrev.addEventListener('click', () => {
+  swiperBlur.slidePrev();
+})
+swiperNext.addEventListener('click', () => {
+  swiperBlur.slideNext();
+})
+
+// });
 
