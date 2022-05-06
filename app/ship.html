@@ -9,9 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <!-- css -->
     <link rel="stylesheet" href="./css/libs.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -77,6 +74,33 @@
                 </p>
             </div>
         </div>
+    </section>
+
+    <!-- Swiper_6  POPUP -->
+    <section class="custom-model-main">
+        <div class="custom-model-inner">
+            <div class="close-btn"></div>
+            <div class="swiper-popup">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="custom-model-wrap">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="custom-model-wrap">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="custom-model-wrap">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-popup-pagination"></div>
+                <div class="swiper-popup-button-prev"></div>
+                <div class="swiper-popup-button-next"></div>
+            </div>
+        </div>
+        <div class="bg-overlay"></div>
     </section>
 
     <!-- Swiper_2  Варианты водного транспорта -->
@@ -157,30 +181,72 @@
         </div>
     </section>
 
-    <section class="session">
+    <div class="product-one__tabs">
         <div class="container">
             <h2 class="session__title">
                 Варианты водного транспорта
             </h2>
         </div>
         <div class="session-container">
-            <div class="session__tabs">
-                <input type="radio" name="tabs" id="tabone" checked="checked">
-                <label class="session__btn-label session__btn-label1" for="tabone">
-                    <div class="session__btn-item session__btn-item1">
-                        <span class="session__btn-title">
-                            Высокий сезон
-                        </span>
-                        <span class="session__btn-date">
-                            с 10.05 по 10.09
-                        </span>
-                    </div>
-                </label>
-                <div class="tab">
+            <ul class="tabs">
+                <li class="session__btn-item session__btn-item1 active" data-id="1">
+                    <span class="session__btn-title">
+                        Высокий сезон
+                    </span>
+                    <span class="session__btn-date">
+                        C 13 мая по 9 июня и с 6 июля по 28 августа  
+                    </span>
+                </li>
+                <li class="session__btn-item session__btn-item2" data-id="2">
+                    <span class="session__btn-title">
+                        Высокий сезон
+                    </span>
+                    <span class="session__btn-date">
+                        с 10.05 по 10. C 13 мая по 9 июня
+                        и с 6 июля по 28 августа
+                    </span>
+                </li>
+                <li class="session__btn-item session__btn-item3" data-id="3">
+                    <span class="session__btn-title">
+                        Высокий сезон
+                    </span>
+                    <span class="session__btn-date">
+                        с 10.05 по 10.09
+                    </span>
+                </li>
+            </ul>
+            <div class="tab_content">
+                <div class="tab-item active-tab" id="1">
                     <div class="session__content">
                         <div class="session__content-item">
                             <div class="session__content-component">
                                 Теплоход класса стандарт
+                            </div>
+                            <div class="session__content-block">
+                                <div class="session__content-text">
+                                    <p class="session__content-text__title">
+                                        Небольшой теплоход
+                                    </p>
+                                    <p class="session__content-text__person">
+                                        до 25 человек
+                                    </p>
+                                </div>
+                                <div class="session__content-price">
+                                    от 2500
+                                </div>
+                            </div>
+                            <div class="session__content-block">
+                                <div class="session__content-text">
+                                    <p class="session__content-text__title">
+                                        Небольшой теплоход
+                                    </p>
+                                    <p class="session__content-text__person">
+                                        до 25 человек
+                                    </p>
+                                </div>
+                                <div class="session__content-price">
+                                    от 2500
+                                </div>
                             </div>
                             <div class="session__content-block">
                                 <div class="session__content-text">
@@ -351,19 +417,7 @@
                         </div>
                     </div>
                 </div>
-
-                <input type="radio" name="tabs" id="tabtwo">
-                <label class="session__btn-label session__btn-label2" for="tabtwo">
-                    <div class="session__btn-item session__btn-item2">
-                        <span class="session__btn-title">
-                            Средний сезон
-                        </span>
-                        <span class="session__btn-date">
-                            с 10.05 по 10.09
-                        </span>
-                    </div>
-                </label>
-                <div class="tab">
+                <div class="tab-item active-tab" id="2">
                     <div class="session__content">
                         <div class="session__content-item">
                             <div class="session__content-component">
@@ -535,22 +589,10 @@
                                     от 2600
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
-
-                <input type="radio" name="tabs" id="tabthree">
-                <label class="session__btn-label session__btn-label3" for="tabthree">
-                    <div class="session__btn-item session__btn-item3">
-                        <span class="session__btn-title">
-                            Средний сезон
-                        </span>
-                        <span class="session__btn-date">
-                            с 10.05 по 10.09
-                        </span>
-                    </div>
-                </label>
-                <div class="tab">
+                <div class="tab-item active-tab" id="3">
                     <div class="session__content">
                         <div class="session__content-item">
                             <div class="session__content-component">
@@ -725,12 +767,10 @@
                         </div>
                     </div>
                 </div>
-                <span class="nightprice">*В ночное время и выходные цены увеличиваются на 20%</span>
+                <span class="nightprice">*В ночное время и выходные цены увеличиваются на 20%</span> 
             </div>
-
         </div>
-
-    </section>
+    </div>
 
     <section class="ship-price">
         <div class="container">
@@ -931,7 +971,7 @@
                         </p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -959,9 +999,9 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
-    <section class="ship-sideBar"> 
+    <section class="ship-sideBar">
         <div class="container">
             <div class="ship-sideBar__inner">
                 <p class="ship-sideBar__text">
@@ -972,7 +1012,7 @@
                 </button>
             </div>
         </div>
-    </section>     
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

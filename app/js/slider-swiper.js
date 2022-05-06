@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       360: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 250,
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       360: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 700,
         pagination: {
           el: ".swiper-offers-pagination",
           type: "bullets",
@@ -169,69 +169,67 @@ document.addEventListener('DOMContentLoaded', () => {
     effect: "coverflow",
     coverflowEffect: {
       rotate: 0,
-      stretch: 53,
-      depth: 165,
-      modifier: 2,
-      slideShadows: true
+      stretch: 0,
+      depth: 0,
+      modifier: 0,
+      slideShadows: false
     },
     breakpoints: {
       360: {
         loop: false,
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 350,
         pagination: {
           el: ".swiper-blur-pagination",
           type: "bullets",
           dynamicBullets: true,
         },
-        effect: false,
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 0,
+          slideShadows: false
+        },
       },
-      effect: "coverflow",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 0,
-        modifier: 0,
-        slideShadows: false
+      768: {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-blur-pagination",
+          type: "bullets",
+          dynamicBullets: true,
+        },
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: -5,
+          depth: 600,
+          modifier: 1,
+          slideShadows: true
+        },
+      },
+      992: {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-blur-button-next",
+          prevEl: ".swiper-blur-button-prev",
+        },
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: -30,
+          depth: 625,
+          modifier: 1,
+          slideShadows: true
+        },
       },
     },
-    768: {
-      loop: true,
-      slidesPerView: 2,
-      // spaceBetween: 45,
-      pagination: {
-        el: ".swiper-blur-pagination",
-        type: "bullets",
-        dynamicBullets: true,
-      },
-      effect: "coverflow",
-      coverflowEffect: {
-        rotate: 2,
-        stretch: 58,
-        depth: 161,
-        modifier: 2,
-        slideShadows: true
-      },
 
-    },
-    992: {
-      loop: true,
-      slidesPerView: 2,
-      spaceBetween: 15,
-      navigation: {
-        nextEl: ".swiper-blur-button-next",
-        prevEl: ".swiper-blur-button-prev",
-      },
-      effect: "coverflow",
-      coverflowEffect: {
-        rotate: 2,
-        stretch: 53,
-        depth: 165,
-        modifier: 2,
-        slideShadows: true
-      },
-
-    },
   });
 
   const swiperPopup = new Swiper('.swiper-popup', {
@@ -247,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: ".swiper-popup-button-next",
       prevEl: ".swiper-popup-button-prev",
     },
-  
+
     // breakpoints: {
     //   360: {
     //     loop: true,
@@ -271,26 +269,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  // const swiperPrev = document.getElementById('swiper-blur-button-prev')
+  // const swiperNext = document.getElementById('swiper-blur-button-next')
 
-
-
-
+  // swiperPrev.addEventListener('click', () => {
+  //   swiperBlur.slidePrev();
+  // })
+  // swiperNext.addEventListener('click', () => {
+  //   swiperBlur.slideNext();
+  // })
 
 });
 
 
 
 
-//  v Dom
-const swiperPrev = document.getElementById('swiper-blur-button-prev')
-const swiperNext = document.getElementById('swiper-blur-button-next')
 
-swiperPrev.addEventListener('click', () => {
-  swiperBlur.slidePrev();
-})
-swiperNext.addEventListener('click', () => {
-  swiperBlur.slideNext();
-})
 
-// });
 

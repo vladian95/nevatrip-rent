@@ -88,14 +88,13 @@ h2 {
         overflow: visible !important;
         position: relative;
         padding-bottom: 50px !important;
+        margin: 0 auto;
     }
 
     .specific-routes__slider-item.swiper-slide {
         width: 295px !important;
     }
-    .specific-routes {
-        display: flex;
-    }
+    
     .swiper-pagination,
     .swiper-offers-pagination {
         display: block;
@@ -170,6 +169,7 @@ h2 {
     .swiper-offers {
         height: 100%;
         width: 335px;
+        margin: 0 auto;
         padding-bottom: 50px !important;
     }
     .offers__item.offers__item1.swiper-slide,
@@ -184,8 +184,8 @@ h2 {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 335px;
-            height: 220px;
+            // width: 335px;
+            // height: 220px;
             border-radius: 16px;
         }
         &__item2 {
@@ -194,8 +194,8 @@ h2 {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 335px;
-            height: 220px;
+            // width: 335px;
+            // height: 220px;
             border-radius: 16px;
         }
         &__item3 {
@@ -204,8 +204,8 @@ h2 {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 335px;
-            height: 220px;
+            // width: 335px;
+            // height: 220px;
             border-radius: 16px;
         }
     }
@@ -214,6 +214,7 @@ h2 {
         width: 335px;
         // position: relative;
         // overflow: hidden;
+        margin: 0 auto;
     }
     .regata-slider__item1.swiper-slide,
     .regata-slider__item2.swiper-slide,
@@ -997,6 +998,7 @@ h2 {
     .swiper-offers {
         height: 100%;
         width: 400px;
+        margin: 0;
         padding-bottom: 50px !important;
     }
     .regata-slider {
@@ -1004,16 +1006,16 @@ h2 {
         padding-bottom: 80px;
         position: relative;
         &__item1 {
-            background-image: url("../images/regata/piter.jpg");
+            background-image: url("../images/otherItemImg.jpeg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 610px;
+            width: 700px;
             height: 400px;
             border-radius: 16px;
         }
         &__item2 {
-            background-image: url("../images/regata/sankt.jpg");
+            background-image: url("../images/regata/peterburg.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -1022,7 +1024,7 @@ h2 {
             border-radius: 16px;
         }
         &__item3 {
-            background-image: url("../images/regata/peterburg.jpg");
+            background-image: url("../images/regata/sankt.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -1040,7 +1042,7 @@ h2 {
     .regata-slider__item2.swiper-slide,
     .regata-slider__item3.swiper-slide {
         filter: blur(4px);
-        width: 370px;
+        width: 350px;
         height: 220px;
         transition: 0.5s;
         z-index: -2;

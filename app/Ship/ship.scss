@@ -1,61 +1,35 @@
 @media (min-width: 360px) {
-    /**   <!-- !!!!ONLY CSS TABS !!!! -->*/
-    .session {
+    .product-one__tabs {
         padding-top: 90px;
     }
-
-    .session__tabs {
-        display: flex;
-        flex-wrap: wrap;
+    .session-container{
+        padding-left: 12px;
+    }
+    .session__title{
+        margin-bottom: 29px;
+    }
+    .tabs {
         position: relative;
-        margin-top: 36px;
+        li{
+            display: inline-block;
+        }
     }
-
-    .session__tabs label {
-        order: 1;
-        display: block;
-        cursor: pointer;
-        transition: background ease 0.2s;
+    .tab_content{
+        position: relative;
     }
-
-    .session__tabs .tab {
-        order: 99;
-        flex-grow: 1;
-        width: 100%;
+    .tab-item {
         display: none;
-        background: #fff;
-        // z-index: -4;
-    }
-
-    .session__tabs input[type="radio"] {
-        display: none;
-    }
-    .session__tabs input[type="radio"]:checked + label {
-        z-index: 50;
-        background: $light-blue;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
-        .session__btn-item{
-            color: $dark   
-        } 
-
-    }
-    .session__tabs input[type="radio"]:checked + label + .tab {
-        display: block;
-    }
-    .session__btn-label2{
-        position: absolute;
-        left: 120px;
-        z-index: 49;
-    }
-    .session__btn-label3{
-        position: absolute;
-        left: 240px;
-        z-index: 48;
+        &:first-child {
+            display: block;
+        }
+    } 
+    .session__btn-item.active{
+        color: $dark;
     }
     .session__btn-item {
         padding: 8px 10px;
         text-align: center;
-        min-width: 135px;
+        width: 135px;
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         border-radius: 20px 20px 0px 0px;
         font-size: 30px;
@@ -69,12 +43,14 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
+        max-width: 115px;
     }
     .session__btn-date {
         font-weight: 400;
         font-size: 11px;
         line-height: 15px;
         display: block;
+        max-width: 115px;
     }
     .session__content {
         display: flex;
@@ -83,8 +59,6 @@
         align-items: flex-start;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 85px 20px;
-        // border-radius: 0px 20px 20px 20px;
-        
     }
     .session__content-item {
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
@@ -94,7 +68,7 @@
         position: relative;
         min-width: 270px;
         min-height: 348px;
-        & + .session__content-item{
+        & + .session__content-item {
             margin-left: 20px;
         }
     }
@@ -116,20 +90,20 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid $light-gray;
-        &:last-child{
+        &:last-child {
             border: none;
         }
     }
     .session__content-text {
         width: 50%;
     }
-    .session__content-text__title{
+    .session__content-text__title {
         font-size: 14px;
         line-height: 19px;
         font-weight: 600;
         color: $dark;
     }
-    .session__content-text__person{
+    .session__content-text__person {
         font-size: 14px;
         line-height: 19px;
         font-weight: 400;
@@ -141,9 +115,9 @@
         color: $dark;
         padding-right: 15px;
         position: relative;
-        &::before{
+        &::before {
             position: absolute;
-            content: '';
+            content: "";
             right: 0;
             top: 4px;
             background-image: url(../images/new-img/ruble.svg);
@@ -151,7 +125,7 @@
             height: 12px;
         }
     }
-    .nightprice{
+    .nightprice {
         position: absolute;
         left: 27px;
         bottom: 30px;
@@ -160,7 +134,6 @@
         font-weight: 400;
         padding-right: 31px;
     }
-    
 
     //SESSION END
 
@@ -191,11 +164,12 @@
         cursor: pointer;
         margin: 5px;
     }
-    .ship-other__item1{
-        .ship-other__item-bg{
+    .ship-other__item1 {
+        .ship-other__item-bg {
             width: 100%;
             height: 100%;
-            background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), url('../images/ship/ship_l.jpg');
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+                url("../images/ship/ship_l.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -203,16 +177,16 @@
             display: block;
             &:hover {
                 transform: scale(1.1);
-                background: url('../images/ship/ship_l.jpg');
+                background: url("../images/ship/ship_l.jpg");
             }
         }
-        
     }
     .ship-other__item2 {
-        .ship-other__item-bg{
+        .ship-other__item-bg {
             width: 100%;
             height: 100%;
-            background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), url('../images/ship/ship_2.jpg');
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+                url("../images/ship/ship_2.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -220,16 +194,17 @@
             display: block;
             &:hover {
                 transform: scale(1.1);
-                background: url('../images/ship/ship_2.jpg');
+                background: url("../images/ship/ship_2.jpg");
             }
         }
     }
 
     .ship-other__item3 {
-        .ship-other__item-bg{
+        .ship-other__item-bg {
             width: 100%;
             height: 100%;
-            background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), url('../images/ship/ship_3.jpg');
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+                url("../images/ship/ship_3.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -237,7 +212,7 @@
             display: block;
             &:hover {
                 transform: scale(1.1);
-                background: url('../images/ship/ship_3.jpg');
+                background: url("../images/ship/ship_3.jpg");
             }
         }
     }
@@ -279,71 +254,22 @@
             right: -12px;
         }
     }
-
-}   
+}
 
 @media (min-width: 768px) {
-    .session {
+    .session__title{
+        margin-bottom: 36px;
+    }
+    .product-one__tabs {
         padding-top: 90px;
     }
-
-    .session-container{
+    .session-container {
         padding-left: 5%;
-
-    }
-
-    .session__tabs {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        margin-top: 36px;
-    }
-
-    .session__tabs label {
-        order: 1;
-        display: block;
-        cursor: pointer;
-        transition: background ease 0.2s;
-    }
-
-    .session__tabs .tab {
-        order: 99;
-        flex-grow: 1;
-        width: 100%;
-        display: none;
-        background: #fff;
-        // z-index: -4;
-    }
-
-    .session__tabs input[type="radio"] {
-        display: none;
-    }
-    .session__tabs input[type="radio"]:checked + label {
-        z-index: 50;
-        background: $light-blue;
-       
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
-        .session__btn-item{
-            color: $dark;   
-        }     
-    }
-    .session__tabs input[type="radio"]:checked + label + .tab {
-        display: block;
-    }
-    .session__btn-label2{
-        position: absolute;
-        left: 210px;
-        z-index: 49;
-    }
-    .session__btn-label3{
-        position: absolute;
-        left: 410px;
-        z-index: 48;
     }
     .session__btn-item {
         padding: 8px 10px;
         text-align: center;
-        min-width: 240px;
+        width: 240px;
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         border-radius: 20px 20px 0px 0px;
         font-size: 30px;
@@ -352,7 +278,7 @@
         cursor: pointer;
         font-size: 14px;
         background-color: #fff;
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
     }
@@ -360,11 +286,13 @@
         font-size: 14px;
         line-height: 19px;
         font-weight: 600;
+        max-width: 220px;
     }
     .session__btn-date {
         font-size: 14px;
         line-height: 19px;
         font-weight: 400;
+        max-width: 220px;
         display: block;
     }
     .session__content {
@@ -402,20 +330,20 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid $light-gray;
-        &:last-child{
+        &:last-child {
             border: none;
         }
     }
     .session__content-text {
         width: 50%;
     }
-    .session__content-text__title{
+    .session__content-text__title {
         font-size: 16px;
         font-weight: 600;
         line-height: 22px;
         color: $dark;
     }
-    .session__content-text__person{
+    .session__content-text__person {
         font-size: 16px;
         line-height: 22px;
         font-weight: 400;
@@ -425,9 +353,9 @@
         font-size: 22px;
         font-weight: 400;
         color: $dark;
-        &::before{
+        &::before {
             position: absolute;
-            content: '';
+            content: "";
             right: 0;
             top: 6px;
             background-image: url(../images/new-img/ruble.svg);
@@ -442,12 +370,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
     }
 }
 
 @media (min-width: 992px) {
-    .session-container{
+    .session-container {
         max-width: 960px;
         padding: 0px 15px;
         margin: 0 auto;
@@ -455,7 +382,6 @@
     .session__content {
         border-radius: 0px 20px 20px 20px;
     }
-
 
     // SHIP START
     .ship-other {
