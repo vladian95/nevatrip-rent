@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-<head lang="ru">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>specific</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- css -->
-    <link rel="stylesheet" href="./css/libs.min.css">
-    <link rel="stylesheet" href="./css/style.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>specific</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="./css/libs.min.css">
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
 
 <body>
     <section class="specific-main">
@@ -74,6 +74,33 @@
                 </p>
             </div>
         </div>
+    </section>
+
+    <!-- Swiper_6  POPUP -->
+    <section class="custom-model-main">
+        <div class="custom-model-inner">
+            <div class="close-btn"></div>
+            <div class="swiper-popup">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="custom-model-wrap">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="custom-model-wrap">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="custom-model-wrap">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-popup-pagination"></div>
+                <div class="swiper-popup-button-prev"></div>
+                <div class="swiper-popup-button-next"></div>
+            </div>
+        </div>
+        <div class="bg-overlay"></div>
     </section>
 
     <section class="specific-transport">
@@ -154,26 +181,41 @@
         </div>
     </section>
 
-    <section class="specific-session">
+    <section class="product-two__tabs">
         <div class="container">
             <h2 class="specific-session__title">
                 Варианты водного транспорта
             </h2>
         </div>
         <div class="specific-session__container">
-            <div class="specific-session__tabs">
-                <input type="radio" name="tabs" id="tabone" checked="checked">
-                <label class="specific-session__btn-label specific-session__btn-label1" for="tabone">
-                    <div class="specific-session__btn-item specific-session__btn-item1">
-                        <p class="specific-session__btn-title">
-                            Высокий сезонa
-                        </p>
-                        <p class="specific-session__btn-date">
-                            с 10.05 по 10.09
-                        </p>
-                    </div>
-                </label>
-                <div class="tab">
+            <ul class="tabs">
+                <li class="specific-session__btn-item specific-session__btn-item1 specific-session--active" data-id="4">
+                    <span class="specific-session__btn-title">
+                        Высокий сезонa
+                    </span>
+                    <span class="specific-session__btn-date">
+                        с 10.05 по 10.09с 10.05 по 10.09с 10.05 по 10.09
+                    </span>
+                </li>
+                <li class="specific-session__btn-item specific-session__btn-item2" data-id="5">
+                    <span class="specific-session__btn-title">
+                        Средний сезон
+                    </span>
+                    <span class="specific-session__btn-date">
+                        с 10.05 по 10.09
+                    </span>
+                </li>
+                <li class="specific-session__btn-item specific-session__btn-item3" data-id="6">
+                    <span class="specific-session__btn-title">
+                        Высокий сезон
+                    </span>
+                    <span class="specific-session__btn-date">
+                        с 10.05 по 10.09с 10.05 по 10.09с 10.05 по 10.09
+                    </span>
+                </li>
+            </ul>
+            <div class="tab_content">
+                <div class="tab-item active-tab" id="4">
                     <div class="specific-session__content">
                         <div class="specific-session__content-item">
                             <div class="specific-session__content-component">
@@ -182,7 +224,7 @@
                             <div class="specific-session__content-top">
                                 <span class="specific-session__content-price">от 2500</span>
                                 <p class="specific-session__content-text">
-                                    Будние дни <br>с понедельника по четверг
+                                    Будние дни <br>с понедельника по четверг 
                                 </p>
                             </div>
                             <div class="specific-session__content-bottom">
@@ -228,19 +270,7 @@
                         </div>
                     </div>
                 </div>
-
-                <input type="radio" name="tabs" id="tabtwo">
-                <label class="specific-session__btn-label specific-session__btn-label2" for="tabtwo">
-                    <div class="specific-session__btn-item specific-session__btn-item2">
-                        <span class="specific-session__btn-title">
-                            Средний сезон
-                        </span>
-                        <span class="specific-session__btn-date">
-                            с 10.05 по 10.09
-                        </span>
-                    </div>
-                </label>
-                <div class="tab">
+                <div class="tab-item active-tab" id="5">
                     <div class="specific-session__content">
                         <div class="specific-session__content-item">
                             <div class="specific-session__content-component">
@@ -295,19 +325,7 @@
                         </div>
                     </div>
                 </div>
-
-                <input type="radio" name="tabs" id="tabthree">
-                <label class="specific-session__btn-label specific-session__btn-label3" for="tabthree">
-                    <div class="specific-session__btn-item specific-session__btn-item3">
-                        <span class="specific-session__btn-title">
-                            Высокий сезон
-                        </span>
-                        <span class="specific-session__btn-date">
-                            с 10.05 по 10.09
-                        </span>
-                    </div>
-                </label>
-                <div class="tab">
+                <div class="tab-item active-tab" id="6">
                     <div class="specific-session__content">
                         <div class="specific-session__content-item">
                             <div class="specific-session__content-component">
@@ -363,6 +381,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -604,7 +623,7 @@
                         </p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -624,7 +643,7 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
 
     <section class="specific-sideBar">
         <div class="container">
@@ -637,7 +656,7 @@
                 </button>
             </div>
         </div>
-    </section>   
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

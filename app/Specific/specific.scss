@@ -69,63 +69,35 @@
     }
     //Specific other end
 
-    /**   <!-- !!!!ONLY CSS TABS !!!! -->*/
-    .specific-session {
+    //TABS
+    .product-two__tabs {
         padding-top: 90px;
     }
-
-    .specific-session__tabs {
-        display: flex;
-        flex-wrap: wrap;
+    .specific-session__title{
+        margin-bottom: 12px;
+    }
+    .specific-session__container{
+        padding-left: 12px;
+    }
+    .tabs {
         position: relative;
-        margin-top: 36px;
+        li{
+            display: inline-block;
+        }
     }
-
-    .specific-session__tabs label {
-        order: 1;
-        display: block;
-        cursor: pointer;
-        transition: background ease 0.2s;
-    }
-
-    .specific-session__tabs .tab {
-        order: 99;
-        flex-grow: 1;
-        width: 100%;
+    .tab-item {
         display: none;
-        background: #fff;
-        // z-index: -4;
-    }
-
-    .specific-session__tabs input[type="radio"] {
-        display: none;
-    }
-
-    .specific-session__tabs input[type="radio"]:checked + label {
-        z-index: 50;
-        background: $light-blue;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
-        .specific-session__btn-item{
-            color: $dark;   
-        }     
-    }
-    .specific-session__tabs input[type="radio"]:checked + label + .tab {
-        display: block;
-    }
-    .specific-session__btn-label2{
-        position: absolute;
-        left: 117px;
-        z-index: 49;
-    }
-    .specific-session__btn-label3{
-        position: absolute;
-        left: 235px;
-        z-index: 48;
+        &:first-child {
+            display: block;
+        }
+    } 
+    .specific-session__btn-item.specific-session--active{
+        color: $dark;
     }
     .specific-session__btn-item {
         padding: 8px 10px;
         text-align: center;
-        min-width: 135px;
+        width: 135px;
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         border-radius: 20px 20px 0px 0px;
         font-size: 30px;
@@ -142,21 +114,22 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
-        margin: 0;
+        max-width: 115px;
     }
     .specific-session__btn-date {
         font-weight: 400;
         font-size: 11px;
         line-height: 15px;
         display: block;
-        margin: 0;
+        max-width: 115px;
     }
     .specific-session__content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         overflow: auto;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15);
         padding: 30px 0px 40px 20px;
         border-radius: 0px 0px 0px 20px;
     }
@@ -167,7 +140,7 @@
         border-radius: 16px;
         position: relative;
         min-width: 270px;
-        max-height: 348px;
+        min-height: 348px;
         & + .specific-session__content-item{
             margin-left: 20px;
         }
@@ -205,110 +178,60 @@
         font-weight: 600;
         color: $dark;
     }
-
 }
 
 @media (min-width: 768px) {
-    //Specific session start
-    /**   <!-- !!!!ONLY CSS TABS !!!! -->*/
-    .specific-session {
+    //TABS
+    .product-two__tabs {
         padding-top: 90px;
     }
-
+    .specific-session__title{
+        margin-bottom: 36px;
+    }
     .specific-session__container{
         padding-left: 3%;
-    }
-
-    .specific-session__tabs {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        margin-top: 36px;
-    }
-
-    .specific-session__tabs label {
-        order: 1;
-        display: block;
-        cursor: pointer;
-        transition: background ease 0.2s;
-    }
-
-    .specific-session__tabs .tab {
-        order: 99;
-        flex-grow: 1;
-        width: 100%;
-        display: none;
-        background: #fff;
-        // z-index: -4;
-    }
-
-    .specific-session__tabs input[type="radio"] {
-        display: none;
-    }
-
-    .specific-session__tabs input[type="radio"]:checked + label {
-        z-index: 50;
-        background: $light-blue;
-       
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
-        .specific-session__btn-item{
-            color: $dark;   
-        }     
-    }
-    .specific-session__tabs input[type="radio"]:checked + label + .tab {
-        display: block;
-    }
-    .specific-session__btn-label2{
-        position: absolute;
-        left: 210px;
-        z-index: 49;
-    }
-    .specific-session__btn-label3{
-        position: absolute;
-        left: 410px;
-        z-index: 48;
     }
     .specific-session__btn-item {
         padding: 8px 10px;
         text-align: center;
-        min-width: 240px;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        width: 240px;
+        
         border-radius: 20px 20px 0px 0px;
         color: $gray;
         line-height: 19px;
         cursor: pointer;
-        
         background-color: #fff;    
     }
     .specific-session__btn-title {
         font-weight: 600;
         font-size: 14px;
         line-height: 19px;
-
+        max-width: 220px;
     }
     .specific-session__btn-date {
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
         display: block;
+        max-width: 220px;
     }
     .specific-session__content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         overflow: auto;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15);
+        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 40px 20px;
         border-radius: 0px 0px 0px 20px;
     }
     .specific-session__content-item {
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         padding: 84px 20px 40px 20px;
-        max-width: 270px;
         border-radius: 16px;
         position: relative;
         min-width: 270px;
-        max-height: 348px;
+        min-height: 348px;
     }
     .specific-session__content-component {
         padding: 16px 20px;
@@ -334,6 +257,7 @@
         font-size: 22px;
         font-weight: 400;
         color: $dark;
+        max-width: 230px;
     }
     .specific-session__content-text {
         margin-top: 12px;
@@ -342,6 +266,7 @@
         line-height: 19px;
         font-weight: 600;
         color: $dark;
+        padding-right: 3px;
     }
     //specific-session end
 
@@ -373,7 +298,7 @@
     .specific-session__content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 40px 20px;
         border-radius: 0px 20px 20px 20px;
