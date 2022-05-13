@@ -1,5 +1,3 @@
-// Ches Swiper test
-// import Swiper from "swiper";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -268,18 +266,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // },
   });
 
+  const swiperPrev = document.getElementById('swiper-blur-button-prev')
+  const swiperNext = document.getElementById('swiper-blur-button-next')
 
-  // const swiperPrev = document.getElementById('swiper-blur-button-prev')
-  // const swiperNext = document.getElementById('swiper-blur-button-next')
-
-  // swiperPrev.addEventListener('click', () => {
-  //   swiperBlur.slidePrev();
-  // })
-  // swiperNext.addEventListener('click', () => {
-  //   swiperBlur.slideNext();
-  // })
+  swiperPrev.addEventListener('click', () => {
+    swiperBlur.slidePrev();
+  })
+  swiperNext.addEventListener('click', () => {
+    swiperBlur.slideNext();
+  })
 
 });
+
+
 
 
 
