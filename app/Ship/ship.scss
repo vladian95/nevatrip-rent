@@ -29,7 +29,7 @@
     .session__btn-item {
         padding: 8px 10px;
         text-align: center;
-        width: 135px;
+        width: 113px;
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         border-radius: 20px 20px 0px 0px;
         font-size: 30px;
@@ -146,15 +146,14 @@
         margin-top: 15px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        overflow: auto;
     }
 
     .ship-other__item {
         display: inline-block;
         overflow: hidden;
         position: relative;
-        width: 223px;
+        min-width: 223px;
         height: 154px;
         background-repeat: no-repeat;
         background-position: center;
@@ -222,10 +221,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px 10px;
-        max-width: 196px;
+        padding: 10px 20px;
+        // max-width: 196px;
         background-color: #dce8ff;
-        border-radius: 0px 16px;
+        border-radius: 16px 0px;
         left: 0px;
         top: -1px;
         font-size: 14px;
@@ -396,15 +395,6 @@
     }
     .ship-other__item2 {
         display: block;
-    }
-    .ship-other__item-component {
-        min-width: 157px;
-        height: 42px;
-        padding: 10px 20px;
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 600;
-        color: $dark;
     }
     .ship-other__link {
         font-size: 16px;

@@ -1,3 +1,4 @@
+
 @media (min-width: 360px) {
     //Keytering block start
     .keytering {
@@ -7,10 +8,8 @@
     .keytering__inner {
         padding: 15px 0;
         display: flex;
-        justify-content: space-around;
         align-items: center;
     }
-
     .keytering__btn {
         font-size: 14px;
         line-height: 16px;
@@ -39,6 +38,7 @@
     }   
     .keytering__btn-buffet{
         background-color: $blue-two;
+        margin-right: 10px;
         &::before{
             background-image: url(../images/wedding/cake-mobile.svg);
             width: 30px;
@@ -47,6 +47,7 @@
     } 
     .keytering__btn-banquet{
         background-color: $blue;
+        margin-left: 10px;
         &::after{
             background-image: url(../images/wedding/banquet-mobile.svg);
             width: 34px;
@@ -126,8 +127,16 @@
         font-weight: 400;
         font-size: 24px;
         color: $dark;
+        position: relative;
         &::after {
-            content: url('../images/regata/ruble-currency-sign.png');
+            content: '';
+            background-image: url(../images/rubls/24.svg);
+            top: 50%;
+            right: -16px;
+            position: absolute;
+            width: 13.5px;
+            height: 18px;
+            transform: translate(0px, -50%);
         }
     }
     .offers__star {
@@ -145,6 +154,10 @@
         font-weight: 400;
         border-radius: 30px;
         cursor: pointer;
+        transition: .3s ease;
+        &:hover{
+            background-color: #F4BF00;
+        }
     }
     //Offers block end
 }
@@ -157,6 +170,9 @@
     }
     .keytering__inner{
         padding-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .keytering__btn{
         padding: 38px 0px;
@@ -172,6 +188,7 @@
         }
     }
     .keytering__btn-buffet{
+        margin-right: 0;
         &::before{
             background-image: url(../images/wedding/cake-desktop.svg);
             width: 50px;
@@ -181,6 +198,7 @@
         }
     }
     .keytering__btn-banquet{
+        margin-left: 0;
         &::after{
             background-image: url(../images/wedding/banquet-desktop.svg);
             width: 52px;
@@ -237,6 +255,17 @@
     .offers__price{
         font-size: 30px;
         line-height: 50px;
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url(../images/rubls/30.svg);
+            top: 50%;
+            right: -19px;
+            position: absolute;
+            width: 17px;
+            height: 22px;
+            transform: translate(0px, -50%);
+        }
     }
     .offers__star{
         font-size: 12px;
