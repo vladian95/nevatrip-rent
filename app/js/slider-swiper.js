@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded',() => {
 
   const swiper = new Swiper('.swiper', {
     loop: false,
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       360: {
         slidesPerView: 1,
-        spaceBetween: 250,
+        spaceBetween: 0,
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
@@ -45,26 +45,26 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: ".swiper-transport-button-next",
       prevEl: ".swiper-transport-button-prev",
     },
-    breakpoints: {
-      360: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-transport-button-next",
-          prevEl: ".swiper-transport-button-prev",
+      breakpoints: {
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 30,
         },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-transport-button-next",
+            prevEl: ".swiper-transport-button-prev",
+          },
+        },
+        
       },
-
-    },
-
+      
   });
 
   const swiperVariants = new Swiper('.swiper-variants', {
@@ -72,40 +72,44 @@ document.addEventListener('DOMContentLoaded', () => {
     autoHeight: true,
     autoWidth: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-variants-pagination",
       clickable: true,
-    },
+  },
     navigation: {
       nextEl: ".swiper-variants-button-next",
       prevEl: ".swiper-variants-button-prev",
     },
-    breakpoints: {
-      360: {
-        slidesPerView: 1,
-        spaceBetween: 15,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
+      breakpoints: {
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+          pagination: {
+            el: ".swiper-variants-pagination",
+            type: "bullets",
         },
       },
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-variants-button-next",
-          prevEl: ".swiper-variants-button-prev",
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-variants-pagination",
+            type: "bullets",
+        },
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-variants-button-next",
+            prevEl: ".swiper-variants-button-prev",
+          },
+        },
+          1440: {
+            slidesPerView: 2,
+            spaceBetween: 30,
         },
       },
-      1440: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-    },
-
+      
   });
 
   const swiperOffers = new Swiper('.swiper-offers', {
@@ -113,8 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
     autoHeight: true,
     autoWidth: true,
     pagination: {
-      el: ".swiper-offers-pagination",
-      clickable: true,
+        el: ".swiper-offers-pagination",
+        clickable: true,
     },
     navigation: {
       nextEl: ".swiper-offers-button-next",
@@ -129,24 +133,24 @@ document.addEventListener('DOMContentLoaded', () => {
           type: "bullets",
         },
       },
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-offers-button-next",
-          prevEl: ".swiper-offers-button-prev",
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-offers-button-next",
+            prevEl: ".swiper-offers-button-prev",
+          },
+        },
+          1440: {
+            slidesPerView: 2,
+            spaceBetween: 30,
         },
       },
-      1440: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-    },
-
+      
   });
 
   const swiperBlur = new Swiper('.swiper-blur', {
@@ -155,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 1,
     centeredSlides: true,
     autoHeight: true,
-    // autoWidth: true,
+    autoWidth: true,  
     pagination: {
       el: ".swiper-blur-pagination",
       clickable: true,
@@ -173,8 +177,10 @@ document.addEventListener('DOMContentLoaded', () => {
       slideShadows: false
     },
     breakpoints: {
+      0: {
+        loop: true,
+      },
       360: {
-        loop: false,
         slidesPerView: 1,
         spaceBetween: 350,
         pagination: {
@@ -192,7 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       },
       768: {
-        loop: true,
         slidesPerView: 2,
         spaceBetween: 0,
         pagination: {
@@ -210,7 +215,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       },
       992: {
-        loop: true,
         slidesPerView: 2,
         spaceBetween: 0,
         navigation: {
