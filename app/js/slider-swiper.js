@@ -179,6 +179,14 @@ document.addEventListener('DOMContentLoaded',() => {
     breakpoints: {
       0: {
         loop: true,
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 0,
+          slideShadows: false
+        },
       },
       360: {
         slidesPerView: 1,
@@ -225,7 +233,7 @@ document.addEventListener('DOMContentLoaded',() => {
         coverflowEffect: {
           rotate: 0,
           stretch: -30,
-          depth: 625,
+          depth: 672,
           modifier: 1,
           slideShadows: true
         },
