@@ -266,7 +266,6 @@ h2 {
         position: absolute;
         bottom: -37px !important;
     }
-
     .custom-model-main {
         text-align: center;
         position: fixed;
@@ -815,8 +814,16 @@ h2 {
         line-height: 18px;
         font-weight: 400;
         margin-top: 19px;
+        position: relative;
         &::after {
-            content: url("../images/regata/ruble-currency-sign.png");
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 67px;
+            transform: translate(0px, -50%);
+            background-image: url(../images/rubls/18.svg);
+            width: 10px;
+            height: 13px;
         }
     }
     //Varients slider end
@@ -1720,6 +1727,17 @@ h2 {
         font-size: 22px;
         line-height: 22px;
         font-weight: 400;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 82px;
+            transform: translate(0px, -50%);
+            background-image: url(../images/rubls/22.svg);
+            width: 12px;
+            height: 16px;
+        }
     }
     //Varients end
 }

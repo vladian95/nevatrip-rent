@@ -179,6 +179,14 @@ document.addEventListener('DOMContentLoaded',() => {
     breakpoints: {
       0: {
         loop: true,
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 0,
+          slideShadows: false
+        },
       },
       360: {
         slidesPerView: 1,
@@ -247,27 +255,6 @@ document.addEventListener('DOMContentLoaded',() => {
       nextEl: ".swiper-popup-button-next",
       prevEl: ".swiper-popup-button-prev",
     },
-
-    // breakpoints: {
-    //   360: {
-    //     loop: true,
-    //     spaceBetween: 1000,
-    //     pagination: {
-    //       el: ".swiper-popup-pagination",
-    //       clickable: true,
-    //       type: "bullets",
-    //       dynamicBullets: true,
-    //     },
-    //   },
-    //   992: {
-    //     loop: true,
-    //     spaceBetween: 1000,
-    //     navigation: {
-    //       nextEl: ".swiper-popup-button-next",
-    //       prevEl: ".swiper-popup-button-prev",
-    //     },
-    //   },
-    // },
   });
 
   const swiperPrev = document.getElementById('swiper-blur-button-prev')
