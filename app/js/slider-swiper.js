@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',() => {
     breakpoints: {
       360: {
         slidesPerView: 1,
-        spaceBetween: 250,
+        spaceBetween: 0,
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded',() => {
     autoHeight: true,
     autoWidth: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-variants-pagination",
       clickable: true,
   },
     navigation: {
@@ -84,17 +84,21 @@ document.addEventListener('DOMContentLoaded',() => {
           slidesPerView: 1,
           spaceBetween: 15,
           pagination: {
-            el: ".swiper-pagination",
+            el: ".swiper-variants-pagination",
             type: "bullets",
         },
       },
         768: {
           slidesPerView: 1,
           spaceBetween: 30,
+          pagination: {
+            el: ".swiper-variants-pagination",
+            type: "bullets",
+        },
         },
         992: {
           slidesPerView: 2,
-          spaceBetween: 30,
+          spaceBetween: 10,
           navigation: {
             nextEl: ".swiper-variants-button-next",
             prevEl: ".swiper-variants-button-prev",
@@ -155,7 +159,7 @@ document.addEventListener('DOMContentLoaded',() => {
     spaceBetween: 1,
     centeredSlides: true,
     autoHeight: true,
-    // autoWidth: true,
+    autoWidth: true,  
     pagination: {
       el: ".swiper-blur-pagination",
       clickable: true,
@@ -173,8 +177,10 @@ document.addEventListener('DOMContentLoaded',() => {
       slideShadows: false
     },
     breakpoints: {
+      0: {
+        loop: true,
+      },
       360: {
-        loop: false,
         slidesPerView: 1,
         spaceBetween: 350,
         pagination: {
@@ -192,7 +198,6 @@ document.addEventListener('DOMContentLoaded',() => {
         },
       },
       768: {
-        loop: true,
         slidesPerView: 2,
         spaceBetween: 0,
         pagination: {
@@ -210,7 +215,6 @@ document.addEventListener('DOMContentLoaded',() => {
         },
       },
       992: {
-        loop: true,
         slidesPerView: 2,
         spaceBetween: 0,
         navigation: {
