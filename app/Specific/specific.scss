@@ -82,9 +82,11 @@
     }
     .tabs {
         position: relative;
-        li {
-            display: inline-block;
-        }
+        display: flex;
+        // li {
+        //     display: inline-block;
+            
+        // }
     }
     .tab-item {
         display: none;
@@ -94,29 +96,25 @@
     }
     .specific-session__btn-item.specific-session--active {
         color: $dark;
-        z-index: 17;
-        border-bottom: transparent;
-        &::before{
-            content: '';
-            border-bottom: transparent;
-        }
+        z-index: 51;
+        box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.12);
+        // &::before{
+        //     content: '';
+        //     // border-bottom: 1px solid white;
+        //     // box-shadow: 11px -5px 12px -8px rgba(0, 0, 0, 0.12);
+        // }
     }
-    .specific-session__btn-item1{
-        z-index: 15;
-        border: 1px solid black;
-        border-right: white;
-        border-radius: 20px 0px 0px 0px;  
+    .specific-session__btn-item1{ 
+        margin-right: -13px;
     }
     .specific-session__btn-item2{
-        z-index: 15;
-        border: 1px solid black;
-        border-right: white;
-        border-radius: 20px 0px 0px 0px;
+        z-index: 41;
+        
+        margin-right: -13px;
     }
     .specific-session__btn-item3{
-        z-index: 14;
-        border: 1px solid black;
-        border-radius: 20px 20px 0px 0px;
+        z-index: 40;
+        
         &::before{
             display: none;
         }
@@ -124,32 +122,32 @@
     .specific-session__btn-item {
         padding: 8px 10px;
         text-align: center;
-        width: 113px;
-        // border-radius: 20px 20px 0px 0px;
+        width: 135px;
         font-size: 30px;
         color: $gray;
         line-height: 19px;
+        border-radius: 20px 20px 0px 0px ;
         cursor: pointer;
         font-size: 14px;
         background-color: #fff;
         position: relative;
+        box-shadow: 0px -5px 16px rgba(0, 0, 0, 0.15);
         &:hover {
             text-decoration: underline;
         }
-        &::before{
-            content: '';
-            position: absolute;
-            height: 56px;
-            width: 30px;
-            background-color: red;
-            top: -1px;
-            bottom: 0;
-            right: -29px;  
-            border: 1px solid black;
-            border-left: white;
-            border-radius: 0px 20px 0px 0px;
-            background-color: #fff; 
-        }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     min-height: 54px;
+        //     width: 30px;
+        //     background-color: red;
+        //     top: 0px;
+        //     bottom: 0px;
+        //     right: -29px;  
+        //     box-shadow: 11px -5px 12px -8px rgba(0, 0, 0, 0.12);
+        //     border-radius: 0px 20px 0px 0px;
+        //     background-color: #fff; 
+        // }
     }
     .specific-session__btn-title {
         font-weight: 600;
@@ -164,28 +162,26 @@
         display: block;
         max-width: 115px;
     }
+    .tab_content{
+        z-index: 50;
+    }
     .specific-session__content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         overflow: auto;
-        border: 1px solid black;
-        border-top: none;
-        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-        // box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 0px 40px 20px;
-        border-radius: 0px 0px 0px 20px;
-        
+        border-radius: 0px 0px 0px 20px; 
     }
     .specific-session__content-item {
-        // box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         padding: 84px 20px 40px 20px;
-        border: 1px solid black;
         width: 246px;
         border-radius: 16px;
         position: relative;
         min-width: 270px;
         min-height: 348px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.15);
         & + .specific-session__content-item {
             margin-left: 20px;
         }
@@ -214,6 +210,17 @@
         font-size: 18px;
         font-weight: 400;
         color: $dark;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/rubls/18.svg);
+            width: 10px;
+            height: 13px;
+            top: 50%;
+            right: -12px;
+            transform: translate(0px, -50%);
+        }
     }
     .specific-session__content-text {
         margin-top: 12px;
@@ -234,7 +241,10 @@
         margin-bottom: 36px;
     }
     .specific-session__container {
-        padding-left: 3%;
+        max-width: 738px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        
     }
     .specific-session__btn-item {
         padding: 8px 10px;
@@ -245,6 +255,12 @@
         line-height: 19px;
         cursor: pointer;
         background-color: #fff;
+    }
+    .specific-session__btn-item1{
+        margin-right: -30px;
+    }
+    .specific-session__btn-item2{
+        margin-right: -30px;
     }
     .specific-session__btn-title {
         font-weight: 600;
@@ -263,14 +279,11 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        overflow: auto;
-        // box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15);
-        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 40px 20px;
         border-radius: 0px 0px 0px 20px;
+        overflow: auto;
     }
     .specific-session__content-item {
-        // box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
         padding: 84px 20px 40px 20px;
         border-radius: 16px;
         position: relative;
@@ -302,6 +315,16 @@
         font-weight: 400;
         color: $dark;
         max-width: 230px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/rubls/22.svg);
+            width: 12px;
+            height: 16px;
+            top: 50%;
+            right: -14px;
+            transform: translate(0px, -50%);
+        }    
     }
     .specific-session__content-text {
         margin-top: 12px;

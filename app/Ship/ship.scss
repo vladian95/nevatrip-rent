@@ -10,12 +10,10 @@
     }
     .tabs {
         position: relative;
-        li{
-            display: inline-block;
-        }
-    }
-    .tab_content{
-        position: relative;
+        display: flex;
+        // li{
+        //     display: inline-block;
+        // }
     }
     .tab-item {
         display: none;
@@ -25,12 +23,24 @@
     } 
     .session__btn-item.active{
         color: $dark;
+        z-index: 110;
+        box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.12);
+    }
+    .session__btn-item1{
+        margin-right: -13px;
+        
+    }
+    .session__btn-item2{
+        margin-right: -13px;   
+        z-index: 105;
+    }
+    .session__btn-item3{
+        z-index: 104;
     }
     .session__btn-item {
         padding: 8px 10px;
         text-align: center;
-        width: 113px;
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
+        width: 135px;
         border-radius: 20px 20px 0px 0px;
         font-size: 30px;
         color: $gray;
@@ -38,6 +48,10 @@
         cursor: pointer;
         font-size: 14px;
         background-color: #fff;
+        box-shadow: 0px -5px 16px rgba(0, 0, 0, 0.15);
+        &:hover {
+            text-decoration: underline;
+        }
     }
     .session__btn-title {
         font-weight: 600;
@@ -52,6 +66,10 @@
         display: block;
         max-width: 115px;
     }
+    .tab__content-sessions{
+        position: relative;
+        z-index: 109;
+    }
     .session__content {
         display: flex;
         overflow: auto;
@@ -59,6 +77,7 @@
         align-items: flex-start;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 85px 20px;
+        border-radius: 0px 0px 0px 20px; 
     }
     .session__content-item {
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.12);
@@ -118,11 +137,12 @@
         &::before {
             position: absolute;
             content: "";
-            right: 0;
-            top: 4px;
-            background-image: url(../images/new-img/ruble.svg);
-            width: 9px;
-            height: 12px;
+            right: 3px;
+            top: 50%;
+            transform: translate(0px, -50%);
+            background-image: url(../images/rubls/18.svg);
+            width: 10px;
+            height: 13px;
         }
     }
     .nightprice {
@@ -355,11 +375,12 @@
         &::before {
             position: absolute;
             content: "";
-            right: 0;
-            top: 6px;
-            background-image: url(../images/new-img/ruble.svg);
-            width: 9px;
-            height: 12px;
+            right: 1px;
+            top: 50%;
+            transform: translate(0px, -50%);
+            background-image: url(../images/rubls/22.svg);
+            width: 12px;
+            height: 16px;
         }
     }
     //SESSION END
