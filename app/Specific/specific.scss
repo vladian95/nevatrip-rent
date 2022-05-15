@@ -15,6 +15,7 @@
         width: 335px;
         height: 220px;
         border-radius: 16px;
+        -webkit-border-radius:16px;
         position: relative;
         .specific-other__item-bg {
             width: 100%;
@@ -244,7 +245,13 @@
         max-width: 738px;
         padding: 0px 15px;
         margin: 0 auto;
-        
+        overflow: visible;
+        border-right: none;
+    }
+    .tab_content,
+    .tab-item.active-tab,
+    .specific-session__content{
+        overflow: visible;
     }
     .specific-session__btn-item {
         padding: 8px 10px;
@@ -281,7 +288,7 @@
         align-items: flex-start;
         padding: 30px 40px 40px 20px;
         border-radius: 0px 0px 0px 20px;
-        overflow: auto;
+        
     }
     .specific-session__content-item {
         padding: 84px 20px 40px 20px;
