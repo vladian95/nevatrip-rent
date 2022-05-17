@@ -1,5 +1,5 @@
 
-@media (min-width: 360px) {
+@media (min-width: 0px) {
     //other start
     .speedboat-other {
         padding-top: 40px;
@@ -20,6 +20,11 @@
         cursor: pointer;
         overflow: hidden;
         margin: 5px;
+        &:hover{
+            .speedboat-other__item-component{
+                background-color: #9ABDFF;
+            }
+        }
         .speedboat-other__item-bg{
             width: 100%;
             height: 100%;
@@ -48,6 +53,7 @@
         font-size: 14px;
         line-height: 16px;
         font-weight: 600;
+        transition: .3s ease;
     }
     .speedboat-other__link {
         position: absolute;
@@ -92,6 +98,11 @@
         cursor: pointer;
         display: inline-block;
         overflow: hidden;
+        &:hover{
+            .speedboat-other__item-component{
+                background-color: #9ABDFF;
+            }
+        }
         .speedboat-other__item-second--active{
             width: 100%;
             height: 100%;

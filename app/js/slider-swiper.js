@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',() => {
     breakpoints: {
       360: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 550,
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded',() => {
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 32,
           navigation: {
             nextEl: ".swiper-transport-button-next",
             prevEl: ".swiper-transport-button-prev",
@@ -82,7 +82,8 @@ document.addEventListener('DOMContentLoaded',() => {
       breakpoints: {
         360: {
           slidesPerView: 1,
-          spaceBetween: 15,
+          spaceBetween: 550,
+          
           pagination: {
             el: ".swiper-variants-pagination",
             type: "bullets",
@@ -98,7 +99,7 @@ document.addEventListener('DOMContentLoaded',() => {
         },
         992: {
           slidesPerView: 2,
-          spaceBetween: 10,
+          spaceBetween: 30,
           navigation: {
             nextEl: ".swiper-variants-button-next",
             prevEl: ".swiper-variants-button-prev",
@@ -156,7 +157,7 @@ document.addEventListener('DOMContentLoaded',() => {
   const swiperBlur = new Swiper('.swiper-blur', {
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 1,
+    // spaceBetween: 1,
     centeredSlides: true,
     autoHeight: true,
     autoWidth: true,  
@@ -174,21 +175,23 @@ document.addEventListener('DOMContentLoaded',() => {
       stretch: 0,
       depth: 0,
       modifier: 0,
-      slideShadows: false
+      slideShadows: true,
     },
     breakpoints: {
       0: {
         loop: true,
+        centeredSlides: true,
         effect: "coverflow",
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
           depth: 0,
           modifier: 0,
-          slideShadows: false
+          slideShadows: false,
         },
       },
       360: {
+        // centeredSlides: true,
         slidesPerView: 1,
         spaceBetween: 350,
         pagination: {
@@ -202,7 +205,7 @@ document.addEventListener('DOMContentLoaded',() => {
           stretch: 0,
           depth: 0,
           modifier: 0,
-          slideShadows: false
+          slideShadows: false,
         },
       },
       768: {
@@ -219,7 +222,7 @@ document.addEventListener('DOMContentLoaded',() => {
           stretch: -5,
           depth: 600,
           modifier: 1,
-          slideShadows: true
+          slideShadows: true,
         },
       },
       992: {
@@ -232,14 +235,13 @@ document.addEventListener('DOMContentLoaded',() => {
         effect: "coverflow",
         coverflowEffect: {
           rotate: 0,
-          stretch: -30,
-          depth: 672,
+          stretch: -10,
+          depth: 550,
           modifier: 1,
-          slideShadows: true
+          slideShadows: true,
         },
       },
     },
-
   });
 
   const swiperPopup = new Swiper('.swiper-popup', {

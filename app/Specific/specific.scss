@@ -1,4 +1,4 @@
-@media (min-width: 360px) {
+@media (min-width: 0px) {
     //Specific Other start
     .specific-other {
         padding-top: 40px;
@@ -17,6 +17,11 @@
         border-radius: 16px;
         -webkit-border-radius:16px;
         position: relative;
+        &:hover{
+            .specific-other__item-component{
+                background-color: #9ABDFF;
+            }
+        }
         .specific-other__item-bg {
             width: 100%;
             height: 100%;
@@ -47,6 +52,7 @@
         font-size: 14px;
         line-height: 16px;
         font-weight: 600;
+        transition: .3s ease;
     }
     .specific-other__link {
         position: absolute;
@@ -72,9 +78,6 @@
     //Specific other end
 
     //TABS
-    .product-two__tabs {
-        padding-top: 90px;
-    }
     .specific-session__title {
         margin-bottom: 12px;
     }
@@ -236,7 +239,7 @@
 @media (min-width: 768px) {
     //TABS
     .product-two__tabs {
-        padding-top: 90px;
+        padding-top: 50px;
     }
     .specific-session__title {
         margin-bottom: 36px;
@@ -246,7 +249,6 @@
         padding: 0px 15px;
         margin: 0 auto;
         overflow: visible;
-        border-right: none;
     }
     .tab_content,
     .tab-item.active-tab,
@@ -284,11 +286,13 @@
     }
     .specific-session__content {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         padding: 30px 40px 40px 20px;
         border-radius: 0px 0px 0px 20px;
-        
+        width: 850px;
+        overflow: auto; 
+        padding-right: 120px;
     }
     .specific-session__content-item {
         padding: 84px 20px 40px 20px;
@@ -373,11 +377,11 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         padding: 30px 40px 40px 20px;
         border-radius: 0px 20px 20px 20px;
+        width: 100%;
+        overflow: hidden; 
     }
-
     .specific-other__item {
         min-width: 450px;
         min-height: 300px;
