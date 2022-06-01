@@ -1,0 +1,395 @@
+@media (min-width: 0px) {
+    //Specific Other start
+    .specific-other {
+        padding-top: 40px;
+    }
+    .specific-other__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .specific-other__item {
+        display: inline-block;
+        overflow: hidden;
+        width: 335px;
+        height: 220px;
+        border-radius: 16px;
+        -webkit-border-radius:16px;
+        position: relative;
+        &:hover{
+            .specific-other__item-component{
+                background-color: #9ABDFF;
+            }
+        }
+        .specific-other__item-bg {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+                url("../images/otherItemImg.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            display: block;
+            &:hover {
+                transform: scale(1.1);
+                background: url("../images/otherItemImg.jpeg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+    .specific-other__item-component {
+        padding: 12px 14px;
+        min-width: 157px;
+        background-color: #dce8ff;
+        border-radius: 13px 0px 15px 0px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        transition: .3s ease;
+    }
+    .specific-other__link {
+        position: absolute;
+        right: 22px;
+        bottom: 10px;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../images/speedboat-link-img.svg);
+            width: 5px;
+            height: 9px;
+            bottom: 4px;
+            right: -12px;
+        }
+    }
+    //Specific other end
+
+    //TABS
+    .specific-session__title {
+        margin-bottom: 12px;
+    }
+    .specific-session__container {
+        padding-left: 12px;
+    }
+    .tabs {
+        position: relative;
+        display: flex;
+        // li {
+        //     display: inline-block;
+            
+        // }
+    }
+    .tab-item {
+        display: none;
+        &:first-child {
+            display: block;
+        }
+    }
+    .specific-session__btn-item.specific-session--active {
+        color: $dark;
+        z-index: 51;
+        box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.12);
+        // &::before{
+        //     content: '';
+        //     // border-bottom: 1px solid white;
+        //     // box-shadow: 11px -5px 12px -8px rgba(0, 0, 0, 0.12);
+        // }
+    }
+    .specific-session__btn-item1{ 
+        margin-right: -13px;
+    }
+    .specific-session__btn-item2{
+        z-index: 41;
+        
+        margin-right: -13px;
+    }
+    .specific-session__btn-item3{
+        z-index: 40;
+        
+        &::before{
+            display: none;
+        }
+    }
+    .specific-session__btn-item {
+        padding: 8px 10px;
+        text-align: center;
+        width: 135px;
+        font-size: 30px;
+        color: $gray;
+        line-height: 19px;
+        border-radius: 20px 20px 0px 0px ;
+        cursor: pointer;
+        font-size: 14px;
+        background-color: #fff;
+        position: relative;
+        box-shadow: 0px -5px 16px rgba(0, 0, 0, 0.15);
+        &:hover {
+            text-decoration: underline;
+        }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     min-height: 54px;
+        //     width: 30px;
+        //     background-color: red;
+        //     top: 0px;
+        //     bottom: 0px;
+        //     right: -29px;  
+        //     box-shadow: 11px -5px 12px -8px rgba(0, 0, 0, 0.12);
+        //     border-radius: 0px 20px 0px 0px;
+        //     background-color: #fff; 
+        // }
+    }
+    .specific-session__btn-title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 115px;
+    }
+    .specific-session__btn-date {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        display: block;
+        max-width: 115px;
+    }
+    .tab_content{
+        z-index: 50;
+    }
+    .specific-session__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: auto;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 30px 0px 40px 20px;
+        border-radius: 0px 0px 0px 20px; 
+    }
+    .specific-session__content-item {
+        padding: 84px 20px 40px 20px;
+        width: 246px;
+        border-radius: 16px;
+        position: relative;
+        min-width: 270px;
+        min-height: 348px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.15);
+        & + .specific-session__content-item {
+            margin-left: 20px;
+        }
+    }
+    .specific-session__content-component {
+        padding: 16px 20px;
+        max-width: 225px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        background-color: $blue;
+        border-radius: 16px 0px 16px 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $dark;
+    }
+    .specific-session__content-top {
+        padding-bottom: 36px;
+        border-bottom: 1px solid $light-gray;
+    }
+    .specific-session__content-bottom {
+        margin-top: 36px;
+    }
+    .specific-session__content-price {
+        font-size: 18px;
+        font-weight: 400;
+        color: $dark;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/rubls/18.svg);
+            width: 10px;
+            height: 13px;
+            top: 50%;
+            right: -12px;
+            transform: translate(0px, -50%);
+        }
+    }
+    .specific-session__content-text {
+        margin-top: 12px;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        color: $dark;
+    }
+}
+
+@media (min-width: 768px) {
+    //TABS
+    .product-two__tabs {
+        padding-top: 50px;
+    }
+    .specific-session__title {
+        margin-bottom: 36px;
+    }
+    .specific-session__container {
+        max-width: 738px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        overflow: visible;
+    }
+    .tab_content,
+    .tab-item.active-tab,
+    .specific-session__content{
+        overflow: visible;
+    }
+    .specific-session__btn-item {
+        padding: 8px 10px;
+        text-align: center;
+        width: 240px;
+        // border-radius: 20px 0px 0px 0px;
+        color: $gray;
+        line-height: 19px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    .specific-session__btn-item1{
+        margin-right: -30px;
+    }
+    .specific-session__btn-item2{
+        margin-right: -30px;
+    }
+    .specific-session__btn-title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 220px;
+    }
+    .specific-session__btn-date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        display: block;
+        max-width: 220px;
+    }
+    .specific-session__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 30px 40px 40px 20px;
+        border-radius: 0px 0px 0px 20px;
+        width: 850px;
+        overflow: auto; 
+        padding-right: 120px;
+    }
+    .specific-session__content-item {
+        padding: 84px 20px 40px 20px;
+        border-radius: 16px;
+        position: relative;
+        min-width: 270px;
+        min-height: 348px;
+    }
+    .specific-session__content-component {
+        padding: 16px 20px;
+        max-width: 225px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        background-color: $blue;
+        border-radius: 16px 0px 16px 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $dark;
+    }
+    .specific-session__content-top {
+        padding-bottom: 36px;
+        border-bottom: 1px solid $light-gray;
+    }
+    .specific-session__content-bottom {
+        margin-top: 36px;
+    }
+    .specific-session__content-price {
+        font-size: 22px;
+        font-weight: 400;
+        color: $dark;
+        max-width: 230px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/rubls/22.svg);
+            width: 12px;
+            height: 16px;
+            top: 50%;
+            right: -14px;
+            transform: translate(0px, -50%);
+        }    
+    }
+    .specific-session__content-text {
+        margin-top: 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: $dark;
+        padding-right: 3px;
+    }
+    //specific-session end
+
+    //Specific other start
+    .specific-other {
+        padding-top: 80px;
+    }
+    .specific-other__inner {
+        justify-content: flex-start;
+        margin-top: 36px;
+    }
+    .specific-other__item {
+        min-width: 344px;
+        min-height: 230px;
+    }
+    .specific-other__item-component {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    //Specific other end
+}
+
+@media (min-width: 992px) {
+    .specific-session__container {
+        max-width: 960px;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+    .specific-session__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 30px 40px 40px 20px;
+        border-radius: 0px 20px 20px 20px;
+        width: 100%;
+        overflow: hidden; 
+    }
+    .specific-other__item {
+        min-width: 450px;
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

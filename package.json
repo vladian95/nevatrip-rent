@@ -9,7 +9,7 @@
   "author": "Chesy",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
@@ -19,6 +19,10 @@
     "gulp-uglify": "^3.0.2",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
-    "swiper": "^8.0.6"
+    "swiper": "^8.1.1"
+  },
+  "dependencies": {
+    "browserslist": "^4.20.2",
+    "gulp-file-include": "^2.3.0"
   }
 }
